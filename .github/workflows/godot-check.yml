@@ -1,0 +1,33 @@
+name: Godot 检查
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    env:
+      GODOT_VERSION: 4.3-stable
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 下载 Godot
+        run: |
+          curl -sSL -o godot.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_linux.x86_64.zip"
+          unzip -q godot.zip
+          mv "Godot_v${GODOT_VERSION}_linux.x86_64" "$RUNNER_TEMP/godot"
+
+      - name: 导入项目
+        run: timeout 300 "$RUNNER_TEMP/godot" --headless --editor --quit 2>&1 | tee import.log || true
+
+      - name: 运行冒烟测试
+        run: |
+          set -o pipefail
+          timeout 300 "$RUNNER_TEMP/godot" --headless --path . res://tests/smoke_test.tscn 2>&1 | tee test.log
+
+      - name: 检查脚本错误
+        run: |
+          if grep -nE "SCRIPT ERROR|Parse Error|Failed to load script|Could not find type" import.log test.log; then
+            echo "发现脚本错误"; exit 1
+          fi

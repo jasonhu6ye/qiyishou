@@ -1,0 +1,6 @@
+# Godot
+.godot/
+*.translation
+export_presets.cfg
+# 本地导出产物
+build/
