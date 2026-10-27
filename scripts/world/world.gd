@@ -85,7 +85,7 @@ func _generate() -> void:
 			var dx := (x - 28) / 4.6
 			var dy := (y - 16) / 3.2
 			if dx * dx + dy * dy < 1.0:
-				_set(Vector2i(x, y), WATER)
+				_set_tile(Vector2i(x, y), WATER)
 	for road in [Rect2i(3, 7, 42, 1), Rect2i(9, 7, 1, 24), Rect2i(36, 7, 1, 24), Rect2i(9, 30, 28, 1)]:
 		_fill(road, PATH, rng)
 	for y in H:
@@ -102,18 +102,18 @@ func _generate() -> void:
 				tiles[y * W + x] = FLOWER
 	for h in HOUSES:
 		_fill(h["rect"], HOUSE, rng)
-	_set(HEAL_DOOR, DOOR)
-	_set(HEAL_EXIT, PATH)
+	_set_tile(HEAL_DOOR, DOOR)
+	_set_tile(HEAL_EXIT, PATH)
 
 
 func _fill(r: Rect2i, v: int, rng: RandomNumberGenerator, p := 1.0) -> void:
 	for y in range(r.position.y, r.end.y):
 		for x in range(r.position.x, r.end.x):
 			if rng.randf() < p:
-				_set(Vector2i(x, y), v)
+				_set_tile(Vector2i(x, y), v)
 
 
-func _set(c: Vector2i, v: int) -> void:
+func _set_tile(c: Vector2i, v: int) -> void:
 	if in_bounds(c):
 		tiles[c.y * W + c.x] = v
 
@@ -186,6 +186,6 @@ func _draw() -> void:
 						Art.ellipse(self, o + Vector2(11, 11), Vector2(1.4, 1.4), Color("#ff9fb5"))
 					elif t == TALL_GRASS:
 						for blade in [Vector2(2, 6), Vector2(8, 2), Vector2(9, 10), Vector2(3, 12)]:
-							var bp := o + blade
+							var bp: Vector2 = o + blade
 							Art.poly(self, [bp + Vector2(0, 5), bp + Vector2(2, -1), bp + Vector2(3, 5)], Color("#3f9a3c"))
 							Art.poly(self, [bp + Vector2(2, 5), bp + Vector2(4.5, 0), bp + Vector2(5.5, 5)], Color("#2f7f2e"))
