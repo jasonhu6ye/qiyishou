@@ -26,6 +26,11 @@ func _ready() -> void:
 	main.dialog.close()
 	main.player.place(Vector2i(34, 15))
 	main.player.dir = Vector2i.RIGHT
+	main._area = main.world.area_name(main.player.cell)
+	main.hud.refresh(main._area)
+	if main.hud._tween:
+		main.hud._tween.kill()
+	main.hud.toast.modulate.a = 0.0
 	var ajie: Prop = main.world.npc_props[1]
 	ajie.set_alerted(true)
 	await _frames(5)
