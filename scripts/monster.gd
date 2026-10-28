@@ -71,6 +71,20 @@ func level_up() -> Array[String]:
 	return learned
 
 
+## 进化：换成新物种，按最大 HP 的增量补血，招式保留
+func evolve(new_key: String) -> void:
+	var old_max := max_hp()
+	key = new_key
+	hp += max_hp() - old_max
+
+
+## 用伤药回复，返回实际回复量
+func restore(amount: int) -> int:
+	var healed := mini(amount, max_hp() - hp)
+	hp += healed
+	return healed
+
+
 func to_dict() -> Dictionary:
 	return {"key": key, "level": level, "hp": hp, "xp": xp, "moves": Array(moves)}
 

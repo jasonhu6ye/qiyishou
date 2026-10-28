@@ -61,12 +61,41 @@ func _unit_checks() -> void:
 			check(false, "2号道路等级应在 5–9")
 			break
 
+	var bug := Monster.create("chongchong", 6)
+	check(Data.evolution_for(bug) == "", "6 级绒绒虫还不会进化")
+	bug.xp = bug.xp_for_next()
+	bug.level_up()
+	check(Data.evolution_for(bug) == "jianjian", "7 级绒绒虫会进化成茧茧")
+	var hp_before := bug.hp
+	bug.evolve("jianjian")
+	check(bug.key == "jianjian" and bug.hp >= hp_before, "进化后换物种且不掉血")
+
+	Game.reset()
+	var money_before: int = Game.money
+	check(Game.buy("伤药") and Game.potions == 3 and Game.money == money_before - 300, "商店买伤药扣钱加数量")
+	Game.money = 100
+	check(not Game.buy("兽球") and Game.balls == 5, "钱不够买不了")
+	var hurt := Monster.create("paowa", 10)
+	hurt.hp = 3
+	var healed: int = Game.use_potion(hurt)
+	check(healed == Data.POTION_HEAL and hurt.hp == 3 + Data.POTION_HEAL, "伤药回复 20 HP")
+	hurt.hp = hurt.max_hp()
+	check(Game.use_potion(hurt) == 0 and Game.potions == 2, "满血时不消耗伤药")
+
+	for key in Data.SPECIES:
+		if Art.tex("monsters/%s_front" % key) == null or Art.tex("monsters/%s_back" % key) == null:
+			check(false, "%s 的立绘能载入" % key)
+	for kind in ["heal", "shop", "home"]:
+		check(Art.tex("house_" + kind) != null, "%s 房屋贴图能载入" % kind)
+
 	check(Art.tex("tiles") != null and Art.tex("tree") != null and Art.tex("player") != null, "像素图都能载入")
 	check(Game.ui_theme != null and Game.ui_theme.default_font.resource_path == Game.FONT_PATH, "界面主题使用像素字体")
 
 	Game.reset()
 	Game.party.append(Monster.create("paowa", 7))
 	Game.balls = 3
+	Game.money = 1234
+	Game.flags["trainer_ajie"] = true
 	Game.seen["paowa"] = true
 	Game.player_cell = Vector2i(10, 7)
 	Game.save_game()
@@ -74,6 +103,7 @@ func _unit_checks() -> void:
 	check(Game.load_game(), "能读取存档")
 	check(Game.party.size() == 1 and Game.party[0].key == "paowa" and Game.party[0].level == 7, "存档保留队伍")
 	check(Game.balls == 3 and Game.player_cell == Vector2i(10, 7), "存档保留兽球和位置")
+	check(Game.money == 1234 and Game.flags.get("trainer_ajie", false), "存档保留金钱和训练师记录")
 	Game.delete_save()
 
 
@@ -91,6 +121,10 @@ func _scene_checks() -> void:
 	check(world.tile_at(World.HEAL_DOOR) == World.DOOR, "治疗所门口存在")
 	check(not world.is_walkable(Vector2i(0, 0)), "地图边缘是树")
 	check(main.state == 0 and main.player.active, "有队伍时直接进入行走状态")
+	check(world.tile_at(World.SHOP_DOOR) == World.DOOR, "商店门口存在")
+	var ajie: Prop = world.trainer_spotting(Vector2i(36, 15))
+	check(ajie != null and ajie.npc["trainer"]["id"] == "trainer_ajie", "站在阿杰视线里会被发现")
+	check(world.trainer_spotting(Vector2i(36, 16)) == null, "不在视线里不会被发现")
 	var dialog_font: Font = main.dialog.label.get_theme_font("font")
 	check(dialog_font.resource_path == Game.FONT_PATH, "对话框实际用上了像素字体")
 	check(main.dialog.label.get_theme_font_size("font_size") == Game.FONT_SIZE, "对话框字号是 12px")
@@ -98,15 +132,35 @@ func _scene_checks() -> void:
 
 func _battle_check() -> void:
 	var battle: Battle = main.battle
-	var dialog: DialogBox = main.dialog
 	var wild := Monster.create("chongchong", 2)
-	var done := [false]
+	var foes: Array[Monster] = [wild]
+	var result := await _auto_battle(foes, {})
+	check(result == "won" or result == "caught", "自动操作能打完一场野外战斗（结果：%s）" % result)
+	check(not battle.visible, "战斗结束后关闭战斗画面")
+
+	# 训练师战斗：用一只高等级的首发，确保能连续打倒两只对手
+	Game.party.push_front(Monster.create("huohu2", 30))
+	var money_before: int = Game.money
+	var info: Dictionary = World.NPCS[1]["trainer"]
+	var team: Array[Monster] = []
+	for entry in info["team"]:
+		team.append(Monster.create(entry[0], int(entry[1])))
+	result = await _auto_battle(team, info)
+	check(result == "won", "能打赢训练师的两只奇异兽（结果：%s）" % result)
+	check(team[0].is_fainted() and team[1].is_fainted(), "训练师的两只都被打倒")
+	check(Game.money == money_before + int(info["reward"]), "打赢训练师拿到奖金")
+
+
+## 自动按键打完一场战斗：对话直接跳过，选项总是点第一个可用按钮
+func _auto_battle(foes: Array[Monster], info: Dictionary) -> String:
+	var battle: Battle = main.battle
+	var dialog: DialogBox = main.dialog
+	var out := [""]
 	var run_battle := func():
-		await battle.run(wild, 0)
-		done[0] = true
+		out[0] = await battle.run(foes, 1, info)
 	run_battle.call()
 	var start := Time.get_ticks_msec()
-	while not done[0] and (Time.get_ticks_msec() - start) / 1000.0 < TIMEOUT:
+	while out[0] == "" and (Time.get_ticks_msec() - start) / 1000.0 < TIMEOUT:
 		await get_tree().process_frame
 		if dialog._waiting:
 			dialog._finish()
@@ -115,6 +169,4 @@ func _battle_check() -> void:
 				if b is Button and not b.disabled:
 					b.pressed.emit()
 					break
-	check(done[0], "自动操作能打完一场战斗")
-	check(wild.is_fainted() or Game.caught.has("chongchong"), "野生绒绒虫被打倒或被抓到")
-	check(not battle.visible, "战斗结束后关闭战斗画面")
+	return out[0]

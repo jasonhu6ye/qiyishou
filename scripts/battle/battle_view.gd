@@ -46,7 +46,7 @@ func _draw() -> void:
 			dy = minf(26.0, (t - b.faint_enemy_at) * 80.0)
 			alpha = 1.0 - dy / 26.0
 		if alpha > 0.0:
-			_monster(Vector2(236 + dx, 82 + dy), 1.35, b.wild.key, false, alpha, t)
+			_monster(Vector2(236 + dx, 82 + dy), b.wild.key, false, alpha, t)
 
 	if b.ball_at > 0.0:
 		_ball(t - b.ball_at, t - b.ball_shake_at)
@@ -58,7 +58,7 @@ func _draw() -> void:
 		if since < 0.45:
 			dx = sin(since * 40.0) * 3.0
 			alpha = 0.35 if int(since / 0.07) % 2 else 1.0
-		_monster(Vector2(84 + dx, 152), 1.9, b.me.key, true, alpha, t)
+		_monster(Vector2(84 + dx, 154), b.me.key, true, alpha, t)
 
 	_hp_box(Vector2(8, 8), 140, b.wild, b.disp_enemy_hp, false)
 	if b.show_me and b.me:
@@ -73,9 +73,11 @@ func _reset() -> void:
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2(_k, _k))
 
 
-func _monster(feet: Vector2, s: float, key: String, back: bool, alpha: float, t: float) -> void:
-	draw_set_transform(feet * _k, 0.0, Vector2(s * _k, s * _k))
-	Art.monster(self, key, back, alpha, t)
+## 立绘按整像素放置，再加一个上下 1 像素的呼吸起伏
+func _monster(feet: Vector2, key: String, back: bool, alpha: float, t: float) -> void:
+	var bob := roundf(sin(t * 3.0 + (1.5 if back else 0.0)))
+	draw_set_transform((feet.round() + Vector2(0, bob)) * _k, 0.0, Vector2(_k, _k))
+	Art.monster(self, key, back, alpha)
 	_reset()
 
 

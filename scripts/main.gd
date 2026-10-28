@@ -72,7 +72,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		_interact()
 	elif event.is_action_pressed("cancel"):
 		get_viewport().set_input_as_handled()
-		_party_menu()
+		_main_menu()
 
 
 func _on_stepped(cell: Vector2i) -> void:
@@ -82,8 +82,13 @@ func _on_stepped(cell: Vector2i) -> void:
 		hud.show_toast(area)
 	hud.refresh(area)
 	var t := world.tile_at(cell)
-	if t == World.DOOR:
+	var spotter := world.trainer_spotting(cell)
+	if cell == World.HEAL_DOOR:
 		_heal()
+	elif cell == World.SHOP_DOOR:
+		_shop()
+	elif spotter:
+		_trainer_battle(spotter, true)
 	elif t == World.TALL_GRASS and Game.rng.randf() < ENCOUNTER_RATE:
 		_encounter(cell)
 	elif player.steps % AUTOSAVE_STEPS == 0:
@@ -94,11 +99,35 @@ func _heal() -> void:
 	_set_state(State.TALK)
 	await dialog.say("护士：欢迎来到治疗所！把奇异兽交给我吧……")
 	Game.heal_all()
-	Game.balls = maxi(Game.balls, 10)
-	await dialog.say("全部恢复精神了！兽球也给你补到 10 个，路上小心。")
+	await dialog.say("全部恢复精神了！路上小心。")
 	dialog.close()
 	player.dir = Vector2i.DOWN
 	player.place(World.HEAL_EXIT)
+	_save()
+	_set_state(State.WALK)
+
+
+func _shop() -> void:
+	_set_state(State.TALK)
+	await dialog.say("店员：欢迎光临！需要点什么？")
+	while true:
+		var items: Array = Data.SHOP.keys()
+		var labels: Array = []
+		for item in items:
+			labels.append("%s  %d 金" % [item, Data.SHOP[item]])
+		labels.append("离开")
+		var i: int = await dialog.choose("你有 %d 金 · 兽球 %d · 伤药 %d" % [Game.money, Game.balls, Game.potions], labels)
+		if i >= items.size():
+			break
+		if Game.buy(items[i]):
+			hud.refresh(_area)
+			await dialog.say("买了一个%s。谢谢惠顾！" % items[i], 0.9)
+		else:
+			await dialog.say("钱好像不太够呢……", 1.0)
+	await dialog.say("欢迎下次光临！", 0.8)
+	dialog.close()
+	player.dir = Vector2i.DOWN
+	player.place(World.SHOP_EXIT)
 	_save()
 	_set_state(State.WALK)
 
@@ -107,8 +136,36 @@ func _encounter(cell: Vector2i) -> void:
 	_set_state(State.BATTLE)
 	var zone := world.zone_index(cell)
 	var wild := Data.roll_wild(zone, Game.rng)
-	var blackout: bool = await battle.run(wild, zone)
-	if blackout:
+	var foes: Array[Monster] = [wild]
+	var result: String = await battle.run(foes, zone)
+	_after_battle(result)
+
+
+## 训练师对战。spotted 为 true 表示是被训练师看见（会先弹感叹号）
+func _trainer_battle(npc: Prop, spotted: bool) -> void:
+	var info: Dictionary = npc.npc["trainer"]
+	_set_state(State.TALK)
+	if spotted:
+		npc.set_alerted(true)
+		await get_tree().create_timer(0.6).timeout
+		npc.set_alerted(false)
+	else:
+		npc.face(-player.dir)
+	for line in info["intro"]:
+		await dialog.say(line)
+	dialog.close()
+	_set_state(State.BATTLE)
+	var team: Array[Monster] = []
+	for entry in info["team"]:
+		team.append(Monster.create(entry[0], int(entry[1])))
+	var result: String = await battle.run(team, world.zone_index(player.cell), info)
+	if result == "won":
+		Game.flags[info["id"]] = true
+	_after_battle(result)
+
+
+func _after_battle(result: String) -> void:
+	if result == "lost":
 		player.dir = Vector2i.DOWN
 		player.place(World.HEAL_EXIT)
 	_save()
@@ -118,28 +175,64 @@ func _encounter(cell: Vector2i) -> void:
 func _interact() -> void:
 	var front := player.facing_cell()
 	var npc := world.npc_at(front)
+	if npc and npc.npc.has("trainer") and not Game.flags.get(npc.npc["trainer"]["id"], false):
+		_trainer_battle(npc, false)
+		return
 	if npc:
 		_set_state(State.TALK)
 		npc.face(-player.dir)
 		for line in npc.npc["lines"]:
 			await dialog.say(line)
-		npc.face(Vector2i.DOWN)
+		npc.face(npc.npc.get("facing", Vector2i.DOWN))
 		dialog.close()
 		_set_state(State.WALK)
 		return
 	var house := world.house_at(front)
 	if not house.is_empty():
 		_set_state(State.TALK)
-		if house["heal"]:
-			await dialog.say("治疗所的大门在正下方，走进去就能恢复。")
-		else:
-			await dialog.say("门上挂着牌子：外出采集中，请勿打扰。")
+		match house["kind"]:
+			"heal":
+				await dialog.say("治疗所的大门在正下方，走进去就能恢复。")
+			"shop":
+				await dialog.say("商店的大门在正下方，兽球和伤药都在这里买。")
+			_:
+				await dialog.say("门上挂着牌子：外出采集中，请勿打扰。")
 		dialog.close()
 		_set_state(State.WALK)
 
 
-func _party_menu() -> void:
+func _main_menu() -> void:
 	_set_state(State.MENU)
+	var i: int = await dialog.choose("%d 金 · 兽球 %d · 伤药 %d" % [Game.money, Game.balls, Game.potions],
+		["队伍", "背包", "返回"])
+	if i == 0:
+		await _party_menu()
+	elif i == 1:
+		await _bag_menu()
+	dialog.close()
+	_set_state(State.WALK)
+
+
+func _bag_menu() -> void:
+	var j: int = await dialog.choose("背包", ["伤药 ×%d" % Game.potions, "返回"], [Game.potions <= 0, false])
+	if j != 0:
+		return
+	var labels: Array = []
+	var disabled: Array = []
+	for m in Game.party:
+		labels.append("%s  %d/%d" % [m.species_name(), m.hp, m.max_hp()])
+		disabled.append(m.is_fainted() or m.hp >= m.max_hp())
+	labels.append("返回")
+	disabled.append(false)
+	var k: int = await dialog.choose("给谁用伤药？（回复 %d HP）" % Data.POTION_HEAL, labels, disabled)
+	if k < Game.party.size():
+		var m: Monster = Game.party[k]
+		var healed: int = Game.use_potion(m)
+		await dialog.say("%s 回复了 %d 点 HP。" % [m.species_name(), healed])
+		_save()
+
+
+func _party_menu() -> void:
 	var labels: Array = []
 	for m in Game.party:
 		labels.append("%s Lv.%d  HP %d/%d" % [m.species_name(), m.level, m.hp, m.max_hp()])
@@ -151,8 +244,6 @@ func _party_menu() -> void:
 		Game.party.push_front(m)
 		await dialog.say("%s 成为了首发。" % m.species_name())
 		_save()
-	dialog.close()
-	_set_state(State.WALK)
 
 
 func _save() -> void:
