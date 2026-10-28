@@ -1,0 +1,7987 @@
+{
+ "11号道路": {
+  "region": "翠原",
+  "list": [
+   {
+    "key": "yuanniao",
+    "name": "圆滚鸟",
+    "levels": [
+     3,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d162",
+    "name": "烛烛狮",
+    "levels": [
+     5,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d271",
+    "name": "微光熊",
+    "levels": [
+     3,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d273",
+    "name": "团团犬",
+    "levels": [
+     2,
+     5
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d328",
+    "name": "羽蝠",
+    "levels": [
+     5,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d357",
+    "name": "嘟貂",
+    "levels": [
+     7,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d364",
+    "name": "咕咕鸽",
+    "levels": [
+     4,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d463",
+    "name": "蔓蜥",
+    "levels": [
+     9,
+     13
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d538",
+    "name": "嫩龟",
+    "levels": [
+     6,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d587",
+    "name": "茧茧螳",
+    "levels": [
+     6,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d606",
+    "name": "绒羊",
+    "levels": [
+     4,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "9号道路": {
+  "region": "蔚蓝海岸",
+  "list": [
+   {
+    "key": "yuanniao2",
+    "name": "疾风鸟",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d062",
+    "name": "小泡虾",
+    "levels": [
+     25,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d062",
+    "name": "小泡虾",
+    "levels": [
+     25,
+     30
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d080",
+    "name": "汐汐螺",
+    "levels": [
+     24,
+     26
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d129",
+    "name": "小羽鸟",
+    "levels": [
+     26,
+     31
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d181",
+    "name": "湿湿龟",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d206",
+    "name": "湿湿鸭",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d206",
+    "name": "湿湿鸭",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d285",
+    "name": "泡泡龟",
+    "levels": [
+     24,
+     26
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d316",
+    "name": "湿湿獭",
+    "levels": [
+     27,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d319",
+    "name": "微光羊",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d340",
+    "name": "小汐鲨",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d340",
+    "name": "小汐鲨",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d409",
+    "name": "麻羊",
+    "levels": [
+     24,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d464",
+    "name": "小滴虾",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d560",
+    "name": "潮灵鸭",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d576",
+    "name": "疾风鹰",
+    "levels": [
+     26,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d609",
+    "name": "彩仙后狐",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d611",
+    "name": "泡穿山甲",
+    "levels": [
+     25,
+     30
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d678",
+    "name": "啾蜓",
+    "levels": [
+     25,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d686",
+    "name": "闪豹",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "2号道路": {
+  "region": "翠原",
+  "list": [
+   {
+    "key": "chongchong",
+    "name": "绒绒虫",
+    "levels": [
+     2,
+     5
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d056",
+    "name": "嫩猴",
+    "levels": [
+     6,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d076",
+    "name": "月精",
+    "levels": [
+     6,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d123",
+    "name": "毛猪",
+    "levels": [
+     6,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d423",
+    "name": "团团燕",
+    "levels": [
+     7,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d442",
+    "name": "涌蛙",
+    "levels": [
+     10,
+     14
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d463",
+    "name": "蔓蜥",
+    "levels": [
+     9,
+     14
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d482",
+    "name": "团团鸭",
+    "levels": [
+     3,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d499",
+    "name": "叶叶鹿",
+    "levels": [
+     2,
+     5
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d512",
+    "name": "小毛鸭",
+    "levels": [
+     6,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d622",
+    "name": "刺甲",
+    "levels": [
+     2,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d702",
+    "name": "微光狼",
+    "levels": [
+     5,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "13号道路": {
+  "region": "赤炎火山",
+  "list": [
+   {
+    "key": "tantan",
+    "name": "炭炭",
+    "levels": [
+     38,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d065",
+    "name": "千足蚕",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d118",
+    "name": "烈虎",
+    "levels": [
+     39,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d177",
+    "name": "斗牛",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d245",
+    "name": "焰焰蜥",
+    "levels": [
+     37,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d248",
+    "name": "武刚猿",
+    "levels": [
+     36,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d253",
+    "name": "暖狐",
+    "levels": [
+     37,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d263",
+    "name": "烛雀",
+    "levels": [
+     36,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d304",
+    "name": "暖驹",
+    "levels": [
+     38,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d324",
+    "name": "小力牛",
+    "levels": [
+     39,
+     43
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d336",
+    "name": "星辉兔",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d341",
+    "name": "海鲨",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d391",
+    "name": "角角鲨",
+    "levels": [
+     36,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d414",
+    "name": "焰狐",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d416",
+    "name": "幼幼蛟",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d549",
+    "name": "小斗鹤",
+    "levels": [
+     36,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d579",
+    "name": "炎烈龟",
+    "levels": [
+     39,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d590",
+    "name": "长翠雀",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d598",
+    "name": "暖暖虎",
+    "levels": [
+     39,
+     43
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d602",
+    "name": "炭炭雀",
+    "levels": [
+     37,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d614",
+    "name": "炭狼",
+    "levels": [
+     36,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d633",
+    "name": "焚犬",
+    "levels": [
+     36,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d634",
+    "name": "暖暖犬",
+    "levels": [
+     38,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d646",
+    "name": "岩岩菊石",
+    "levels": [
+     37,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d654",
+    "name": "小幼鳄",
+    "levels": [
+     39,
+     43
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d660",
+    "name": "锈犰狳",
+    "levels": [
+     38,
+     43
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d691",
+    "name": "小火犬",
+    "levels": [
+     39,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d706",
+    "name": "灼龟",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "8号道路": {
+  "region": "蔚蓝海岸",
+  "list": [
+   {
+    "key": "fufu",
+    "name": "浮浮母",
+    "levels": [
+     24,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d062",
+    "name": "小泡虾",
+    "levels": [
+     25,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d062",
+    "name": "小泡虾",
+    "levels": [
+     25,
+     30
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d098",
+    "name": "涟涟鲸",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d108",
+    "name": "小湿偶",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d129",
+    "name": "小羽鸟",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d146",
+    "name": "甲蝶",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d181",
+    "name": "湿湿龟",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d181",
+    "name": "湿湿龟",
+    "levels": [
+     26,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d206",
+    "name": "湿湿鸭",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d206",
+    "name": "湿湿鸭",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d226",
+    "name": "小石蟹",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d259",
+    "name": "冰冰狐",
+    "levels": [
+     27,
+     31
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d285",
+    "name": "泡泡龟",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d312",
+    "name": "魅面",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "夜晚草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d340",
+    "name": "小汐鲨",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d362",
+    "name": "滴滴鳗",
+    "levels": [
+     24,
+     26
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d382",
+    "name": "霜霜兔",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d409",
+    "name": "麻羊",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d464",
+    "name": "小滴虾",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d505",
+    "name": "小汐鱼",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d523",
+    "name": "小汐贝",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d554",
+    "name": "毛毛鸭",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d573",
+    "name": "千足蜂",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d584",
+    "name": "铜狼",
+    "levels": [
+     25,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d667",
+    "name": "圆圆鸭",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d678",
+    "name": "啾蜓",
+    "levels": [
+     25,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d708",
+    "name": "卵卵豹",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "7号道路": {
+  "region": "蔚蓝海岸",
+  "list": [
+   {
+    "key": "fufu",
+    "name": "浮浮母",
+    "levels": [
+     24,
+     27
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d069",
+    "name": "风蝠",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d080",
+    "name": "汐汐螺",
+    "levels": [
+     24,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d080",
+    "name": "汐汐螺",
+    "levels": [
+     24,
+     27
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d098",
+    "name": "涟涟鲸",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d108",
+    "name": "小湿偶",
+    "levels": [
+     25,
+     27
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d116",
+    "name": "翼晶鸦",
+    "levels": [
+     27,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d153",
+    "name": "湿湿蟹",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d206",
+    "name": "湿湿鸭",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d216",
+    "name": "小湿蛙",
+    "levels": [
+     24,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d216",
+    "name": "小湿蛙",
+    "levels": [
+     24,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d243",
+    "name": "小绒猪",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d285",
+    "name": "泡泡龟",
+    "levels": [
+     24,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d315",
+    "name": "飓隼",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d316",
+    "name": "湿湿獭",
+    "levels": [
+     27,
+     31
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d322",
+    "name": "妖兔",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d340",
+    "name": "小汐鲨",
+    "levels": [
+     24,
+     27
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d362",
+    "name": "滴滴鳗",
+    "levels": [
+     24,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d409",
+    "name": "麻羊",
+    "levels": [
+     24,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d424",
+    "name": "雄燕",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d429",
+    "name": "岩岩狼",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d464",
+    "name": "小滴虾",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d464",
+    "name": "小滴虾",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d483",
+    "name": "雄宗师鸭",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d489",
+    "name": "泡泡猪",
+    "levels": [
+     26,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d523",
+    "name": "小汐贝",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d560",
+    "name": "潮灵鸭",
+    "levels": [
+     26,
+     31
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d584",
+    "name": "铜狼",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d611",
+    "name": "泡穿山甲",
+    "levels": [
+     25,
+     30
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d667",
+    "name": "圆圆鸭",
+    "levels": [
+     26,
+     31
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d708",
+    "name": "卵卵豹",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "3号道路": {
+  "region": "翠原",
+  "list": [
+   {
+    "key": "dianli",
+    "name": "电栗",
+    "levels": [
+     7,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d056",
+    "name": "嫩猴",
+    "levels": [
+     6,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d076",
+    "name": "月精",
+    "levels": [
+     6,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d139",
+    "name": "绒绒貂",
+    "levels": [
+     3,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d142",
+    "name": "灵疾兔",
+    "levels": [
+     4,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d200",
+    "name": "猛蟹",
+    "levels": [
+     3,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d219",
+    "name": "蠕蠕蝉",
+    "levels": [
+     3,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d364",
+    "name": "咕咕鸽",
+    "levels": [
+     4,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d423",
+    "name": "团团燕",
+    "levels": [
+     7,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d426",
+    "name": "咕兔",
+    "levels": [
+     4,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d557",
+    "name": "疾风翼雀",
+    "levels": [
+     5,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d572",
+    "name": "绒绒蜂",
+    "levels": [
+     4,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d642",
+    "name": "小茧蝶",
+    "levels": [
+     4,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d712",
+    "name": "籽籽兔",
+    "levels": [
+     3,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "翠原野外": {
+  "region": "翠原",
+  "list": [
+   {
+    "key": "dianli",
+    "name": "电栗",
+    "levels": [
+     7,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d076",
+    "name": "月精",
+    "levels": [
+     6,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d219",
+    "name": "蠕蠕蝉",
+    "levels": [
+     3,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d239",
+    "name": "芝蚁",
+    "levels": [
+     5,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d273",
+    "name": "团团犬",
+    "levels": [
+     2,
+     4
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d282",
+    "name": "绒蜓",
+    "levels": [
+     5,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d344",
+    "name": "小萌蝶",
+    "levels": [
+     7,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d357",
+    "name": "嘟貂",
+    "levels": [
+     7,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d426",
+    "name": "咕兔",
+    "levels": [
+     4,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d433",
+    "name": "糖糖猫",
+    "levels": [
+     4,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d482",
+    "name": "团团鸭",
+    "levels": [
+     3,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d499",
+    "name": "叶叶鹿",
+    "levels": [
+     2,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d517",
+    "name": "小翔鹰",
+    "levels": [
+     5,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d527",
+    "name": "茧猫",
+    "levels": [
+     7,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d557",
+    "name": "疾风翼雀",
+    "levels": [
+     5,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d587",
+    "name": "茧茧螳",
+    "levels": [
+     6,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d700",
+    "name": "翔燕",
+    "levels": [
+     3,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d712",
+    "name": "籽籽兔",
+    "levels": [
+     3,
+     5
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "16号道路": {
+  "region": "翠原",
+  "list": [
+   {
+    "key": "dianli",
+    "name": "电栗",
+    "levels": [
+     7,
+     12
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d084",
+    "name": "芝芝蝶",
+    "levels": [
+     3,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d091",
+    "name": "小翔鸟",
+    "levels": [
+     5,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d103",
+    "name": "小毛熊",
+    "levels": [
+     6,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d111",
+    "name": "妖精",
+    "levels": [
+     2,
+     5
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d123",
+    "name": "毛猪",
+    "levels": [
+     6,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d139",
+    "name": "绒绒貂",
+    "levels": [
+     3,
+     5
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d162",
+    "name": "烛烛狮",
+    "levels": [
+     5,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d239",
+    "name": "芝蚁",
+    "levels": [
+     5,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d273",
+    "name": "团团犬",
+    "levels": [
+     2,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d328",
+    "name": "羽蝠",
+    "levels": [
+     5,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d333",
+    "name": "蠕蠕蜥",
+    "levels": [
+     7,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d349",
+    "name": "小暖猴",
+    "levels": [
+     6,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d357",
+    "name": "嘟貂",
+    "levels": [
+     7,
+     11
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d469",
+    "name": "蛮蟹",
+    "levels": [
+     5,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d482",
+    "name": "团团鸭",
+    "levels": [
+     3,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d499",
+    "name": "叶叶鹿",
+    "levels": [
+     2,
+     4
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d538",
+    "name": "嫩龟",
+    "levels": [
+     6,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d557",
+    "name": "疾风翼雀",
+    "levels": [
+     5,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d606",
+    "name": "绒羊",
+    "levels": [
+     4,
+     8
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d642",
+    "name": "小茧蝶",
+    "levels": [
+     4,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d700",
+    "name": "翔燕",
+    "levels": [
+     3,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "金沙荒漠野外": {
+  "region": "金沙荒漠",
+  "list": [
+   {
+    "key": "d021",
+    "name": "雷栗",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d022",
+    "name": "角鳄",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d064",
+    "name": "蠕蠕蚕",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d082",
+    "name": "火火蜗",
+    "levels": [
+     32,
+     37
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d100",
+    "name": "震鳄",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d190",
+    "name": "小幼蜥",
+    "levels": [
+     32,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d208",
+    "name": "恶邪鬣",
+    "levels": [
+     33,
+     35
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d228",
+    "name": "焰焰虎",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d261",
+    "name": "卵卵犀",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d266",
+    "name": "石蜥",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d272",
+    "name": "轰王熊",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d337",
+    "name": "小泥蜥",
+    "levels": [
+     30,
+     32
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d363",
+    "name": "沧鳗",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d436",
+    "name": "土土牛",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d451",
+    "name": "岗螺",
+    "levels": [
+     32,
+     37
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d472",
+    "name": "炎震狮",
+    "levels": [
+     32,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d473",
+    "name": "卵偶",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d561",
+    "name": "小锈鹰",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d594",
+    "name": "小狡豺",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d597",
+    "name": "裂牛",
+    "levels": [
+     31,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d613",
+    "name": "裂壤驼",
+    "levels": [
+     31,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d710",
+    "name": "黑鬣",
+    "levels": [
+     32,
+     34
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "10号道路": {
+  "region": "金沙荒漠",
+  "list": [
+   {
+    "key": "d022",
+    "name": "角鳄",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d064",
+    "name": "蠕蠕蚕",
+    "levels": [
+     30,
+     32
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d099",
+    "name": "怒涛海鲸",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d100",
+    "name": "震鳄",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d131",
+    "name": "小砾甲",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d167",
+    "name": "尘鳄",
+    "levels": [
+     33,
+     37
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d208",
+    "name": "恶邪鬣",
+    "levels": [
+     33,
+     37
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d261",
+    "name": "卵卵犀",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d266",
+    "name": "石蜥",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d334",
+    "name": "铠魔毒蜥",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d342",
+    "name": "泥穿山甲",
+    "levels": [
+     31,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d361",
+    "name": "冥毒瘟蛙",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d367",
+    "name": "芝芝螳",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d411",
+    "name": "沙鼹",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d436",
+    "name": "土土牛",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d451",
+    "name": "岗螺",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d473",
+    "name": "卵偶",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d525",
+    "name": "焰雀",
+    "levels": [
+     33,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d561",
+    "name": "小锈鹰",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d577",
+    "name": "暖暖龟",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d594",
+    "name": "小狡豺",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d597",
+    "name": "裂牛",
+    "levels": [
+     31,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d613",
+    "name": "裂壤驼",
+    "levels": [
+     31,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d626",
+    "name": "腐蚀蜂",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d675",
+    "name": "砾砾偶",
+    "levels": [
+     31,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d710",
+    "name": "黑鬣",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "碧镜湖区野外": {
+  "region": "碧镜湖区",
+  "list": [
+   {
+    "key": "d023",
+    "name": "蛟壤鳄",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d034",
+    "name": "幼蛇",
+    "levels": [
+     48,
+     53
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d072",
+    "name": "小滴螺",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d072",
+    "name": "小滴螺",
+    "levels": [
+     48,
+     53
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d081",
+    "name": "海螺",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d089",
+    "name": "云鹤",
+    "levels": [
+     49,
+     53
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d120",
+    "name": "小铃灵",
+    "levels": [
+     48,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d133",
+    "name": "棉棉猫",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d138",
+    "name": "蛟鹰",
+    "levels": [
+     48,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d173",
+    "name": "涟涟鸦",
+    "levels": [
+     50,
+     53
+    ],
+    "method": "钓鱼",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d233",
+    "name": "花冠狐",
+    "levels": [
+     49,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d246",
+    "name": "焚蜥",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d251",
+    "name": "心玄晶",
+    "levels": [
+     49,
+     53
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d264",
+    "name": "爆雀",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d307",
+    "name": "小泡猪",
+    "levels": [
+     49,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d376",
+    "name": "泡泡虾",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d388",
+    "name": "萌萌蜗",
+    "levels": [
+     51,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d392",
+    "name": "苍龙鲨",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d397",
+    "name": "幼蜥",
+    "levels": [
+     49,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d437",
+    "name": "震壤牛",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d495",
+    "name": "小幻鸮",
+    "levels": [
+     48,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d515",
+    "name": "渊鱼",
+    "levels": [
+     50,
+     53
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d553",
+    "name": "渊疾风螺",
+    "levels": [
+     50,
+     54
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d603",
+    "name": "炎心雀",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d618",
+    "name": "翱鸮",
+    "levels": [
+     51,
+     55
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d696",
+    "name": "星星蝶",
+    "levels": [
+     49,
+     53
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d701",
+    "name": "苍穹燕",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d703",
+    "name": "雷狼",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "14号道路": {
+  "region": "苍岩山脉",
+  "list": [
+   {
+    "key": "d025",
+    "name": "小鳞蛟",
+    "levels": [
+     45,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d087",
+    "name": "斗斗牛",
+    "levels": [
+     43,
+     45
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d119",
+    "name": "翱隼",
+    "levels": [
+     44,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d212",
+    "name": "猛瘴虎",
+    "levels": [
+     45,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d229",
+    "name": "熔虎",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d231",
+    "name": "力力袋鼠",
+    "levels": [
+     43,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d393",
+    "name": "晶豹",
+    "levels": [
+     44,
+     49
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d493",
+    "name": "小翔雀",
+    "levels": [
+     42,
+     45
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d520",
+    "name": "啾犬",
+    "levels": [
+     42,
+     46
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d566",
+    "name": "斗虎",
+    "levels": [
+     43,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d593",
+    "name": "千足蜗",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "15号道路": {
+  "region": "苍岩山脉",
+  "list": [
+   {
+    "key": "d025",
+    "name": "小鳞蛟",
+    "levels": [
+     45,
+     49
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d119",
+    "name": "翱隼",
+    "levels": [
+     44,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d156",
+    "name": "猛袋鼠",
+    "levels": [
+     42,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d172",
+    "name": "震犀",
+    "levels": [
+     42,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d193",
+    "name": "拳蜥",
+    "levels": [
+     45,
+     49
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d212",
+    "name": "猛瘴虎",
+    "levels": [
+     45,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d227",
+    "name": "山蟹皇",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d283",
+    "name": "刺蜓",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d289",
+    "name": "硬磐蟹",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d393",
+    "name": "晶豹",
+    "levels": [
+     44,
+     46
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d401",
+    "name": "磐裂晶",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d551",
+    "name": "小幼鲨",
+    "levels": [
+     44,
+     49
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d566",
+    "name": "斗虎",
+    "levels": [
+     43,
+     45
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d656",
+    "name": "猛熊",
+    "levels": [
+     45,
+     49
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d673",
+    "name": "蛮猿",
+    "levels": [
+     44,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "火山口": {
+  "region": "赤炎火山",
+  "list": [
+   {
+    "key": "d028",
+    "name": "小砾蜥",
+    "levels": [
+     36,
+     40
+    ],
+    "method": "洞窟",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d041",
+    "name": "炎帝·焚天",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d101",
+    "name": "沙鼬",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d171",
+    "name": "震地牛",
+    "levels": [
+     39,
+     43
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d230",
+    "name": "硬甲",
+    "levels": [
+     39,
+     43
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d354",
+    "name": "卵菊石",
+    "levels": [
+     38,
+     42
+    ],
+    "method": "洞窟",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d688",
+    "name": "岩犀",
+    "levels": [
+     38,
+     42
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "冰晶洞": {
+  "region": "霜岭",
+  "list": [
+   {
+    "key": "d031",
+    "name": "小铁偶",
+    "levels": [
+     58,
+     63
+    ],
+    "method": "洞窟",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d046",
+    "name": "冰后·霜晶",
+    "levels": [
+     65,
+     65
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d269",
+    "name": "小影影",
+    "levels": [
+     56,
+     58
+    ],
+    "method": "洞窟",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d309",
+    "name": "锈狼",
+    "levels": [
+     54,
+     58
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d331",
+    "name": "铁犰狳",
+    "levels": [
+     54,
+     58
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d352",
+    "name": "小铜蟹",
+    "levels": [
+     56,
+     58
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d698",
+    "name": "铜犀",
+    "levels": [
+     54,
+     58
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "赤炎火山野外": {
+  "region": "赤炎火山",
+  "list": [
+   {
+    "key": "d032",
+    "name": "刃镜偶",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d118",
+    "name": "烈虎",
+    "levels": [
+     39,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d149",
+    "name": "地猪",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d177",
+    "name": "斗牛",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d245",
+    "name": "焰焰蜥",
+    "levels": [
+     37,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d248",
+    "name": "武刚猿",
+    "levels": [
+     36,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d263",
+    "name": "烛雀",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d304",
+    "name": "暖驹",
+    "levels": [
+     38,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d324",
+    "name": "小力牛",
+    "levels": [
+     39,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d391",
+    "name": "角角鲨",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d414",
+    "name": "焰狐",
+    "levels": [
+     36,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d416",
+    "name": "幼幼蛟",
+    "levels": [
+     36,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d492",
+    "name": "武犀",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d510",
+    "name": "焰鲤",
+    "levels": [
+     37,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d549",
+    "name": "小斗鹤",
+    "levels": [
+     36,
+     38
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d598",
+    "name": "暖暖虎",
+    "levels": [
+     39,
+     43
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d602",
+    "name": "炭炭雀",
+    "levels": [
+     37,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d614",
+    "name": "炭狼",
+    "levels": [
+     36,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d633",
+    "name": "焚犬",
+    "levels": [
+     36,
+     39
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d634",
+    "name": "暖暖犬",
+    "levels": [
+     38,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d646",
+    "name": "岩岩菊石",
+    "levels": [
+     37,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d654",
+    "name": "小幼鳄",
+    "levels": [
+     39,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d660",
+    "name": "锈犰狳",
+    "levels": [
+     38,
+     40
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d668",
+    "name": "雄钢王鸭",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d679",
+    "name": "翱云蜓",
+    "levels": [
+     36,
+     42
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d691",
+    "name": "小火犬",
+    "levels": [
+     39,
+     41
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "19号道路": {
+  "region": "碧镜湖区",
+  "list": [
+   {
+    "key": "d034",
+    "name": "幼蛇",
+    "levels": [
+     48,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d038",
+    "name": "冻龙",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d072",
+    "name": "小滴螺",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d072",
+    "name": "小滴螺",
+    "levels": [
+     48,
+     52
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d106",
+    "name": "小芽羊",
+    "levels": [
+     50,
+     53
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d120",
+    "name": "小铃灵",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d133",
+    "name": "棉棉猫",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d195",
+    "name": "棉蝶",
+    "levels": [
+     49,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d233",
+    "name": "花冠狐",
+    "levels": [
+     49,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d251",
+    "name": "心玄晶",
+    "levels": [
+     49,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d307",
+    "name": "小泡猪",
+    "levels": [
+     49,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d317",
+    "name": "潮獭",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d373",
+    "name": "小棉狐",
+    "levels": [
+     50,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d376",
+    "name": "泡泡虾",
+    "levels": [
+     48,
+     52
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d388",
+    "name": "萌萌蜗",
+    "levels": [
+     51,
+     55
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d417",
+    "name": "龙翔蛟",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d439",
+    "name": "小风鹏",
+    "levels": [
+     50,
+     55
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d494",
+    "name": "飓林雀",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d495",
+    "name": "小幻鸮",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d502",
+    "name": "铠深渊蟋",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d515",
+    "name": "渊鱼",
+    "levels": [
+     50,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d585",
+    "name": "钢刃狼",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d607",
+    "name": "霸古木羊",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d657",
+    "name": "鳞鳞蛇",
+    "levels": [
+     48,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d696",
+    "name": "星星蝶",
+    "levels": [
+     49,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   }
+  ]
+ },
+ "18号道路": {
+  "region": "碧镜湖区",
+  "list": [
+   {
+    "key": "d034",
+    "name": "幼蛇",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d072",
+    "name": "小滴螺",
+    "levels": [
+     48,
+     50
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d106",
+    "name": "小芽羊",
+    "levels": [
+     50,
+     53
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d133",
+    "name": "棉棉猫",
+    "levels": [
+     48,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d138",
+    "name": "蛟鹰",
+    "levels": [
+     48,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d262",
+    "name": "巨岩犀",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d307",
+    "name": "小泡猪",
+    "levels": [
+     49,
+     54
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d325",
+    "name": "狂牛王",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d388",
+    "name": "萌萌蜗",
+    "levels": [
+     51,
+     55
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d397",
+    "name": "幼蜥",
+    "levels": [
+     49,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d439",
+    "name": "小风鹏",
+    "levels": [
+     50,
+     55
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d452",
+    "name": "小幼鹰",
+    "levels": [
+     48,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d495",
+    "name": "小幻鸮",
+    "levels": [
+     48,
+     51
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d617",
+    "name": "巨岩蟹",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d632",
+    "name": "大地鹿",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d650",
+    "name": "大灵鸽",
+    "levels": [
+     48,
+     54
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d657",
+    "name": "鳞鳞蛇",
+    "levels": [
+     48,
+     52
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "苍岩山脉野外": {
+  "region": "苍岩山脉",
+  "list": [
+   {
+    "key": "d035",
+    "name": "翔蛇",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d079",
+    "name": "怨蜂",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d087",
+    "name": "斗斗牛",
+    "levels": [
+     43,
+     45
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d119",
+    "name": "翱隼",
+    "levels": [
+     44,
+     49
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d128",
+    "name": "怒涛瀑鳗",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d156",
+    "name": "猛袋鼠",
+    "levels": [
+     42,
+     45
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d172",
+    "name": "震犀",
+    "levels": [
+     42,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d193",
+    "name": "拳蜥",
+    "levels": [
+     45,
+     49
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d212",
+    "name": "猛瘴虎",
+    "levels": [
+     45,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d279",
+    "name": "幼蛟",
+    "levels": [
+     44,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d297",
+    "name": "铠霸翅蛾",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d347",
+    "name": "岩鸟",
+    "levels": [
+     43,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d380",
+    "name": "剧蜈",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d393",
+    "name": "晶豹",
+    "levels": [
+     44,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d412",
+    "name": "裂鼹",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d520",
+    "name": "啾犬",
+    "levels": [
+     42,
+     46
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d524",
+    "name": "怒涛贝皇",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d526",
+    "name": "煌雀皇",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d551",
+    "name": "小幼鲨",
+    "levels": [
+     44,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d566",
+    "name": "斗虎",
+    "levels": [
+     43,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d568",
+    "name": "砾偶",
+    "levels": [
+     43,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d656",
+    "name": "猛熊",
+    "levels": [
+     45,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d671",
+    "name": "甲荆蝉",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "霜岭野外": {
+  "region": "霜岭",
+  "list": [
+   {
+    "key": "d037",
+    "name": "雪龙",
+    "levels": [
+     55,
+     57
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d057",
+    "name": "林繁猴",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d090",
+    "name": "冻蛾",
+    "levels": [
+     59,
+     63
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d122",
+    "name": "凛地鲸",
+    "levels": [
+     57,
+     62
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d137",
+    "name": "磐岳螺",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d202",
+    "name": "暴蝠",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "夜晚草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d207",
+    "name": "溟鸭",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d234",
+    "name": "小角鹅",
+    "levels": [
+     57,
+     59
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d240",
+    "name": "织花冠蚁",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d250",
+    "name": "重钢蟹",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d252",
+    "name": "心晶",
+    "levels": [
+     56,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d298",
+    "name": "湿母",
+    "levels": [
+     55,
+     57
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d348",
+    "name": "坚鸟",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d422",
+    "name": "浪涌母",
+    "levels": [
+     60,
+     63
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d430",
+    "name": "巨岩狼",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d446",
+    "name": "翅猛蝶",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d474",
+    "name": "硬偶",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d497",
+    "name": "雪雪豹",
+    "levels": [
+     57,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d531",
+    "name": "狂螺",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d571",
+    "name": "凛鸟",
+    "levels": [
+     58,
+     61
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d588",
+    "name": "霸翅铠螳",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d605",
+    "name": "寒晶鲸",
+    "levels": [
+     58,
+     61
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d628",
+    "name": "小星狐",
+    "levels": [
+     54,
+     58
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d635",
+    "name": "烈犬",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d640",
+    "name": "小梦狐",
+    "levels": [
+     58,
+     63
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d659",
+    "name": "寒冻熊",
+    "levels": [
+     55,
+     57
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d716",
+    "name": "大地山猪",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "21号道路": {
+  "region": "霜岭",
+  "list": [
+   {
+    "key": "d037",
+    "name": "雪龙",
+    "levels": [
+     55,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d063",
+    "name": "海炎狱虾",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d074",
+    "name": "幻幻鸮",
+    "levels": [
+     56,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d083",
+    "name": "爆炎狱蜗",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d090",
+    "name": "冻蛾",
+    "levels": [
+     59,
+     61
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d121",
+    "name": "仙后灵君",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d122",
+    "name": "凛地鲸",
+    "levels": [
+     57,
+     61
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d126",
+    "name": "霸翅蜗",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d158",
+    "name": "瘴蜂",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d175",
+    "name": "冰冰蛾",
+    "levels": [
+     54,
+     57
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d252",
+    "name": "心晶",
+    "levels": [
+     56,
+     61
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d292",
+    "name": "锋铠狼",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d375",
+    "name": "镜蝶",
+    "levels": [
+     59,
+     63
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d377",
+    "name": "涌虾",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d441",
+    "name": "翔龙鹰",
+    "levels": [
+     56,
+     61
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d461",
+    "name": "涟涟鱼",
+    "levels": [
+     55,
+     60
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d552",
+    "name": "苍龙岳鲨",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d562",
+    "name": "钢王鹰",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d605",
+    "name": "寒晶鲸",
+    "levels": [
+     58,
+     61
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d628",
+    "name": "小星狐",
+    "levels": [
+     54,
+     56
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d674",
+    "name": "狂猿",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ },
+ "千年神木": {
+  "region": "深翠森林",
+  "list": [
+   {
+    "key": "d040",
+    "name": "森灵守护·苍古",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d054",
+    "name": "幻·芽之子",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   }
+  ]
+ },
+ "云巅": {
+  "region": "苍岩山脉",
+  "list": [
+   {
+    "key": "d042",
+    "name": "风神·凌霄",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   }
+  ]
+ },
+ "湖心岛": {
+  "region": "碧镜湖区",
+  "list": [
+   {
+    "key": "d043",
+    "name": "镜湖之主·澈",
+    "levels": [
+     55,
+     55
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d053",
+    "name": "幻·星屑",
+    "levels": [
+     55,
+     55
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   }
+  ]
+ },
+ "沉没神殿": {
+  "region": "雾沼",
+  "list": [
+   {
+    "key": "d044",
+    "name": "沼王·墨渊",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d078",
+    "name": "影影蜂",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d221",
+    "name": "尘尘驼",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d276",
+    "name": "狡鬣",
+    "levels": [
+     19,
+     22
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d311",
+    "name": "小夜面",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d458",
+    "name": "小沙象",
+    "levels": [
+     19,
+     21
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d543",
+    "name": "影灯",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "流沙遗迹": {
+  "region": "金沙荒漠",
+  "list": [
+   {
+    "key": "d045",
+    "name": "沙之古王·塔鲁",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d055",
+    "name": "幻·时之沙",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d148",
+    "name": "小尘猪",
+    "levels": [
+     30,
+     32
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d151",
+    "name": "砾砾甲",
+    "levels": [
+     31,
+     34
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d170",
+    "name": "裂龟",
+    "levels": [
+     33,
+     35
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d208",
+    "name": "恶邪鬣",
+    "levels": [
+     33,
+     35
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d209",
+    "name": "小沙鼠",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d288",
+    "name": "石石蟹",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d400",
+    "name": "砾晶",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d406",
+    "name": "黑黑鬣",
+    "levels": [
+     31,
+     36
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d431",
+    "name": "小尘驼",
+    "levels": [
+     31,
+     34
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d594",
+    "name": "小狡豺",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d619",
+    "name": "铜铜甲",
+    "levels": [
+     32,
+     34
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d631",
+    "name": "土土鹿",
+    "levels": [
+     30,
+     32
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d652",
+    "name": "沙驼",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d669",
+    "name": "裂地驼",
+    "levels": [
+     31,
+     36
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d710",
+    "name": "黑鬣",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "回声矿洞": {
+  "region": "苍岩山脉",
+  "list": [
+   {
+    "key": "d047",
+    "name": "岩心巨像",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d066",
+    "name": "卵卵蟹",
+    "levels": [
+     42,
+     46
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d136",
+    "name": "石螺",
+    "levels": [
+     42,
+     46
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d203",
+    "name": "小锈狼",
+    "levels": [
+     42,
+     47
+    ],
+    "method": "洞窟",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d249",
+    "name": "小钉蟹",
+    "levels": [
+     44,
+     48
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d265",
+    "name": "地象",
+    "levels": [
+     43,
+     47
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d291",
+    "name": "小钉狼",
+    "levels": [
+     43,
+     46
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d306",
+    "name": "锋武狼",
+    "levels": [
+     42,
+     44
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d326",
+    "name": "钉钉犀",
+    "levels": [
+     43,
+     46
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d476",
+    "name": "石石菊石",
+    "levels": [
+     42,
+     45
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d580",
+    "name": "锋钟",
+    "levels": [
+     42,
+     47
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   },
+   {
+    "key": "d616",
+    "name": "小卵蟹",
+    "levels": [
+     42,
+     46
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d715",
+    "name": "尘尘猪",
+    "levels": [
+     43,
+     47
+    ],
+    "method": "洞窟",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "海蚀洞": {
+  "region": "蔚蓝海岸",
+  "list": [
+   {
+    "key": "d048",
+    "name": "潮音海龙",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d093",
+    "name": "砾螺",
+    "levels": [
+     26,
+     29
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d278",
+    "name": "峭翱龟",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "白帆灯塔": {
+  "region": "蔚蓝海岸",
+  "list": [
+   {
+    "key": "d049",
+    "name": "引路灯鸟",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   }
+  ]
+ },
+ "冠军之路": {
+  "region": "霜岭",
+  "list": [
+   {
+    "key": "d050",
+    "name": "试炼之狮·王冠",
+    "levels": [
+     65,
+     65
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d052",
+    "name": "奈尔斯始祖·源",
+    "levels": [
+     65,
+     65
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d269",
+    "name": "小影影",
+    "levels": [
+     56,
+     60
+    ],
+    "method": "洞窟",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d309",
+    "name": "锈狼",
+    "levels": [
+     54,
+     56
+    ],
+    "method": "洞窟",
+    "rarity": "少见"
+   },
+   {
+    "key": "d331",
+    "name": "铁犰狳",
+    "levels": [
+     54,
+     56
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d352",
+    "name": "小铜蟹",
+    "levels": [
+     56,
+     58
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   },
+   {
+    "key": "d516",
+    "name": "锋蛇",
+    "levels": [
+     56,
+     60
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "迷雾林海": {
+  "region": "深翠森林",
+  "list": [
+   {
+    "key": "d051",
+    "name": "雾隐九尾",
+    "levels": [
+     50,
+     50
+    ],
+    "method": "固定",
+    "rarity": "唯一"
+   },
+   {
+    "key": "d448",
+    "name": "偷偷蜥",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "洞窟",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "深翠森林野外": {
+  "region": "深翠森林",
+  "list": [
+   {
+    "key": "d058",
+    "name": "鬼鸦",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d077",
+    "name": "灵荆貂",
+    "levels": [
+     12,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d112",
+    "name": "蠕蚕",
+    "levels": [
+     14,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d124",
+    "name": "雄霸猪",
+    "levels": [
+     12,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d125",
+    "name": "茧茧蜗",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d143",
+    "name": "小嫩蛙",
+    "levels": [
+     13,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d145",
+    "name": "茧蝶",
+    "levels": [
+     12,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d180",
+    "name": "妖灵",
+    "levels": [
+     16,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d314",
+    "name": "翔翔隼",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d321",
+    "name": "小棉兔",
+    "levels": [
+     15,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d379",
+    "name": "斑斑蜈",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d385",
+    "name": "小籽苗",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d394",
+    "name": "叶蜥",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d419",
+    "name": "蠕蛛",
+    "levels": [
+     16,
+     19
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d443",
+    "name": "芽蜥",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d445",
+    "name": "芝蝶",
+    "levels": [
+     14,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d448",
+    "name": "偷偷蜥",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d455",
+    "name": "羽羽蜓",
+    "levels": [
+     13,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d478",
+    "name": "团团牛",
+    "levels": [
+     14,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d484",
+    "name": "小茧萤",
+    "levels": [
+     15,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d486",
+    "name": "苗兔",
+    "levels": [
+     16,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d501",
+    "name": "绒绒蟋",
+    "levels": [
+     15,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d546",
+    "name": "嘟嘟犬",
+    "levels": [
+     14,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d558",
+    "name": "妖狐",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d574",
+    "name": "甲刺蚁",
+    "levels": [
+     16,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d581",
+    "name": "酸蜥",
+    "levels": [
+     12,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d589",
+    "name": "咕咕雀",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d608",
+    "name": "棉棉狐",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d623",
+    "name": "小芝蚕",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d644",
+    "name": "萌精",
+    "levels": [
+     12,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d649",
+    "name": "小圆鸽",
+    "levels": [
+     15,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d663",
+    "name": "小蠕蜓",
+    "levels": [
+     13,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   }
+  ]
+ },
+ "20号道路": {
+  "region": "深翠森林",
+  "list": [
+   {
+    "key": "d058",
+    "name": "鬼鸦",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d112",
+    "name": "蠕蚕",
+    "levels": [
+     14,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d125",
+    "name": "茧茧蜗",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d143",
+    "name": "小嫩蛙",
+    "levels": [
+     13,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d180",
+    "name": "妖灵",
+    "levels": [
+     16,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d187",
+    "name": "萌羊",
+    "levels": [
+     12,
+     14
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d197",
+    "name": "小幽灯",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d295",
+    "name": "魂藤影",
+    "levels": [
+     15,
+     18
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d314",
+    "name": "翔翔隼",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d335",
+    "name": "萌萌兔",
+    "levels": [
+     13,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d385",
+    "name": "小籽苗",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d394",
+    "name": "叶蜥",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d443",
+    "name": "芽蜥",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d445",
+    "name": "芝蝶",
+    "levels": [
+     14,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d455",
+    "name": "羽羽蜓",
+    "levels": [
+     13,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d484",
+    "name": "小茧萤",
+    "levels": [
+     15,
+     19
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d486",
+    "name": "苗兔",
+    "levels": [
+     16,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d501",
+    "name": "绒绒蟋",
+    "levels": [
+     15,
+     19
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d540",
+    "name": "诡邪狐",
+    "levels": [
+     12,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d546",
+    "name": "嘟嘟犬",
+    "levels": [
+     14,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d574",
+    "name": "甲刺蚁",
+    "levels": [
+     16,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d608",
+    "name": "棉棉狐",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d644",
+    "name": "萌精",
+    "levels": [
+     12,
+     14
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "6号道路": {
+  "region": "雾沼",
+  "list": [
+   {
+    "key": "d060",
+    "name": "小茧蚕",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d096",
+    "name": "小汐菇",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d114",
+    "name": "小蠕蟋",
+    "levels": [
+     19,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d127",
+    "name": "滴鳗",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d127",
+    "name": "滴鳗",
+    "levels": [
+     22,
+     25
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d157",
+    "name": "小酸蜂",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d166",
+    "name": "涌云鲤",
+    "levels": [
+     20,
+     24
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d166",
+    "name": "涌云鲤",
+    "levels": [
+     20,
+     22
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d184",
+    "name": "斑斑蛾",
+    "levels": [
+     19,
+     22
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d224",
+    "name": "酸酸鳗",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d236",
+    "name": "斑斑鼠",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d242",
+    "name": "翅甲",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d276",
+    "name": "狡鬣",
+    "levels": [
+     19,
+     22
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d311",
+    "name": "小夜面",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d360",
+    "name": "酸蛙",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d370",
+    "name": "紫母",
+    "levels": [
+     20,
+     22
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d403",
+    "name": "茧茧蟋",
+    "levels": [
+     19,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d467",
+    "name": "绒绒蛾",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d503",
+    "name": "小沙犀",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d532",
+    "name": "小汐龟",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d535",
+    "name": "湿蟹",
+    "levels": [
+     21,
+     24
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d543",
+    "name": "影灯",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d559",
+    "name": "壤猪",
+    "levels": [
+     19,
+     21
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d563",
+    "name": "小涟獭",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d592",
+    "name": "小绒蜗",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d610",
+    "name": "魅寂面",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d625",
+    "name": "小斑蜂",
+    "levels": [
+     21,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d665",
+    "name": "紫紫鳗",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d685",
+    "name": "寂影",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "夜晚草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d693",
+    "name": "影蝠",
+    "levels": [
+     20,
+     25
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "雾沼野外": {
+  "region": "雾沼",
+  "list": [
+   {
+    "key": "d060",
+    "name": "小茧蚕",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d096",
+    "name": "小汐菇",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d114",
+    "name": "小蠕蟋",
+    "levels": [
+     19,
+     22
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d127",
+    "name": "滴鳗",
+    "levels": [
+     22,
+     25
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d127",
+    "name": "滴鳗",
+    "levels": [
+     22,
+     24
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d157",
+    "name": "小酸蜂",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d166",
+    "name": "涌云鲤",
+    "levels": [
+     20,
+     22
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d166",
+    "name": "涌云鲤",
+    "levels": [
+     20,
+     25
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d224",
+    "name": "酸酸鳗",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d236",
+    "name": "斑斑鼠",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d242",
+    "name": "翅甲",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d258",
+    "name": "蚀剧蜥",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d276",
+    "name": "狡鬣",
+    "levels": [
+     19,
+     23
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d296",
+    "name": "小芝蛾",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d301",
+    "name": "绒绒蚁",
+    "levels": [
+     20,
+     24
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d358",
+    "name": "灵大貂",
+    "levels": [
+     18,
+     24
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d360",
+    "name": "酸蛙",
+    "levels": [
+     22,
+     25
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d370",
+    "name": "紫母",
+    "levels": [
+     20,
+     23
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d370",
+    "name": "紫母",
+    "levels": [
+     20,
+     23
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d467",
+    "name": "绒绒蛾",
+    "levels": [
+     22,
+     24
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d503",
+    "name": "小沙犀",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d532",
+    "name": "小汐龟",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d535",
+    "name": "湿蟹",
+    "levels": [
+     21,
+     25
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d541",
+    "name": "紫紫蛛",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d563",
+    "name": "小涟獭",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d575",
+    "name": "瘴鼠",
+    "levels": [
+     21,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d610",
+    "name": "魅寂面",
+    "levels": [
+     22,
+     25
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d625",
+    "name": "小斑蜂",
+    "levels": [
+     21,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d637",
+    "name": "汐汐蟹",
+    "levels": [
+     20,
+     23
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d665",
+    "name": "紫紫鳗",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d685",
+    "name": "寂影",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "夜晚草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d693",
+    "name": "影蝠",
+    "levels": [
+     20,
+     25
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "5号道路": {
+  "region": "雾沼",
+  "list": [
+   {
+    "key": "d060",
+    "name": "小茧蚕",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d096",
+    "name": "小汐菇",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d096",
+    "name": "小汐菇",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d114",
+    "name": "小蠕蟋",
+    "levels": [
+     19,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d127",
+    "name": "滴鳗",
+    "levels": [
+     22,
+     25
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d127",
+    "name": "滴鳗",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d166",
+    "name": "涌云鲤",
+    "levels": [
+     20,
+     24
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d166",
+    "name": "涌云鲤",
+    "levels": [
+     20,
+     22
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d224",
+    "name": "酸酸鳗",
+    "levels": [
+     18,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d236",
+    "name": "斑斑鼠",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d242",
+    "name": "翅甲",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d276",
+    "name": "狡鬣",
+    "levels": [
+     19,
+     24
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d301",
+    "name": "绒绒蚁",
+    "levels": [
+     20,
+     23
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d360",
+    "name": "酸蛙",
+    "levels": [
+     22,
+     25
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d370",
+    "name": "紫母",
+    "levels": [
+     20,
+     24
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d403",
+    "name": "茧茧蟋",
+    "levels": [
+     19,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d467",
+    "name": "绒绒蛾",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d503",
+    "name": "小沙犀",
+    "levels": [
+     18,
+     21
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d532",
+    "name": "小汐龟",
+    "levels": [
+     18,
+     22
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d535",
+    "name": "湿蟹",
+    "levels": [
+     21,
+     26
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d559",
+    "name": "壤猪",
+    "levels": [
+     19,
+     24
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d563",
+    "name": "小涟獭",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d563",
+    "name": "小涟獭",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d592",
+    "name": "小绒蜗",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d610",
+    "name": "魅寂面",
+    "levels": [
+     22,
+     26
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d637",
+    "name": "汐汐蟹",
+    "levels": [
+     20,
+     23
+    ],
+    "method": "冲浪",
+    "rarity": "一般"
+   },
+   {
+    "key": "d637",
+    "name": "汐汐蟹",
+    "levels": [
+     20,
+     25
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d685",
+    "name": "寂影",
+    "levels": [
+     18,
+     20
+    ],
+    "method": "夜晚草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d693",
+    "name": "影蝠",
+    "levels": [
+     20,
+     24
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "蔚蓝海岸野外": {
+  "region": "蔚蓝海岸",
+  "list": [
+   {
+    "key": "d062",
+    "name": "小泡虾",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d069",
+    "name": "风蝠",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d069",
+    "name": "风蝠",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d080",
+    "name": "汐汐螺",
+    "levels": [
+     24,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d098",
+    "name": "涟涟鲸",
+    "levels": [
+     25,
+     27
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d108",
+    "name": "小湿偶",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d129",
+    "name": "小羽鸟",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d153",
+    "name": "湿湿蟹",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d181",
+    "name": "湿湿龟",
+    "levels": [
+     26,
+     29
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d206",
+    "name": "湿湿鸭",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d216",
+    "name": "小湿蛙",
+    "levels": [
+     24,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d243",
+    "name": "小绒猪",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d285",
+    "name": "泡泡龟",
+    "levels": [
+     24,
+     26
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d316",
+    "name": "湿湿獭",
+    "levels": [
+     27,
+     30
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d362",
+    "name": "滴滴鳗",
+    "levels": [
+     24,
+     28
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d429",
+    "name": "岩岩狼",
+    "levels": [
+     25,
+     29
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d523",
+    "name": "小汐贝",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d560",
+    "name": "潮灵鸭",
+    "levels": [
+     26,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d611",
+    "name": "泡穿山甲",
+    "levels": [
+     25,
+     28
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d643",
+    "name": "霸翅铠蝶",
+    "levels": [
+     24,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d667",
+    "name": "圆圆鸭",
+    "levels": [
+     26,
+     30
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d678",
+    "name": "啾蜓",
+    "levels": [
+     25,
+     27
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "22号道路": {
+  "region": "霜岭",
+  "list": [
+   {
+    "key": "d070",
+    "name": "云蝠",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "冲浪",
+    "rarity": "少见"
+   },
+   {
+    "key": "d074",
+    "name": "幻幻鸮",
+    "levels": [
+     56,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d090",
+    "name": "冻蛾",
+    "levels": [
+     59,
+     64
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d102",
+    "name": "厚土鼬皇",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d160",
+    "name": "鳞鳞龙",
+    "levels": [
+     54,
+     57
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d204",
+    "name": "铠狼",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d222",
+    "name": "震裂驼",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d252",
+    "name": "心晶",
+    "levels": [
+     56,
+     58
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d298",
+    "name": "湿母",
+    "levels": [
+     55,
+     57
+    ],
+    "method": "冲浪",
+    "rarity": "常见"
+   },
+   {
+    "key": "d343",
+    "name": "大地穿山甲",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d404",
+    "name": "翅蟋",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d422",
+    "name": "浪涌母",
+    "levels": [
+     60,
+     63
+    ],
+    "method": "钓鱼",
+    "rarity": "常见"
+   },
+   {
+    "key": "d441",
+    "name": "翔龙鹰",
+    "levels": [
+     56,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d461",
+    "name": "涟涟鱼",
+    "levels": [
+     55,
+     57
+    ],
+    "method": "钓鱼",
+    "rarity": "一般"
+   },
+   {
+    "key": "d481",
+    "name": "刃锋鹰",
+    "levels": [
+     59,
+     64
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d497",
+    "name": "雪雪豹",
+    "levels": [
+     57,
+     59
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d506",
+    "name": "瀑鱼",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "钓鱼",
+    "rarity": "少见"
+   },
+   {
+    "key": "d599",
+    "name": "爆虎王",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d640",
+    "name": "小梦狐",
+    "levels": [
+     58,
+     63
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d645",
+    "name": "圣光精",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d647",
+    "name": "硬菊石",
+    "levels": [
+     54,
+     60
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d659",
+    "name": "寒冻熊",
+    "levels": [
+     55,
+     57
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "4号道路": {
+  "region": "深翠森林",
+  "list": [
+   {
+    "key": "d077",
+    "name": "灵荆貂",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d125",
+    "name": "茧茧蜗",
+    "levels": [
+     13,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d143",
+    "name": "小嫩蛙",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d164",
+    "name": "茧蜓",
+    "levels": [
+     14,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d201",
+    "name": "狡狡蝠",
+    "levels": [
+     12,
+     17
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d256",
+    "name": "糖糖蝶",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d314",
+    "name": "翔翔隼",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d321",
+    "name": "小棉兔",
+    "levels": [
+     15,
+     19
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d379",
+    "name": "斑斑蜈",
+    "levels": [
+     12,
+     14
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d385",
+    "name": "小籽苗",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d394",
+    "name": "叶蜥",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d425",
+    "name": "翅织蝶",
+    "levels": [
+     12,
+     14
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d443",
+    "name": "芽蜥",
+    "levels": [
+     13,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d445",
+    "name": "芝蝶",
+    "levels": [
+     14,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d448",
+    "name": "偷偷蜥",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d455",
+    "name": "羽羽蜓",
+    "levels": [
+     13,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d478",
+    "name": "团团牛",
+    "levels": [
+     14,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d484",
+    "name": "小茧萤",
+    "levels": [
+     15,
+     19
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d486",
+    "name": "苗兔",
+    "levels": [
+     16,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d501",
+    "name": "绒绒蟋",
+    "levels": [
+     15,
+     19
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d519",
+    "name": "翼鸟",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d539",
+    "name": "林龟",
+    "levels": [
+     12,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d540",
+    "name": "诡邪狐",
+    "levels": [
+     12,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d546",
+    "name": "嘟嘟犬",
+    "levels": [
+     14,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d574",
+    "name": "甲刺蚁",
+    "levels": [
+     16,
+     20
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d581",
+    "name": "酸蜥",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d589",
+    "name": "咕咕雀",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d608",
+    "name": "棉棉狐",
+    "levels": [
+     13,
+     17
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d623",
+    "name": "小芝蚕",
+    "levels": [
+     13,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d644",
+    "name": "萌精",
+    "levels": [
+     12,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d649",
+    "name": "小圆鸽",
+    "levels": [
+     15,
+     18
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d663",
+    "name": "小蠕蜓",
+    "levels": [
+     13,
+     16
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d684",
+    "name": "翼鹰",
+    "levels": [
+     12,
+     15
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "1号道路": {
+  "region": "翠原",
+  "list": [
+   {
+    "key": "d084",
+    "name": "芝芝蝶",
+    "levels": [
+     3,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d091",
+    "name": "小翔鸟",
+    "levels": [
+     5,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d103",
+    "name": "小毛熊",
+    "levels": [
+     6,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d123",
+    "name": "毛猪",
+    "levels": [
+     6,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d139",
+    "name": "绒绒貂",
+    "levels": [
+     3,
+     6
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d213",
+    "name": "小嫩蛇",
+    "levels": [
+     4,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d219",
+    "name": "蠕蠕蝉",
+    "levels": [
+     3,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d294",
+    "name": "大魂鸭",
+    "levels": [
+     4,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d364",
+    "name": "咕咕鸽",
+    "levels": [
+     4,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d463",
+    "name": "蔓蜥",
+    "levels": [
+     9,
+     12
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d517",
+    "name": "小翔鹰",
+    "levels": [
+     5,
+     9
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d527",
+    "name": "茧猫",
+    "levels": [
+     7,
+     10
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d702",
+    "name": "微光狼",
+    "levels": [
+     5,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d712",
+    "name": "籽籽兔",
+    "levels": [
+     3,
+     7
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   }
+  ]
+ },
+ "12号道路": {
+  "region": "金沙荒漠",
+  "list": [
+   {
+    "key": "d100",
+    "name": "震鳄",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d117",
+    "name": "峭地偶",
+    "levels": [
+     31,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d131",
+    "name": "小砾甲",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d167",
+    "name": "尘鳄",
+    "levels": [
+     33,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d190",
+    "name": "小幼蜥",
+    "levels": [
+     32,
+     37
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d198",
+    "name": "魂灯",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "夜晚草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d208",
+    "name": "恶邪鬣",
+    "levels": [
+     33,
+     37
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d225",
+    "name": "冥毒鳗",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d228",
+    "name": "焰焰虎",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d261",
+    "name": "卵卵犀",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d266",
+    "name": "石蜥",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d337",
+    "name": "小泥蜥",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d342",
+    "name": "泥穿山甲",
+    "levels": [
+     31,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d411",
+    "name": "沙鼹",
+    "levels": [
+     30,
+     32
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d436",
+    "name": "土土牛",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d451",
+    "name": "岗螺",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d456",
+    "name": "翱蜓",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d473",
+    "name": "卵偶",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d491",
+    "name": "腐母",
+    "levels": [
+     30,
+     32
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d507",
+    "name": "狡狐",
+    "levels": [
+     33,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d525",
+    "name": "焰雀",
+    "levels": [
+     33,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d561",
+    "name": "小锈鹰",
+    "levels": [
+     30,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d594",
+    "name": "小狡豺",
+    "levels": [
+     30,
+     33
+    ],
+    "method": "夜晚草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d597",
+    "name": "裂牛",
+    "levels": [
+     31,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d613",
+    "name": "裂壤驼",
+    "levels": [
+     31,
+     35
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d670",
+    "name": "芝芝蝉",
+    "levels": [
+     33,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d675",
+    "name": "砾砾偶",
+    "levels": [
+     31,
+     33
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d681",
+    "name": "小偷狸",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d705",
+    "name": "小炭龟",
+    "levels": [
+     30,
+     34
+    ],
+    "method": "草丛",
+    "rarity": "稀有"
+   },
+   {
+    "key": "d709",
+    "name": "山玄冰豹",
+    "levels": [
+     30,
+     36
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d710",
+    "name": "黑鬣",
+    "levels": [
+     32,
+     36
+    ],
+    "method": "夜晚草丛",
+    "rarity": "常见"
+   }
+  ]
+ },
+ "17号道路": {
+  "region": "苍岩山脉",
+  "list": [
+   {
+    "key": "d172",
+    "name": "震犀",
+    "levels": [
+     42,
+     45
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d185",
+    "name": "剧蛾",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d188",
+    "name": "月羊",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d210",
+    "name": "壤地鼠",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d231",
+    "name": "力力袋鼠",
+    "levels": [
+     43,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d365",
+    "name": "壮鸽",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d493",
+    "name": "小翔雀",
+    "levels": [
+     42,
+     44
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d530",
+    "name": "拳螺",
+    "levels": [
+     45,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d551",
+    "name": "小幼鲨",
+    "levels": [
+     44,
+     47
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d578",
+    "name": "煌龟",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d600",
+    "name": "小锈蟹",
+    "levels": [
+     42,
+     46
+    ],
+    "method": "草丛",
+    "rarity": "常见"
+   },
+   {
+    "key": "d653",
+    "name": "岳瘟驼",
+    "levels": [
+     42,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   },
+   {
+    "key": "d656",
+    "name": "猛熊",
+    "levels": [
+     45,
+     48
+    ],
+    "method": "草丛",
+    "rarity": "一般"
+   },
+   {
+    "key": "d673",
+    "name": "蛮猿",
+    "levels": [
+     44,
+     46
+    ],
+    "method": "草丛",
+    "rarity": "少见"
+   }
+  ]
+ }
+}

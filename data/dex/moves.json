@@ -1,0 +1,2146 @@
+{
+ "撞击": {
+  "type": "普通",
+  "category": "物理",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "effect": ""
+ },
+ "啄": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 25,
+  "effect": ""
+ },
+ "咬住": {
+  "type": "恶",
+  "category": "物理",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "疾风翼": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "火花": {
+  "type": "火",
+  "category": "特殊",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "effect": "10% 灼伤"
+ },
+ "火焰轮": {
+  "type": "火",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "烈焰冲撞": {
+  "type": "火",
+  "category": "物理",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "水枪": {
+  "type": "水",
+  "category": "特殊",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "effect": ""
+ },
+ "泡沫光线": {
+  "type": "水",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "激流炮": {
+  "type": "水",
+  "category": "特殊",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "吸取": {
+  "type": "草",
+  "category": "特殊",
+  "power": 30,
+  "accuracy": 100,
+  "pp": 25,
+  "effect": "吸取伤害的一半"
+ },
+ "飞叶": {
+  "type": "草",
+  "category": "物理",
+  "power": 45,
+  "accuracy": 100,
+  "pp": 25,
+  "effect": ""
+ },
+ "飞叶快刀": {
+  "type": "草",
+  "category": "物理",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "叶刃风暴": {
+  "type": "草",
+  "category": "特殊",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "吸取伤害的一半"
+ },
+ "电击": {
+  "type": "电",
+  "category": "特殊",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "effect": "10% 麻痹"
+ },
+ "雷电球": {
+  "type": "电",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 麻痹"
+ },
+ "圆爪": {
+  "type": "普通",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "毛牙": {
+  "type": "普通",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "疾刃": {
+  "type": "普通",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "壮冲锋": {
+  "type": "普通",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "霸拳": {
+  "type": "普通",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "王尾击": {
+  "type": "普通",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "毛吐息": {
+  "type": "普通",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "绒光线": {
+  "type": "普通",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "长球": {
+  "type": "普通",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "疾波": {
+  "type": "普通",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "王炮": {
+  "type": "普通",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "巨弹": {
+  "type": "普通",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "叫声": {
+  "type": "普通",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "降低对手攻击 1 级"
+ },
+ "变圆": {
+  "type": "普通",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高自己防御 1 级"
+ },
+ "睡觉": {
+  "type": "普通",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "睡 2 回合并回满 HP"
+ },
+ "焰撞击": {
+  "type": "火",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 灼伤"
+ },
+ "火拳": {
+  "type": "火",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 灼伤"
+ },
+ "灼踢": {
+  "type": "火",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "炎刃": {
+  "type": "火",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "炎狱尾击": {
+  "type": "火",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "爆重锤": {
+  "type": "火",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "火风暴": {
+  "type": "火",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "炭炮": {
+  "type": "火",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 灼伤"
+ },
+ "灼之歌": {
+  "type": "火",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "焚漩涡": {
+  "type": "火",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "熔波": {
+  "type": "火",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "10% 灼伤"
+ },
+ "炎狱球": {
+  "type": "火",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "鬼火": {
+  "type": "火",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "让对手灼伤"
+ },
+ "大晴天": {
+  "type": "火",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "5 回合晴天，火属性招式威力提升"
+ },
+ "泡刃": {
+  "type": "水",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "泡踢": {
+  "type": "水",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "浪突击": {
+  "type": "水",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "潮重锤": {
+  "type": "水",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "瀑拳": {
+  "type": "水",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "溟冲锋": {
+  "type": "水",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "滴弹": {
+  "type": "水",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "泡冲击": {
+  "type": "水",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "涌漩涡": {
+  "type": "水",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "渊波": {
+  "type": "水",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "怒涛光线": {
+  "type": "水",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "瀑之歌": {
+  "type": "水",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "求雨": {
+  "type": "水",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "5 回合下雨，水属性招式威力提升"
+ },
+ "水之环": {
+  "type": "水",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "每回合回复 1/16 HP"
+ },
+ "芽刃": {
+  "type": "草",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "籽尾击": {
+  "type": "草",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "吸取伤害的一半"
+ },
+ "森突击": {
+  "type": "草",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "吸取伤害的一半"
+ },
+ "蔓牙": {
+  "type": "草",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "繁冲锋": {
+  "type": "草",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "吸取伤害的一半"
+ },
+ "林撞击": {
+  "type": "草",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "籽冲击": {
+  "type": "草",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "嫩之歌": {
+  "type": "草",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "吸取伤害的一半"
+ },
+ "森光线": {
+  "type": "草",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "森吐息": {
+  "type": "草",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "吸取伤害的一半"
+ },
+ "林弹": {
+  "type": "草",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "吸取伤害的一半"
+ },
+ "林波": {
+  "type": "草",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "寄生种子": {
+  "type": "草",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "每回合吸取对手 1/8 HP"
+ },
+ "催眠粉": {
+  "type": "草",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "让对手睡着"
+ },
+ "电拳": {
+  "type": "电",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 麻痹"
+ },
+ "微光踢": {
+  "type": "电",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "磁重锤": {
+  "type": "电",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 麻痹"
+ },
+ "磁突击": {
+  "type": "电",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "天雷牙": {
+  "type": "电",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "10% 麻痹"
+ },
+ "轰撞击": {
+  "type": "电",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "微光球": {
+  "type": "电",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 麻痹"
+ },
+ "闪光线": {
+  "type": "电",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 麻痹"
+ },
+ "雷风暴": {
+  "type": "电",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 麻痹"
+ },
+ "伏吐息": {
+  "type": "电",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 麻痹"
+ },
+ "霹冲击": {
+  "type": "电",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "10% 麻痹"
+ },
+ "天雷弹": {
+  "type": "电",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "电磁波": {
+  "type": "电",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "让对手麻痹"
+ },
+ "充电": {
+  "type": "电",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "下一招电属性威力翻倍，特防提高 1 级"
+ },
+ "凉刃": {
+  "type": "冰",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "雪牙": {
+  "type": "冰",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "凛拳": {
+  "type": "冰",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "冻爪": {
+  "type": "冰",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 冰冻"
+ },
+ "玄冰撞击": {
+  "type": "冰",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "10% 冰冻"
+ },
+ "凛冬踢": {
+  "type": "冰",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "凉风暴": {
+  "type": "冰",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 冰冻"
+ },
+ "霜漩涡": {
+  "type": "冰",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 冰冻"
+ },
+ "寒波": {
+  "type": "冰",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 冰冻"
+ },
+ "凛弹": {
+  "type": "冰",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 冰冻"
+ },
+ "玄冰之歌": {
+  "type": "冰",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "极寒球": {
+  "type": "冰",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "白雾": {
+  "type": "冰",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "5 回合内能力不会被降低"
+ },
+ "冰雹": {
+  "type": "冰",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "5 回合冰雹，每回合伤害非冰属性"
+ },
+ "拳冲锋": {
+  "type": "格斗",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "蛮拳": {
+  "type": "格斗",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "猛重锤": {
+  "type": "格斗",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "强刃": {
+  "type": "格斗",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "狂爪": {
+  "type": "格斗",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "宗师撞击": {
+  "type": "格斗",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "蛮之歌": {
+  "type": "格斗",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "拳波": {
+  "type": "格斗",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "刚球": {
+  "type": "格斗",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "强吐息": {
+  "type": "格斗",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "霸拳风暴": {
+  "type": "格斗",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "狂冲击": {
+  "type": "格斗",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "健美": {
+  "type": "格斗",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高攻击和防御各 1 级"
+ },
+ "看穿": {
+  "type": "格斗",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "本回合不受攻击"
+ },
+ "斑踢": {
+  "type": "毒",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 中毒"
+ },
+ "紫冲锋": {
+  "type": "毒",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 中毒"
+ },
+ "剧尾击": {
+  "type": "毒",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "蚀突击": {
+  "type": "毒",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "瘟重锤": {
+  "type": "毒",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "30% 中毒"
+ },
+ "魔毒刃": {
+  "type": "毒",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "酸弹": {
+  "type": "毒",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 中毒"
+ },
+ "斑吐息": {
+  "type": "毒",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 中毒"
+ },
+ "瘴漩涡": {
+  "type": "毒",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "30% 中毒"
+ },
+ "蚀炮": {
+  "type": "毒",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "瘟风暴": {
+  "type": "毒",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "邪之歌": {
+  "type": "毒",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "剧毒": {
+  "type": "毒",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "让对手中剧毒"
+ },
+ "溶化": {
+  "type": "毒",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高自己防御 2 级"
+ },
+ "尘尾击": {
+  "type": "大地",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "沙冲锋": {
+  "type": "大地",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "裂突击": {
+  "type": "大地",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "震牙": {
+  "type": "大地",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "厚土刃": {
+  "type": "大地",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "大地踢": {
+  "type": "大地",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "泥光线": {
+  "type": "大地",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "土波": {
+  "type": "大地",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "震漩涡": {
+  "type": "大地",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "壤吐息": {
+  "type": "大地",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "岳风暴": {
+  "type": "大地",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "崩冲击": {
+  "type": "大地",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "撒沙": {
+  "type": "大地",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "降低对手命中 1 级"
+ },
+ "沙暴": {
+  "type": "大地",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "5 回合沙暴"
+ },
+ "翔尾击": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "翔拳": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "疾风重锤": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "疾风撞击": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "苍穹踢": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "凌霄爪": {
+  "type": "飞行",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "羽漩涡": {
+  "type": "飞行",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "翔波": {
+  "type": "飞行",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "翼球": {
+  "type": "飞行",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "翱之歌": {
+  "type": "飞行",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "天风暴": {
+  "type": "飞行",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "天炮": {
+  "type": "飞行",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "顺风": {
+  "type": "飞行",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "4 回合内己方速度翻倍"
+ },
+ "羽栖": {
+  "type": "飞行",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "回复一半 HP"
+ },
+ "幻重锤": {
+  "type": "灵能",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 降低特防"
+ },
+ "星撞击": {
+  "type": "灵能",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 降低特防"
+ },
+ "玄牙": {
+  "type": "灵能",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 降低特防"
+ },
+ "灵突击": {
+  "type": "灵能",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 降低特防"
+ },
+ "天启冲锋": {
+  "type": "灵能",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "10% 降低特防"
+ },
+ "神念踢": {
+  "type": "灵能",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "梦漩涡": {
+  "type": "灵能",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "幻吐息": {
+  "type": "灵能",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 降低特防"
+ },
+ "心风暴": {
+  "type": "灵能",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 降低特防"
+ },
+ "镜球": {
+  "type": "灵能",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "冥想冲击": {
+  "type": "灵能",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "10% 降低特防"
+ },
+ "神念光线": {
+  "type": "灵能",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "冥想": {
+  "type": "灵能",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高特攻和特防各 1 级"
+ },
+ "催眠术": {
+  "type": "灵能",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "让对手睡着"
+ },
+ "蠕牙": {
+  "type": "虫",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "茧踢": {
+  "type": "虫",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "织尾击": {
+  "type": "虫",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "甲重锤": {
+  "type": "虫",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "霸翅爪": {
+  "type": "虫",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "千足刃": {
+  "type": "虫",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "蠕漩涡": {
+  "type": "虫",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "绒之歌": {
+  "type": "虫",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "刺风暴": {
+  "type": "虫",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "翅弹": {
+  "type": "虫",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "霸翅冲击": {
+  "type": "虫",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "铠炮": {
+  "type": "虫",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "吐丝": {
+  "type": "虫",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "降低对手速度 2 级"
+ },
+ "蝶舞": {
+  "type": "虫",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高特攻、特防、速度各 1 级"
+ },
+ "卵牙": {
+  "type": "岩石",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 畏缩"
+ },
+ "岩重锤": {
+  "type": "岩石",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 畏缩"
+ },
+ "峭尾击": {
+  "type": "岩石",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "磐爪": {
+  "type": "岩石",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "巨岩拳": {
+  "type": "岩石",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "30% 畏缩"
+ },
+ "巨岩撞击": {
+  "type": "岩石",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "砾漩涡": {
+  "type": "岩石",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 畏缩"
+ },
+ "岩弹": {
+  "type": "岩石",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 畏缩"
+ },
+ "峭风暴": {
+  "type": "岩石",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "30% 畏缩"
+ },
+ "峭之歌": {
+  "type": "岩石",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "30% 畏缩"
+ },
+ "磐岳球": {
+  "type": "岩石",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "30% 畏缩"
+ },
+ "坚冲击": {
+  "type": "岩石",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "隐形岩": {
+  "type": "岩石",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "对手换上场时受到岩石伤害"
+ },
+ "岩石打磨": {
+  "type": "岩石",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高速度 2 级"
+ },
+ "夜突击": {
+  "type": "幽灵",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "影重锤": {
+  "type": "幽灵",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "20% 降低特防"
+ },
+ "冥踢": {
+  "type": "幽灵",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "20% 降低特防"
+ },
+ "寂尾击": {
+  "type": "幽灵",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "冥王牙": {
+  "type": "幽灵",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "幽冥冲锋": {
+  "type": "幽灵",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "幽风暴": {
+  "type": "幽灵",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "20% 降低特防"
+ },
+ "夜漩涡": {
+  "type": "幽灵",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "寂球": {
+  "type": "幽灵",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "寂炮": {
+  "type": "幽灵",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "20% 降低特防"
+ },
+ "无相弹": {
+  "type": "幽灵",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "20% 降低特防"
+ },
+ "冥王冲击": {
+  "type": "幽灵",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "奇异之光": {
+  "type": "幽灵",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "让对手混乱"
+ },
+ "诅咒": {
+  "type": "幽灵",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "每回合扣对手 1/4 HP"
+ },
+ "鳞爪": {
+  "type": "龙",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "幼刃": {
+  "type": "龙",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "蛟突击": {
+  "type": "龙",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "翔重锤": {
+  "type": "龙",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "苍龙牙": {
+  "type": "龙",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "天龙撞击": {
+  "type": "龙",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "幼冲击": {
+  "type": "龙",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "角吐息": {
+  "type": "龙",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "蛟风暴": {
+  "type": "龙",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "龙球": {
+  "type": "龙",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "龙王之歌": {
+  "type": "龙",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "龙王漩涡": {
+  "type": "龙",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "龙之舞": {
+  "type": "龙",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高攻击和速度各 1 级"
+ },
+ "暗重锤": {
+  "type": "恶",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "偷冲锋": {
+  "type": "恶",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "20% 畏缩"
+ },
+ "邪踢": {
+  "type": "恶",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "20% 畏缩"
+ },
+ "邪牙": {
+  "type": "恶",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "20% 畏缩"
+ },
+ "深渊刃": {
+  "type": "恶",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "20% 畏缩"
+ },
+ "暴突击": {
+  "type": "恶",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "黑漩涡": {
+  "type": "恶",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "20% 畏缩"
+ },
+ "偷球": {
+  "type": "恶",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "邪炮": {
+  "type": "恶",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "20% 畏缩"
+ },
+ "魇波": {
+  "type": "恶",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "20% 畏缩"
+ },
+ "夜王光线": {
+  "type": "恶",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "20% 畏缩"
+ },
+ "魔之歌": {
+  "type": "恶",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "挑衅": {
+  "type": "恶",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "3 回合内对手只能用攻击招式"
+ },
+ "诡计": {
+  "type": "恶",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高特攻 2 级"
+ },
+ "钉踢": {
+  "type": "钢",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 提高防御"
+ },
+ "铜拳": {
+  "type": "钢",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "铠刃": {
+  "type": "钢",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 提高防御"
+ },
+ "刃重锤": {
+  "type": "钢",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "10% 提高防御"
+ },
+ "重钢尾击": {
+  "type": "钢",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": ""
+ },
+ "钢王撞击": {
+  "type": "钢",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "钉吐息": {
+  "type": "钢",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 提高防御"
+ },
+ "钉冲击": {
+  "type": "钢",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "10% 提高防御"
+ },
+ "铠风暴": {
+  "type": "钢",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "钢之歌": {
+  "type": "钢",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "铁壁球": {
+  "type": "钢",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "10% 提高防御"
+ },
+ "合金弹": {
+  "type": "钢",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "铁壁": {
+  "type": "钢",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "提高防御 2 级"
+ },
+ "金属音": {
+  "type": "钢",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "降低对手特防 2 级"
+ },
+ "萌重锤": {
+  "type": "妖精",
+  "category": "物理",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": ""
+ },
+ "萌拳": {
+  "type": "妖精",
+  "category": "物理",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 降低特攻"
+ },
+ "月踢": {
+  "type": "妖精",
+  "category": "物理",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "月牙": {
+  "type": "妖精",
+  "category": "物理",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "彩刃": {
+  "type": "妖精",
+  "category": "物理",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "30% 降低特攻"
+ },
+ "仙后爪": {
+  "type": "妖精",
+  "category": "物理",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "自己受到 1/3 反伤"
+ },
+ "糖吐息": {
+  "type": "妖精",
+  "category": "特殊",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 降低特攻"
+ },
+ "棉风暴": {
+  "type": "妖精",
+  "category": "特殊",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 30,
+  "effect": "30% 降低特攻"
+ },
+ "花冠光线": {
+  "type": "妖精",
+  "category": "特殊",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "妖漩涡": {
+  "type": "妖精",
+  "category": "特殊",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": ""
+ },
+ "圣光冲击": {
+  "type": "妖精",
+  "category": "特殊",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 15,
+  "effect": "30% 降低特攻"
+ },
+ "星辉之歌": {
+  "type": "妖精",
+  "category": "特殊",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "effect": "使用后下回合不能行动"
+ },
+ "撒娇": {
+  "type": "妖精",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "降低对手攻击 2 级"
+ },
+ "月光": {
+  "type": "妖精",
+  "category": "变化",
+  "power": 0,
+  "accuracy": 100,
+  "pp": 15,
+  "effect": "回复一半 HP"
+ }
+}
