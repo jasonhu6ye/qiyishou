@@ -149,6 +149,9 @@ func _world_checks(world: World) -> void:
 				kinds[b["kind"]] = true
 				if not world.is_walkable(b["exit"]):
 					check(false, "%s 的%s门口能走" % [t["name"], b["kind"]])
+				var door_ground := WorldGen.ground_of(world.cell(b["door"]))
+				if WorldGen.ground_of(world.cell(b["exit"])) != door_ground:
+					check(false, "%s 的%s门口地面和门一致" % [t["name"], b["kind"]])
 		if not (kinds.has("heal") and kinds.has("shop")):
 			check(false, "%s 有治疗所和商店" % t["name"])
 		if t["kind"] == "city" and not kinds.has("gym"):

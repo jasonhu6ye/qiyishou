@@ -97,6 +97,7 @@ var route_segments: Array = []
 ## 房屋：[{"rect": Rect2i（世界坐标）, "kind", "town", "door": Vector2i, "exit": Vector2i}]
 var buildings: Array = []
 var _pending: Array[Vector2i] = []
+var _finished := 0
 
 
 func _init() -> void:
@@ -338,7 +339,11 @@ func _build_start_town() -> void:
 		_add_building(Rect2i(START_ORIGIN + r.position, r.size), hs["kind"], "chenlu")
 	# NPC 脚下保证是空地
 	for n in World.NPCS:
-		special[START_ORIGIN + Vector2i(n["cell"])] = pack(G_GRASS)
+		var nc: Vector2i = START_ORIGIN + Vector2i(n["cell"])
+		special[nc] = pack(G_GRASS)
+		# 头顶那格的树会挡住 NPC
+		if object_of(special[nc + Vector2i.UP]) != 0:
+			special[nc + Vector2i.UP] = pack(G_GRASS)
 	_finish_buildings(G_GRASS)
 
 
@@ -348,10 +353,14 @@ func _finish_buildings(ground: int) -> void:
 			special[c] = pack(ground, O_NONE, BUILDING)
 		elif special[c] == -2:
 			special[c] = pack(ground, O_PATH)
-	for b in buildings:
-		var e: Vector2i = b["exit"]
-		if not special.has(e) or object_of(special[e]) == 0:
+	# 只处理这一批新加的房屋，免得后面的城镇把前面城镇门口的地面改掉
+	for i in range(_finished, buildings.size()):
+		var e: Vector2i = buildings[i]["exit"]
+		if not special.has(e):
 			special[e] = pack(ground, O_PATH)
+		elif object_of(special[e]) == 0:
+			special[e] = pack(ground_of(special[e]), O_PATH)
+	_finished = buildings.size()
 	_pending.clear()
 
 
