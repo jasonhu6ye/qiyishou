@@ -1,5 +1,5 @@
 extends Node
-## 截图脚本：在有显示环境时运行（CI 里用 xvfb），截取小镇、2 号道路训练师和训练师战斗画面。
+## 截图脚本：在有显示环境时运行（CI 里用 xvfb），截取小镇、2 号道路训练师、训练师战斗和招式特效画面。
 ## godot --path . --rendering-driver opengl3 res://tests/screenshot.tscn
 ## 图片保存在 user://screenshots/，CI 会作为构建产物上传。
 
@@ -50,6 +50,11 @@ func _ready() -> void:
 			main.dialog._finish()
 	await get_tree().create_timer(0.8).timeout
 	await _capture("battle")
+	main.battle.lunge_me_at = Battle.now() - 0.15
+	main.battle.fx_type = "火"
+	main.battle.fx_on_enemy = true
+	main.battle.fx_at = Battle.now() - 0.25
+	await _capture("battle_fx")
 	Game.delete_save()
 	get_tree().quit()
 

@@ -3,6 +3,16 @@ extends Control
 ## 战斗画面。在 320x240 的逻辑坐标里绘制（就是游戏的渲染分辨率），按控件宽度等比缩放。
 
 const LOGICAL := Vector2(320, 240)
+const ENEMY_FEET := Vector2(236, 82)
+const MY_FEET := Vector2(84, 154)
+const FX_TIME := 0.55  ## 招式特效时长，战斗逻辑在特效播完后才结算伤害
+const FX_COLORS := {
+	"火": [Color("#fff3a0"), Color("#ffb03a"), Color("#e8502a")],
+	"水": [Color("#e6f7ff"), Color("#7cc6ff"), Color("#3a7fd6")],
+	"草": [Color("#d8ff9a"), Color("#6cc25a"), Color("#2f7a2c")],
+	"电": [Color("#ffffff"), Color("#fff06a"), Color("#f2b81a")],
+	"普通": [Color("#ffffff"), Color("#ffe7a8"), Color("#c9b98a")],
+}
 
 var battle: Battle
 var _k := 1.0
@@ -16,23 +26,7 @@ func _draw() -> void:
 	var t := Battle.now()
 	_reset()
 
-	var route2 := b.zone == 1
-	var sky_top := Color("#f7b267") if route2 else Color("#8fd3ff")
-	var sky_bottom := Color("#ffe8c2") if route2 else Color("#e6f7ff")
-	var ground := Color("#b9d27a") if route2 else Color("#9be07a")
-	var hills := Color("#c98a5a") if route2 else Color("#8cc7a0")
-	var pad := Color("#cfe39a") if route2 else Color("#b8ec97")
-	draw_polygon(PackedVector2Array([Vector2(0, 0), Vector2(320, 0), Vector2(320, 120), Vector2(0, 120)]),
-		PackedColorArray([sky_top, sky_top, sky_bottom, sky_bottom]))
-	Art.poly(self, [Vector2(0, 120), Vector2(40, 96), Vector2(90, 110), Vector2(150, 88), Vector2(210, 108),
-		Vector2(260, 92), Vector2(320, 104), Vector2(320, 120)], hills)
-	draw_rect(Rect2(0, 120, 320, 120), ground)
-	for i in 14:
-		draw_rect(Rect2((i * 53 + 17) % 320, 128 + (i * 37) % 100, 6, 1.5), Color(0, 0, 0, 0.08))
-	Art.ellipse(self, Vector2(236, 84), Vector2(52, 12), Color(0.27, 0.47, 0.2, 0.55))
-	Art.ellipse(self, Vector2(236, 82), Vector2(48, 10), pad)
-	Art.ellipse(self, Vector2(84, 154), Vector2(66, 15), Color(0.27, 0.47, 0.2, 0.55))
-	Art.ellipse(self, Vector2(84, 152), Vector2(62, 13), pad)
+	draw_texture(Art.tex("battle_bg_%d" % clampi(b.zone, 0, 1)), Vector2.ZERO)
 
 	if b.show_enemy:
 		var dx := 0.0
@@ -45,8 +39,10 @@ func _draw() -> void:
 		if b.faint_enemy_at > 0.0:
 			dy = minf(26.0, (t - b.faint_enemy_at) * 80.0)
 			alpha = 1.0 - dy / 26.0
+		dx += _lunge(t - b.lunge_enemy_at) * -10.0
+		dy += _lunge(t - b.lunge_enemy_at) * 5.0
 		if alpha > 0.0:
-			_monster(Vector2(236 + dx, 82 + dy), b.wild.key, false, alpha, t)
+			_monster(ENEMY_FEET + Vector2(dx, dy), b.wild.key, false, alpha, t)
 
 	if b.ball_at > 0.0:
 		_ball(t - b.ball_at, t - b.ball_shake_at)
@@ -58,7 +54,11 @@ func _draw() -> void:
 		if since < 0.45:
 			dx = sin(since * 40.0) * 3.0
 			alpha = 0.35 if int(since / 0.07) % 2 else 1.0
-		_monster(Vector2(84 + dx, 154), b.me.key, true, alpha, t)
+		var lunge := _lunge(t - b.lunge_me_at)
+		_monster(MY_FEET + Vector2(dx + lunge * 14.0, -lunge * 7.0), b.me.key, true, alpha, t)
+
+	if t - b.fx_at < FX_TIME:
+		_fx((t - b.fx_at) / FX_TIME, b.fx_type, b.fx_on_enemy)
 
 	_hp_box(Vector2(8, 8), 140, b.wild, b.disp_enemy_hp, false)
 	if b.show_me and b.me:
@@ -73,12 +73,85 @@ func _reset() -> void:
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2(_k, _k))
 
 
-## 立绘按整像素放置，再加一个上下 1 像素的呼吸起伏
+## 立绘按整像素放置，脚下有一圈影子，再加一个上下 1 像素的呼吸起伏
 func _monster(feet: Vector2, key: String, back: bool, alpha: float, t: float) -> void:
 	var bob := roundf(sin(t * 3.0 + (1.5 if back else 0.0)))
+	var w := Art.tex("monsters/%s_%s" % [key, "back" if back else "front"]).get_width() * 0.3
+	Art.ellipse(self, feet.round() + Vector2(0, 1), Vector2(roundf(w), roundf(w * 0.22) + 1.0), Color(0.1, 0.15, 0.05, 0.28 * alpha))
 	draw_set_transform((feet.round() + Vector2(0, bob)) * _k, 0.0, Vector2(_k, _k))
 	Art.monster(self, key, back, alpha)
 	_reset()
+
+
+## 出招时向前冲一下：0 → 1 → 0，持续 0.3 秒
+func _lunge(since: float) -> float:
+	if since < 0.0 or since > 0.3:
+		return 0.0
+	return roundf(sin(since / 0.3 * PI) * 4.0) / 4.0
+
+
+## 整像素方块，特效都用它画，保持像素风
+func _dot(p: Vector2, sz: float, col: Color) -> void:
+	draw_rect(Rect2(p.round() - Vector2(sz, sz) * 0.5, Vector2(sz, sz)).abs(), col)
+
+
+## 招式特效。k 从 0 到 1；on_enemy 为 true 表示打向对手
+func _fx(k: float, type: String, on_enemy: bool) -> void:
+	var cols: Array = FX_COLORS.get(type, FX_COLORS["普通"])
+	var target := (ENEMY_FEET + Vector2(0, -22)) if on_enemy else (MY_FEET + Vector2(0, -34))
+	var source := (MY_FEET + Vector2(10, -40)) if on_enemy else (ENEMY_FEET + Vector2(-10, -20))
+	match type:
+		"火":
+			for i in 22:
+				var life := fposmod(k * 1.6 + i * 0.137, 1.0)
+				var p := target + Vector2((i * 23 % 37) - 18 + sin(life * 9.0 + i) * 3.0, 18.0 - life * 44.0)
+				var c: Color = cols[mini(2, int(life * 3.0))]
+				_dot(p, roundf(7.0 - life * 5.0), c)
+				if life < 0.4:
+					_dot(p + Vector2(0, -1), 2.0, cols[0])
+		"水":
+			var travel := minf(1.0, k / 0.55)
+			if k < 0.55:
+				for i in 6:
+					var q := clampf(travel - i * 0.06, 0.0, 1.0)
+					var p := source.lerp(target, q) + Vector2(0, -sin(q * PI) * 16.0 + (i % 2) * 2.0)
+					_dot(p, 5.0 if i % 2 == 0 else 3.0, cols[i % 3])
+			else:
+				var s := (k - 0.55) / 0.45
+				for i in 10:
+					var a := i * TAU / 10.0
+					var p := target + Vector2(cos(a), sin(a) * 0.7) * (4.0 + s * 18.0) + Vector2(0, s * s * 10.0)
+					_dot(p, roundf(4.0 - s * 2.0), cols[i % 2])
+		"草":
+			for i in 6:
+				var q := clampf(k * 1.4 - i * 0.08, 0.0, 1.0)
+				if q <= 0.0 or q >= 1.0:
+					continue
+				var spin := q * 10.0 + i
+				var p := source.lerp(target, q) + Vector2(cos(spin), sin(spin)) * (8.0 - q * 6.0)
+				_dot(p, 4.0, cols[1])
+				_dot(p + Vector2(cos(spin * 2.0), sin(spin * 2.0)).round(), 1.0, cols[0])
+				_dot(p - Vector2(cos(spin * 2.0), sin(spin * 2.0)).round(), 1.0, cols[2])
+		"电":
+			if int(k * 12.0) % 2 == 0:
+				draw_rect(Rect2(Vector2.ZERO, LOGICAL), Color(1.0, 0.95, 0.5, 0.18))
+			for bolt in 3:
+				var pts := PackedVector2Array()
+				var x := target.x + (bolt - 1) * 12.0
+				var jit := int(k * 10.0) * 7 + bolt * 13
+				for j in 7:
+					var y := target.y - 60.0 + j * 10.0
+					pts.append(Vector2(x + ((jit + j * 5) % 9) - 4.0, y).round())
+				draw_polyline(pts, cols[1 if bolt == 1 else 2], 2.0)
+				draw_polyline(pts, cols[0], 1.0)
+		_:
+			var s := k
+			for i in 8:
+				var a := i * TAU / 8.0 + 0.4
+				var d := 4.0 + s * 16.0
+				_dot(target + Vector2(cos(a), sin(a)) * d, roundf(5.0 - s * 3.0), cols[i % 2])
+			if s < 0.4:
+				_dot(target, 10.0 - s * 15.0, Color(1, 1, 1, 0.8))
 
 
 func _ball(since_throw: float, since_shake: float) -> void:
