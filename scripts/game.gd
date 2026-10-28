@@ -110,7 +110,7 @@ func heal_all() -> void:
 		m.heal()
 
 
-## 新捕获的奇异兽：队伍没满进队伍，满了进存储箱。返回 true 表示进了队伍。
+## 新捕获的幻兽：队伍没满进队伍，满了进存储箱。返回 true 表示进了队伍。
 func add_caught(m: Monster) -> bool:
 	caught[m.key] = true
 	if party.size() < PARTY_LIMIT:
@@ -133,7 +133,7 @@ func buy(item: String) -> bool:
 	return true
 
 
-## 对一只奇异兽用伤药，返回回复量；不能用（没药、已倒下、满血）返回 0 且不消耗
+## 对一只幻兽用伤药，返回回复量；不能用（没药、已倒下、满血）返回 0 且不消耗
 func use_potion(m: Monster) -> int:
 	if potions <= 0 or m.is_fainted() or m.hp >= m.max_hp():
 		return 0

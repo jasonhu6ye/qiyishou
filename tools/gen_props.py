@@ -1,6 +1,6 @@
 """地形物件（树、岩石、仙人掌……）的像素图，复用 gen_monsters 的立体光照渲染。
 
-每个物件一张正方形 PNG，脚底在底边往上 5 像素的中心（和奇异兽立绘相同的约定），
+每个物件一张正方形 PNG，脚底在底边往上 5 像素的中心（和幻兽立绘相同的约定），
 输出到 assets/sprites/props/<名字>.png。
 """
 from gen_monsters import render_fit

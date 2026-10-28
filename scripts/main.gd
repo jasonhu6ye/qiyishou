@@ -48,12 +48,12 @@ func _set_state(s: State) -> void:
 
 func _choose_starter() -> void:
 	_set_state(State.TALK)
-	await dialog.say("研究员：欢迎来到晨露镇！这里有三只奇异兽，带上一只出发吧。")
+	await dialog.say("研究员：欢迎来到晨露镇！这里有三只幻兽，带上一只出发吧。")
 	await dialog.say("属性相克是 火 → 草 → 水 → 火，选你喜欢的就好。")
 	var labels: Array = []
 	for k in Data.STARTERS:
 		labels.append("%s（%s）" % [Data.SPECIES[k]["name"], Data.SPECIES[k]["type"]])
-	var i: int = await dialog.choose("选择你的第一只奇异兽", labels)
+	var i: int = await dialog.choose("选择你的第一只幻兽", labels)
 	var m := Monster.create(Data.STARTERS[i], 5)
 	Game.party.append(m)
 	Game.seen[m.key] = true
@@ -110,7 +110,7 @@ func _enter(door: Dictionary) -> void:
 			await dialog.say("这里是%s道馆，%s擅长%s属性。" % [town.get("name", ""), gym.get("leader", "馆主"), gym.get("type", "")])
 			await dialog.say("馆主正在闭关修炼，道馆挑战还没开放。")
 		"league":
-			await dialog.say("奇异兽联盟的大门紧闭着。集齐八枚徽章的训练师才能进入。")
+			await dialog.say("幻兽联盟的大门紧闭着。集齐八枚徽章的训练师才能进入。")
 		_:
 			await dialog.say("门上挂着牌子：外出采集中，请勿打扰。")
 	dialog.close()
@@ -133,7 +133,7 @@ func _town(id: String) -> Dictionary:
 
 func _heal(door: Dictionary) -> void:
 	_set_state(State.TALK)
-	await dialog.say("护士：欢迎来到治疗所！把奇异兽交给我吧……")
+	await dialog.say("护士：欢迎来到治疗所！把幻兽交给我吧……")
 	Game.heal_all()
 	Game.last_town = door["town"]
 	await dialog.say("全部恢复精神了！路上小心。")
@@ -244,7 +244,7 @@ func _look_at(c: Vector2i) -> Array:
 			"gym":
 				return ["道馆的大门在正下方。"]
 			"league":
-				return ["奇异兽联盟总部。"]
+				return ["幻兽联盟总部。"]
 		return ["一户人家。"]
 	var obj := WorldGen.object_of(world.cell(c))
 	if obj == 0 or obj == WorldGen.BUILDING:

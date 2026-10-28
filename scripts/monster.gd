@@ -1,6 +1,6 @@
 class_name Monster
 extends RefCounted
-## 一只奇异兽的实例：物种、等级、当前 HP、经验与招式。
+## 一只幻兽的实例：物种、等级、当前 HP、经验与招式。
 
 var key: String
 var level: int

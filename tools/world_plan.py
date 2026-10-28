@@ -37,15 +37,15 @@ REGIONS = [
     {"id": "cangyan", "name": "苍岩山脉", "biome": "山地", "center": (7200, 2700), "levels": (42, 49),
      "desc": "东北的崇山峻岭，碎石坡、巨岩和高山松林，山腹里有四通八达的矿洞。"},
     {"id": "bijing", "name": "碧镜湖区", "biome": "湖区", "center": (2800, 2700), "levels": (48, 55),
-     "desc": "西北的湖泊群，湖面平如镜，湖心有小岛，岸边芦苇和草甸。传说湖底沉睡着古老的奇异兽。"},
+     "desc": "西北的湖泊群，湖面平如镜，湖心有小岛，岸边芦苇和草甸。传说湖底沉睡着古老的幻兽。"},
     {"id": "shuangling", "name": "霜岭", "biome": "雪原", "center": (5000, 2000), "levels": (54, 65),
-     "desc": "北方的雪原与冰川，针叶林披着积雪，冰湖上可以滑行。最北端是奇异兽联盟。"},
+     "desc": "北方的雪原与冰川，针叶林披着积雪，冰湖上可以滑行。最北端是幻兽联盟。"},
 ]
 
 # kind: start 起始小镇（手工设计）, city 有道馆的城市, town 小镇, league 联盟
 TOWNS = [
     {"id": "chenlu", "name": "晨露镇", "kind": "start", "region": "cuiyuan", "pos": (5000, 5000),
-     "desc": "主角的家乡。研究员在这里发放第一只奇异兽。"},
+     "desc": "主角的家乡。研究员在这里发放第一只幻兽。"},
     {"id": "cuiyuanshi", "name": "翠原市", "kind": "city", "region": "cuiyuan", "pos": (5000, 4250),
      "gym": {"order": 1, "type": "普通", "leader": "馆主 阿岚", "badge": "原野徽章"},
      "desc": "草原上最大的城市，集市热闹，第一座道馆在城北。"},
@@ -53,7 +53,7 @@ TOWNS = [
      "desc": "小山坡上转着一排风车，村里有育宠屋。"},
     {"id": "senyu", "name": "森语镇", "kind": "city", "region": "shencui", "pos": (2450, 5050),
      "gym": {"order": 2, "type": "草", "leader": "馆主 青藤", "badge": "新叶徽章"},
-     "desc": "建在巨树之间的木屋小镇，居民擅长与草系奇异兽沟通。"},
+     "desc": "建在巨树之间的木屋小镇，居民擅长与草系幻兽沟通。"},
     {"id": "gushu", "name": "古树村", "kind": "town", "region": "shencui", "pos": (1700, 4550),
      "desc": "森林深处的隐村，守护着千年神木。"},
     {"id": "nitan", "name": "泥潭村", "kind": "city", "region": "wuzhao", "pos": (2900, 7200),
@@ -75,7 +75,7 @@ TOWNS = [
      "gym": {"order": 6, "type": "火", "leader": "馆主 赤炼", "badge": "熔火徽章"},
      "desc": "建在冷却熔岩台地上的锻造之镇，到处是工坊的炉火。"},
     {"id": "wenquan", "name": "温泉村", "kind": "town", "region": "chiyan", "pos": (7050, 4650),
-     "desc": "火山脚下的温泉乡，泡温泉能让奇异兽恢复精神。"},
+     "desc": "火山脚下的温泉乡，泡温泉能让幻兽恢复精神。"},
     {"id": "yanbao", "name": "岩堡城", "kind": "city", "region": "cangyan", "pos": (7200, 2950),
      "gym": {"order": 7, "type": "岩石", "leader": "馆主 磐石", "badge": "山岳徽章"},
      "desc": "依山而建的石头城堡，城下就是回声矿洞的入口。"},
@@ -88,7 +88,7 @@ TOWNS = [
      "desc": "芦苇荡里的渔村，船夫可以送你去湖心岛。"},
     {"id": "shuangxue", "name": "霜雪村", "kind": "town", "region": "shuangling", "pos": (5000, 2450),
      "desc": "联盟前最后的村庄，雪屋连成一片。"},
-    {"id": "lianmeng", "name": "奇异兽联盟", "kind": "league", "region": "shuangling", "pos": (5000, 1350),
+    {"id": "lianmeng", "name": "幻兽联盟", "kind": "league", "region": "shuangling", "pos": (5000, 1350),
      "desc": "四天王与冠军所在的冰雪殿堂，集齐八枚徽章才能进入。"},
 ]
 
@@ -117,13 +117,13 @@ PLACES = [
     {"name": "海蚀洞", "kind": "dungeon", "region": "weilan", "pos": (4600, 8300),
      "desc": "退潮才露出入口的海边洞窟。"},
     {"name": "流沙遗迹", "kind": "dungeon", "region": "jinsha", "pos": (7750, 7750),
-     "desc": "被流沙半掩的古城遗迹，石壁上刻着奇异兽的古文字。"},
+     "desc": "被流沙半掩的古城遗迹，石壁上刻着幻兽的古文字。"},
     {"name": "火山口", "kind": "dungeon", "region": "chiyan", "pos": (8250, 4900),
      "desc": "活火山的火口，熔岩湖边住着传说中的火之兽。"},
     {"name": "回声矿洞", "kind": "dungeon", "region": "cangyan", "pos": (7550, 2450),
      "desc": "山腹中的矿洞网，能挖到进化石和化石。"},
     {"name": "云巅", "kind": "landmark", "region": "cangyan", "pos": (7900, 2100),
-     "desc": "山脉最高峰，云海之上，偶尔能看到飞行系的传说奇异兽。"},
+     "desc": "山脉最高峰，云海之上，偶尔能看到飞行系的传说幻兽。"},
     {"name": "湖心岛", "kind": "landmark", "region": "bijing", "pos": (2650, 2450),
      "desc": "镜湖中央的小岛，岛上有古老的石阵。"},
     {"name": "冰晶洞", "kind": "dungeon", "region": "shuangling", "pos": (4300, 1900),
@@ -182,7 +182,7 @@ def write_md():
            "外围约 460 格是海洋，南边的海更宽，海里散布着小岛。区域之间的边界由噪声扰动，地形自然过渡。", "",
            "## 冒险路线", "",
            "晨露镇出发 → 翠原市（道馆 1）→ 森语镇（2）→ 泥潭村（3）→ 潮汐港（4）→ 绿洲城（5）"
-           "→ 熔岩镇（6）→ 岩堡城（7）→ 镜湖城（8）→ 霜雪村 → 冠军之路 → 奇异兽联盟。"
+           "→ 熔岩镇（6）→ 岩堡城（7）→ 镜湖城（8）→ 霜雪村 → 冠军之路 → 幻兽联盟。"
            "大体是从中央出发，逆时针绕外圈一周，最后北上。", "",
            "## 区域", ""]
     for r in REGIONS:

@@ -130,7 +130,7 @@ static func effectiveness(move_type: String, target_type: String) -> float:
 	return row.get(target_type, 1.0)
 
 
-## 按地貌的遭遇表抽取一只野生奇异兽，等级在 levels = [最低, 最高] 之间
+## 按地貌的遭遇表抽取一只野生幻兽，等级在 levels = [最低, 最高] 之间
 static func roll_wild(biome: int, levels: Array, rng: RandomNumberGenerator) -> Monster:
 	var table: Array = BIOME_TABLES[clampi(biome, 0, BIOME_TABLES.size() - 1)]
 	var total := 0

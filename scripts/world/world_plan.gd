@@ -39,7 +39,7 @@ const TOWNS := [
 	{"id": "jinghu", "name": "镜湖城", "kind": "city", "region": "bijing", "pos": Vector2i(4083, 4154), "gym": {"order": 8, "type": "灵能", "leader": "馆主 镜音", "badge": "明镜徽章"}},
 	{"id": "luwei", "name": "芦苇村", "kind": "town", "region": "bijing", "pos": Vector2i(3168, 4787), "gym": {}},
 	{"id": "shuangxue", "name": "霜雪村", "kind": "town", "region": "shuangling", "pos": Vector2i(7040, 3450), "gym": {}},
-	{"id": "lianmeng", "name": "奇异兽联盟", "kind": "league", "region": "shuangling", "pos": Vector2i(7040, 1901), "gym": {}},
+	{"id": "lianmeng", "name": "幻兽联盟", "kind": "league", "region": "shuangling", "pos": Vector2i(7040, 1901), "gym": {}},
 ]
 
 ## [编号, 起点城镇 id, 终点城镇 id]
@@ -74,10 +74,10 @@ const PLACES := [
 	{"name": "沉没神殿", "kind": "dungeon", "region": "wuzhao", "pos": Vector2i(4576, 10842), "desc": "半没在泥沼里的古代神殿。"},
 	{"name": "白帆灯塔", "kind": "landmark", "region": "weilan", "pos": Vector2i(7955, 11616), "desc": "海岸尽头的灯塔，塔顶能眺望整片海湾。"},
 	{"name": "海蚀洞", "kind": "dungeon", "region": "weilan", "pos": Vector2i(6477, 11686), "desc": "退潮才露出入口的海边洞窟。"},
-	{"name": "流沙遗迹", "kind": "dungeon", "region": "jinsha", "pos": Vector2i(10912, 10912), "desc": "被流沙半掩的古城遗迹，石壁上刻着奇异兽的古文字。"},
+	{"name": "流沙遗迹", "kind": "dungeon", "region": "jinsha", "pos": Vector2i(10912, 10912), "desc": "被流沙半掩的古城遗迹，石壁上刻着幻兽的古文字。"},
 	{"name": "火山口", "kind": "dungeon", "region": "chiyan", "pos": Vector2i(11616, 6899), "desc": "活火山的火口，熔岩湖边住着传说中的火之兽。"},
 	{"name": "回声矿洞", "kind": "dungeon", "region": "cangyan", "pos": Vector2i(10630, 3450), "desc": "山腹中的矿洞网，能挖到进化石和化石。"},
-	{"name": "云巅", "kind": "landmark", "region": "cangyan", "pos": Vector2i(11123, 2957), "desc": "山脉最高峰，云海之上，偶尔能看到飞行系的传说奇异兽。"},
+	{"name": "云巅", "kind": "landmark", "region": "cangyan", "pos": Vector2i(11123, 2957), "desc": "山脉最高峰，云海之上，偶尔能看到飞行系的传说幻兽。"},
 	{"name": "湖心岛", "kind": "landmark", "region": "bijing", "pos": Vector2i(3731, 3450), "desc": "镜湖中央的小岛，岛上有古老的石阵。"},
 	{"name": "冰晶洞", "kind": "dungeon", "region": "shuangling", "pos": Vector2i(6054, 2675), "desc": "冰川里的洞穴，墙壁是透明的冰晶。"},
 	{"name": "冠军之路", "kind": "dungeon", "region": "shuangling", "pos": Vector2i(7040, 2534), "desc": "通往联盟的最后考验，强大的训练师在此等候。"},

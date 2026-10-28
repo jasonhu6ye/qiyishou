@@ -170,7 +170,7 @@ func run(enemies: Array[Monster], zone_index: int, trainer_info := {}) -> String
 			await dialog.say("%s 倒下了！" % me.species_name())
 			show_me = false
 			if Game.alive_count() == 0:
-				await dialog.say("你身边已经没有能战斗的奇异兽了……")
+				await dialog.say("你身边已经没有能战斗的幻兽了……")
 				await dialog.say("你眼前一黑，慌忙跑回了治疗所。")
 				Game.heal_all()
 				result = "lost"
@@ -225,7 +225,7 @@ func _bag_menu() -> Dictionary:
 		[Game.balls <= 0, Game.potions <= 0, false])
 	if j == 0:
 		if is_trainer_battle():
-			await dialog.say("不能抓别人的奇异兽！", 1.0)
+			await dialog.say("不能抓别人的幻兽！", 1.0)
 			return {}
 		return {"kind": "ball"}
 	if j == 1:

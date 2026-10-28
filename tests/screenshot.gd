@@ -19,7 +19,7 @@ func _ready() -> void:
 	await _frames(10)
 	main.player.dir = Vector2i.UP
 	main.player.queue_redraw()
-	main.dialog.say("老爷爷：年轻人，草丛里藏着野生的奇异兽，走进去就可能遇到。")
+	main.dialog.say("老爷爷：年轻人，草丛里藏着野生的幻兽，走进去就可能遇到。")
 	await _frames(5)
 	await _capture("world")
 

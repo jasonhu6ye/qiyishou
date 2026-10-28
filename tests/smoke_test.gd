@@ -18,7 +18,7 @@ func check(cond: bool, what: String) -> void:
 
 
 func _ready() -> void:
-	print("== 奇异兽 冒烟测试 ==")
+	print("== 幻兽 冒烟测试 ==")
 	Game.delete_save()
 	_unit_checks()
 	await _scene_checks()
@@ -31,7 +31,7 @@ func _ready() -> void:
 func _unit_checks() -> void:
 	var fox := Monster.create("huohu", 5)
 	check(fox.moves.size() == 2 and fox.moves[0] == "撞击" and fox.moves[1] == "火花", "5 级焰尾狐会撞击和火花")
-	check(fox.hp == fox.max_hp() and fox.hp > 0, "新建的奇异兽满血")
+	check(fox.hp == fox.max_hp() and fox.hp > 0, "新建的幻兽满血")
 	var high := Monster.create("huohu", 20)
 	check(high.moves.size() == 4, "高等级最多保留 4 个招式")
 
@@ -190,7 +190,7 @@ func _battle_check() -> void:
 	for entry in info["team"]:
 		team.append(Monster.create(entry[0], int(entry[1])))
 	result = await _auto_battle(team, info)
-	check(result == "won", "能打赢训练师的两只奇异兽（结果：%s）" % result)
+	check(result == "won", "能打赢训练师的两只幻兽（结果：%s）" % result)
 	check(team[0].is_fainted() and team[1].is_fainted(), "训练师的两只都被打倒")
 	check(Game.money == money_before + int(info["reward"]), "打赢训练师拿到奖金")
 

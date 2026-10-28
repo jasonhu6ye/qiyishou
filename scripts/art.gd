@@ -78,7 +78,7 @@ static func house(ci: CanvasItem, kind: String) -> void:
 	ci.draw_texture(t, Vector2(-4, -t.get_height()))
 
 
-## 奇异兽立绘，原点在脚底中心（贴图底边往上 5 像素）。正面 64x64，背面 80x80。
+## 幻兽立绘，原点在脚底中心（贴图底边往上 5 像素）。正面 64x64，背面 80x80。
 static func monster(ci: CanvasItem, key: String, back := false, alpha := 1.0) -> void:
 	var t := tex("monsters/%s_%s" % [key, "back" if back else "front"])
 	var sz := t.get_size()
