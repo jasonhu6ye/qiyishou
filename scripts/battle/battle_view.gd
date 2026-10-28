@@ -102,24 +102,26 @@ func _fx(k: float, type: String, on_enemy: bool) -> void:
 	var source := (MY_FEET + Vector2(10, -40)) if on_enemy else (ENEMY_FEET + Vector2(-10, -20))
 	match type:
 		"火":
-			for i in 14:
+			for i in 22:
 				var life := fposmod(k * 1.6 + i * 0.137, 1.0)
-				var p := target + Vector2((i * 37 % 29) - 14 + sin(life * 9.0 + i) * 2.0, 14.0 - life * 34.0)
+				var p := target + Vector2((i * 37 % 37) - 18 + sin(life * 9.0 + i) * 3.0, 18.0 - life * 44.0)
 				var c: Color = cols[mini(2, int(life * 3.0))]
-				_dot(p, 4.0 - life * 3.0, c)
+				_dot(p, roundf(7.0 - life * 5.0), c)
+				if life < 0.4:
+					_dot(p + Vector2(0, -1), 2.0, cols[0])
 		"水":
 			var travel := minf(1.0, k / 0.55)
 			if k < 0.55:
 				for i in 6:
 					var q := clampf(travel - i * 0.06, 0.0, 1.0)
 					var p := source.lerp(target, q) + Vector2(0, -sin(q * PI) * 16.0 + (i % 2) * 2.0)
-					_dot(p, 3.0 if i % 2 == 0 else 2.0, cols[i % 3])
+					_dot(p, 5.0 if i % 2 == 0 else 3.0, cols[i % 3])
 			else:
 				var s := (k - 0.55) / 0.45
 				for i in 10:
 					var a := i * TAU / 10.0
 					var p := target + Vector2(cos(a), sin(a) * 0.7) * (4.0 + s * 18.0) + Vector2(0, s * s * 10.0)
-					_dot(p, 3.0 - s * 2.0, cols[i % 2])
+					_dot(p, roundf(4.0 - s * 2.0), cols[i % 2])
 		"草":
 			for i in 6:
 				var q := clampf(k * 1.4 - i * 0.08, 0.0, 1.0)
@@ -127,7 +129,7 @@ func _fx(k: float, type: String, on_enemy: bool) -> void:
 					continue
 				var spin := q * 10.0 + i
 				var p := source.lerp(target, q) + Vector2(cos(spin), sin(spin)) * (8.0 - q * 6.0)
-				_dot(p, 3.0, cols[1])
+				_dot(p, 4.0, cols[1])
 				_dot(p + Vector2(cos(spin * 2.0), sin(spin * 2.0)).round(), 1.0, cols[0])
 				_dot(p - Vector2(cos(spin * 2.0), sin(spin * 2.0)).round(), 1.0, cols[2])
 		"电":
@@ -147,7 +149,7 @@ func _fx(k: float, type: String, on_enemy: bool) -> void:
 			for i in 8:
 				var a := i * TAU / 8.0 + 0.4
 				var d := 4.0 + s * 16.0
-				_dot(target + Vector2(cos(a), sin(a)) * d, 3.0 - s * 2.0, cols[i % 2])
+				_dot(target + Vector2(cos(a), sin(a)) * d, roundf(5.0 - s * 3.0), cols[i % 2])
 			if s < 0.4:
 				_dot(target, 10.0 - s * 15.0, Color(1, 1, 1, 0.8))
 
