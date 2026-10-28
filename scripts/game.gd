@@ -4,6 +4,8 @@ extends Node
 const SAVE_PATH := "user://save.json"
 const PARTY_LIMIT := 6
 const START_CELL := Vector2i(9, 8)
+const FONT_PATH := "res://assets/fonts/fusion-pixel-12px.ttf"
+const FONT_SIZE := 12
 
 var party: Array[Monster] = []
 var box: Array[Monster] = []
@@ -17,6 +19,7 @@ var rng := RandomNumberGenerator.new()
 func _ready() -> void:
 	rng.randomize()
 	_setup_input()
+	_setup_theme()
 
 
 func _setup_input() -> void:
@@ -36,6 +39,46 @@ func _setup_input() -> void:
 			var ev := InputEventKey.new()
 			ev.physical_keycode = keycode
 			InputMap.action_add_event(action, ev)
+
+
+## 全局像素风主题：12px 像素字体（不抗锯齿）+ 扁平按钮
+func _setup_theme() -> void:
+	var font: FontFile = load(FONT_PATH)
+	font.antialiasing = TextServer.FONT_ANTIALIASING_NONE
+	font.hinting = TextServer.HINTING_NONE
+	font.subpixel_positioning = TextServer.SUBPIXEL_POSITIONING_DISABLED
+	ThemeDB.fallback_font = font
+	ThemeDB.fallback_font_size = FONT_SIZE
+
+	var theme := Theme.new()
+	theme.default_font = font
+	theme.default_font_size = FONT_SIZE
+	var normal := _flat_box(Color("#2a3160"), Color("#3d4580"))
+	theme.set_stylebox("normal", "Button", normal)
+	theme.set_stylebox("pressed", "Button", normal)
+	theme.set_stylebox("hover", "Button", _flat_box(Color("#333b74"), Color("#ffcd4d")))
+	theme.set_stylebox("disabled", "Button", _flat_box(Color("#22284d"), Color("#2c3260")))
+	var focus := _flat_box(Color(0, 0, 0, 0), Color("#ffcd4d"))
+	focus.draw_center = false
+	theme.set_stylebox("focus", "Button", focus)
+	theme.set_color("font_color", "Button", Color("#f1f2ff"))
+	theme.set_color("font_hover_color", "Button", Color("#ffffff"))
+	theme.set_color("font_focus_color", "Button", Color("#ffcd4d"))
+	theme.set_color("font_disabled_color", "Button", Color("#6b7099"))
+	theme.set_color("font_color", "Label", Color("#f1f2ff"))
+	get_tree().root.theme = theme
+
+
+func _flat_box(bg: Color, border: Color) -> StyleBoxFlat:
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = bg
+	sb.border_color = border
+	sb.set_border_width_all(1)
+	sb.content_margin_left = 5
+	sb.content_margin_right = 5
+	sb.content_margin_top = 2
+	sb.content_margin_bottom = 2
+	return sb
 
 
 func first_alive() -> Monster:

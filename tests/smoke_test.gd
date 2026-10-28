@@ -61,6 +61,9 @@ func _unit_checks() -> void:
 			check(false, "2号道路等级应在 5–9")
 			break
 
+	check(Art.tex("tiles") != null and Art.tex("tree") != null and Art.tex("player") != null, "像素图都能载入")
+	check(ThemeDB.fallback_font is FontFile, "像素字体已设为默认字体")
+
 	Game.reset()
 	Game.party.append(Monster.create("paowa", 7))
 	Game.balls = 3

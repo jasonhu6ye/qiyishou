@@ -20,7 +20,6 @@ var _duration := WALK_TIME
 
 func _ready() -> void:
 	var cam := Camera2D.new()
-	cam.zoom = Vector2(3, 3)
 	cam.offset = Vector2(0, -8)
 	cam.limit_left = 0
 	cam.limit_top = 0
@@ -93,9 +92,8 @@ func _draw() -> void:
 	var step := 0
 	if moving:
 		step = 1 if (steps + (1 if _progress > 0.5 else 0)) % 2 else 2
-	Art.person(self, dir, step, Color("#e04848"), Color("#2a2f5a"))
+	Art.character(self, "player", dir, step)
 	# 站在高草里时，在脚前补画一层草叶，看起来像被草挡住
 	var here := target if moving and _progress > 0.5 else cell
 	if world and world.tile_at(here) == World.TALL_GRASS:
-		for bx in [-7.0, -3.0, 1.0, 4.0]:
-			Art.poly(self, [Vector2(bx, 0), Vector2(bx + 2, -6), Vector2(bx + 3.5, 0)], Color("#3f9a3c"))
+		Art.tall_grass_front(self)
