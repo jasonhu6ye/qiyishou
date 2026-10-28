@@ -90,7 +90,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -192,7 +192,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -287,7 +287,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -378,7 +378,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -476,7 +476,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -567,7 +567,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -658,7 +658,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -756,7 +756,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -847,7 +847,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -936,7 +936,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -1032,7 +1032,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -1124,7 +1124,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -1221,7 +1221,7 @@
     "#a6b91a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -1325,7 +1325,7 @@
     "#a6b91a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -1422,7 +1422,7 @@
     "#a6b91a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -1517,7 +1517,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -1615,7 +1615,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -1712,7 +1712,7 @@
     "#6390f0",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -1813,7 +1813,7 @@
     "#6390f0",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -1904,7 +1904,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -2000,7 +2000,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -2096,7 +2096,7 @@
     "#6f35fc",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -2197,7 +2197,7 @@
     "#6f35fc",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -2293,7 +2293,7 @@
     "#6f35fc",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -2390,7 +2390,7 @@
     "#6f35fc",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -2495,7 +2495,7 @@
     "#6f35fc",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -2592,7 +2592,7 @@
     "#6f35fc",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -2689,7 +2689,7 @@
     "#b6a136",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -2793,7 +2793,7 @@
     "#b6a136",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -2890,7 +2890,7 @@
     "#b6a136",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -2987,7 +2987,7 @@
     "#b7b7ce",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -3091,7 +3091,7 @@
     "#b7b7ce",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -3191,7 +3191,7 @@
     "#b7b7ce",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -3288,7 +3288,7 @@
     "#6f35fc",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -3394,7 +3394,7 @@
     "#6f35fc",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -3494,7 +3494,7 @@
     "#6f35fc",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -3591,7 +3591,7 @@
     "#96d9d6",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -3696,7 +3696,7 @@
     "#96d9d6",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -3796,7 +3796,7 @@
     "#96d9d6",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -3885,7 +3885,7 @@
     "#7ac74c",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -3981,7 +3981,7 @@
     "#ee8130",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -4077,7 +4077,7 @@
     "#a98ff3",
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -4169,7 +4169,7 @@
     "#6390f0",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -4265,7 +4265,7 @@
     "#a33ea1",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -4361,7 +4361,7 @@
     "#e2bf65",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -4457,7 +4457,7 @@
     "#96d9d6",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -4549,7 +4549,7 @@
     "#b6a136",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -4641,7 +4641,7 @@
     "#6390f0",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -4733,7 +4733,7 @@
     "#f7d02c",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -4829,7 +4829,7 @@
     "#c22e28",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -4921,7 +4921,7 @@
     "#735797",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -5017,7 +5017,7 @@
     "#6f35fc",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -5113,7 +5113,7 @@
     "#d685ad",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -5209,7 +5209,7 @@
     "#7ac74c",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -5305,7 +5305,7 @@
     "#e2bf65",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -5403,7 +5403,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -5502,7 +5502,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -5602,7 +5602,7 @@
     "#735797",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -5703,7 +5703,7 @@
     "#735797",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -5800,7 +5800,7 @@
     "#a6b91a",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -5902,7 +5902,7 @@
     "#a6b91a",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -5999,7 +5999,7 @@
     "#6390f0",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -6103,7 +6103,7 @@
     "#6390f0",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -6197,7 +6197,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -6292,7 +6292,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -6386,7 +6386,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -6484,7 +6484,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -6575,7 +6575,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -6668,7 +6668,7 @@
     "#a98ff3",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -6770,7 +6770,7 @@
     "#a98ff3",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -6866,7 +6866,7 @@
     "#a98ff3",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -6961,7 +6961,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -7063,7 +7063,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -7158,7 +7158,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -7257,7 +7257,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -7344,7 +7344,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -7442,7 +7442,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -7543,7 +7543,7 @@
     "#735797",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -7643,7 +7643,7 @@
     "#735797",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -7741,7 +7741,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -7842,7 +7842,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -7937,7 +7937,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -8031,7 +8031,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -8132,7 +8132,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -8237,7 +8237,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -8334,7 +8334,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -8429,7 +8429,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -8528,7 +8528,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -8615,7 +8615,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -8709,7 +8709,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -8809,7 +8809,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -8908,7 +8908,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -8999,7 +8999,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -9097,7 +9097,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -9188,7 +9188,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -9281,7 +9281,7 @@
     "#6390f0",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -9380,7 +9380,7 @@
     "#6390f0",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -9475,7 +9475,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -9575,7 +9575,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -9669,7 +9669,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -9771,7 +9771,7 @@
     "#e2bf65",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -9871,7 +9871,7 @@
     "#e2bf65",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -9965,7 +9965,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -10064,7 +10064,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -10155,7 +10155,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -10246,7 +10246,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -10341,7 +10341,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -10438,7 +10438,7 @@
     "#6390f0",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -10544,7 +10544,7 @@
     "#6390f0",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -10641,7 +10641,7 @@
     "#6390f0",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -10728,7 +10728,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -10828,7 +10828,7 @@
     "#a6b91a",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -10929,7 +10929,7 @@
     "#a6b91a",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -11024,7 +11024,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -11124,7 +11124,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -11217,7 +11217,7 @@
     "#a98ff3",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -11313,7 +11313,7 @@
     "#b6a136",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -11407,7 +11407,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -11502,7 +11502,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -11598,7 +11598,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -11693,7 +11693,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -11789,7 +11789,7 @@
     "#96d9d6",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -11884,7 +11884,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -11980,7 +11980,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -12078,7 +12078,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -12178,7 +12178,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -12276,7 +12276,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -12379,7 +12379,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -12477,7 +12477,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -12577,7 +12577,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -12672,7 +12672,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -12771,7 +12771,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -12868,7 +12868,7 @@
     "#d685ad",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -12974,7 +12974,7 @@
     "#d685ad",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -13071,7 +13071,7 @@
     "#d685ad",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -13162,7 +13162,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -13256,7 +13256,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -13352,7 +13352,7 @@
     "#6f35fc",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -13447,7 +13447,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -13547,7 +13547,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -13638,7 +13638,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -13721,7 +13721,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -13819,7 +13819,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -13919,7 +13919,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -14010,7 +14010,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -14108,7 +14108,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -14202,7 +14202,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -14293,7 +14293,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -14391,7 +14391,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -14485,7 +14485,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -14580,7 +14580,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -14678,7 +14678,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -14771,7 +14771,7 @@
     "#6390f0",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -14873,7 +14873,7 @@
     "#6390f0",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -14966,7 +14966,7 @@
     "#6390f0",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -15057,7 +15057,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -15156,7 +15156,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -15259,7 +15259,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -15357,7 +15357,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -15454,7 +15454,7 @@
     "#6f35fc",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -15554,7 +15554,7 @@
     "#6f35fc",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -15651,7 +15651,7 @@
     "#ee8130",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -15752,7 +15752,7 @@
     "#ee8130",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -15845,7 +15845,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -15941,7 +15941,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -16034,7 +16034,7 @@
     "#6390f0",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -16137,7 +16137,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -16240,7 +16240,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -16335,7 +16335,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -16422,7 +16422,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -16516,7 +16516,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -16612,7 +16612,7 @@
     "#e2bf65",
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -16714,7 +16714,7 @@
     "#6390f0",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -16814,7 +16814,7 @@
     "#6390f0",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -16905,7 +16905,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -16999,7 +16999,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -17092,7 +17092,7 @@
     "#c22e28",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -17193,7 +17193,7 @@
     "#c22e28",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -17286,7 +17286,7 @@
     "#c22e28",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -17373,7 +17373,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -17474,7 +17474,7 @@
     "#6390f0",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -17581,7 +17581,7 @@
     "#6390f0",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -17678,7 +17678,7 @@
     "#6390f0",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -17773,7 +17773,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -17875,7 +17875,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -17973,7 +17973,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -18065,7 +18065,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -18163,7 +18163,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -18257,7 +18257,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -18348,7 +18348,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -18447,7 +18447,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -18538,7 +18538,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -18635,7 +18635,7 @@
     "#c22e28",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -18736,7 +18736,7 @@
     "#c22e28",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -18829,7 +18829,7 @@
     "#d685ad",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -18925,7 +18925,7 @@
     "#d685ad",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -19018,7 +19018,7 @@
     "#735797",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -19118,7 +19118,7 @@
     "#735797",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -19214,7 +19214,7 @@
     "#735797",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -19307,7 +19307,7 @@
     "#c22e28",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -19407,7 +19407,7 @@
     "#705746",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -19507,7 +19507,7 @@
     "#705746",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -19603,7 +19603,7 @@
     "#b7b7ce",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -19703,7 +19703,7 @@
     "#b7b7ce",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -19799,7 +19799,7 @@
     "#b7b7ce",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -19894,7 +19894,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -19997,7 +19997,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -20087,7 +20087,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -20188,7 +20188,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -20291,7 +20291,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -20389,7 +20389,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -20482,7 +20482,7 @@
     "#c22e28",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -20582,7 +20582,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -20684,7 +20684,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -20779,7 +20779,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -20874,7 +20874,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -20978,7 +20978,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -21073,7 +21073,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -21168,7 +21168,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -21268,7 +21268,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -21363,7 +21363,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -21465,7 +21465,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -21563,7 +21563,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -21658,7 +21658,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -21758,7 +21758,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -21852,7 +21852,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -21946,7 +21946,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -22046,7 +22046,7 @@
     "#ee8130",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -22147,7 +22147,7 @@
     "#ee8130",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -22243,7 +22243,7 @@
     "#b6a136",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -22341,7 +22341,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -22440,7 +22440,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -22531,7 +22531,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -22632,7 +22632,7 @@
     "#6f35fc",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -22732,7 +22732,7 @@
     "#6f35fc",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -22829,7 +22829,7 @@
     "#a33ea1",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -22935,7 +22935,7 @@
     "#a33ea1",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -23032,7 +23032,7 @@
     "#a33ea1",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -23129,7 +23129,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -23234,7 +23234,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -23334,7 +23334,7 @@
     "#a6b91a",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -23425,7 +23425,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -23517,7 +23517,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -23608,7 +23608,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -23701,7 +23701,7 @@
     "#ee8130",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -23802,7 +23802,7 @@
     "#ee8130",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -23898,7 +23898,7 @@
     "#ee8130",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -23989,7 +23989,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -24088,7 +24088,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -24186,7 +24186,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -24276,7 +24276,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -24367,7 +24367,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -24463,7 +24463,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -24561,7 +24561,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -24652,7 +24652,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -24743,7 +24743,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -24837,7 +24837,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -24924,7 +24924,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -25024,7 +25024,7 @@
     "#96d9d6",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -25124,7 +25124,7 @@
     "#96d9d6",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -25221,7 +25221,7 @@
     "#b6a136",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -25323,7 +25323,7 @@
     "#b6a136",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -25417,7 +25417,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -25512,7 +25512,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -25608,7 +25608,7 @@
     "#e2bf65",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -25707,7 +25707,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -25811,7 +25811,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -25906,7 +25906,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -25997,7 +25997,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -26092,7 +26092,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -26185,7 +26185,7 @@
     "#f7d02c",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -26281,7 +26281,7 @@
     "#f7d02c",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -26371,7 +26371,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -26467,7 +26467,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -26554,7 +26554,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -26651,7 +26651,7 @@
     "#705746",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -26754,7 +26754,7 @@
     "#705746",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -26847,7 +26847,7 @@
     "#b6a136",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -26941,7 +26941,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -27039,7 +27039,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -27130,7 +27130,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -27225,7 +27225,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -27327,7 +27327,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -27425,7 +27425,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -27516,7 +27516,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -27617,7 +27617,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -27708,7 +27708,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -27803,7 +27803,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -27905,7 +27905,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -28003,7 +28003,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -28098,7 +28098,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -28200,7 +28200,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -28298,7 +28298,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -28387,7 +28387,7 @@
     "#a8a77a",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -28483,7 +28483,7 @@
     "#735797",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -28577,7 +28577,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -28671,7 +28671,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -28765,7 +28765,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -28864,7 +28864,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -28955,7 +28955,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -29046,7 +29046,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -29145,7 +29145,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -29236,7 +29236,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -29331,7 +29331,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -29430,7 +29430,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -29523,7 +29523,7 @@
     "#b7b7ce",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -29623,7 +29623,7 @@
     "#6390f0",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -29725,7 +29725,7 @@
     "#6390f0",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -29822,7 +29822,7 @@
     "#b7b7ce",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -29923,7 +29923,7 @@
     "#b7b7ce",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -30018,7 +30018,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -30121,7 +30121,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -30219,7 +30219,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -30314,7 +30314,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -30414,7 +30414,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -30512,7 +30512,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -30616,7 +30616,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -30714,7 +30714,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -30807,7 +30807,7 @@
     "#f7d02c",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -30903,7 +30903,7 @@
     "#f7d02c",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -31000,7 +31000,7 @@
     "#d685ad",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -31105,7 +31105,7 @@
     "#d685ad",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -31205,7 +31205,7 @@
     "#d685ad",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -31300,7 +31300,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -31399,7 +31399,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -31499,7 +31499,7 @@
     "#b7b7ce",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -31599,7 +31599,7 @@
     "#b7b7ce",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -31690,7 +31690,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -31789,7 +31789,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -31880,7 +31880,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -31971,7 +31971,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -32066,7 +32066,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -32163,7 +32163,7 @@
     "#a6b91a",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -32263,7 +32263,7 @@
     "#a6b91a",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -32363,7 +32363,7 @@
     "#d685ad",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -32463,7 +32463,7 @@
     "#d685ad",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -32557,7 +32557,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -32656,7 +32656,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -32747,7 +32747,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -32838,7 +32838,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -32935,7 +32935,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -33029,7 +33029,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -33124,7 +33124,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -33218,7 +33218,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -33316,7 +33316,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -33407,7 +33407,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -33500,7 +33500,7 @@
     "#b6a136",
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -33596,7 +33596,7 @@
     "#b6a136",
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -33690,7 +33690,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -33788,7 +33788,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -33879,7 +33879,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -33976,7 +33976,7 @@
     "#b7b7ce",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -34077,7 +34077,7 @@
     "#b7b7ce",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -34168,7 +34168,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -34266,7 +34266,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -34357,7 +34357,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -34440,7 +34440,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -34532,7 +34532,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -34618,7 +34618,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -34709,7 +34709,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -34805,7 +34805,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -34905,7 +34905,7 @@
     "#6390f0",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -35007,7 +35007,7 @@
     "#6390f0",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -35099,7 +35099,7 @@
     "#a8a77a",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -35197,7 +35197,7 @@
     "#a8a77a",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -35289,7 +35289,7 @@
     "#a8a77a",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -35386,7 +35386,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -35490,7 +35490,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -35587,7 +35587,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -35684,7 +35684,7 @@
     "#a33ea1",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -35791,7 +35791,7 @@
     "#a33ea1",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -35888,7 +35888,7 @@
     "#a33ea1",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -35983,7 +35983,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -36081,7 +36081,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -36174,7 +36174,7 @@
     "#f95587",
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -36274,7 +36274,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -36379,7 +36379,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -36479,7 +36479,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -36570,7 +36570,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -36669,7 +36669,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -36763,7 +36763,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -36858,7 +36858,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -36960,7 +36960,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -37055,7 +37055,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -37152,7 +37152,7 @@
     "#7ac74c",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -37258,7 +37258,7 @@
     "#7ac74c",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -37355,7 +37355,7 @@
     "#7ac74c",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -37448,7 +37448,7 @@
     "#d685ad",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -37550,7 +37550,7 @@
     "#d685ad",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -37643,7 +37643,7 @@
     "#d685ad",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -37734,7 +37734,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -37829,7 +37829,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -37923,7 +37923,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -38025,7 +38025,7 @@
     "#7ac74c",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -38131,7 +38131,7 @@
     "#7ac74c",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -38228,7 +38228,7 @@
     "#7ac74c",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -38325,7 +38325,7 @@
     "#6f35fc",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -38430,7 +38430,7 @@
     "#6f35fc",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -38527,7 +38527,7 @@
     "#6f35fc",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -38624,7 +38624,7 @@
     "#b6a136",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -38728,7 +38728,7 @@
     "#b6a136",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -38828,7 +38828,7 @@
     "#b6a136",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -38921,7 +38921,7 @@
     "#a6b91a",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -39022,7 +39022,7 @@
     "#a6b91a",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -39118,7 +39118,7 @@
     "#a6b91a",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -39213,7 +39213,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -39315,7 +39315,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -39410,7 +39410,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -39505,7 +39505,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -39605,7 +39605,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -39698,7 +39698,7 @@
     "#e2bf65",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -39799,7 +39799,7 @@
     "#e2bf65",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -39895,7 +39895,7 @@
     "#e2bf65",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -39990,7 +39990,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -40089,7 +40089,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -40180,7 +40180,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -40279,7 +40279,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -40373,7 +40373,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -40464,7 +40464,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -40562,7 +40562,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -40653,7 +40653,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -40740,7 +40740,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -40833,7 +40833,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -40926,7 +40926,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -41020,7 +41020,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -41112,7 +41112,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -41209,7 +41209,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -41298,7 +41298,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -41395,7 +41395,7 @@
     "#b6a136",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -41496,7 +41496,7 @@
     "#b6a136",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -41594,7 +41594,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -41692,7 +41692,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -41789,7 +41789,7 @@
     "#d685ad",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -41893,7 +41893,7 @@
     "#d685ad",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -41990,7 +41990,7 @@
     "#d685ad",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -42081,7 +42081,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -42181,7 +42181,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -42275,7 +42275,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -42372,7 +42372,7 @@
     "#a98ff3",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -42473,7 +42473,7 @@
     "#a98ff3",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -42560,7 +42560,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -42655,7 +42655,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -42753,7 +42753,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -42853,7 +42853,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -42950,7 +42950,7 @@
     "#a6b91a",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -43056,7 +43056,7 @@
     "#a6b91a",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -43156,7 +43156,7 @@
     "#a6b91a",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -43253,7 +43253,7 @@
     "#705746",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -43359,7 +43359,7 @@
     "#705746",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -43456,7 +43456,7 @@
     "#705746",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -43547,7 +43547,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -43643,7 +43643,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -43741,7 +43741,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -43832,7 +43832,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -43923,7 +43923,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -44023,7 +44023,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -44117,7 +44117,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -44212,7 +44212,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -44314,7 +44314,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -44409,7 +44409,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -44506,7 +44506,7 @@
     "#6390f0",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -44607,7 +44607,7 @@
     "#6390f0",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -44698,7 +44698,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -44800,7 +44800,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -44907,7 +44907,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -45004,7 +45004,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -45099,7 +45099,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -45199,7 +45199,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -45291,7 +45291,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -45389,7 +45389,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -45480,7 +45480,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -45573,7 +45573,7 @@
     "#ee8130",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -45671,7 +45671,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -45775,7 +45775,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -45873,7 +45873,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -45966,7 +45966,7 @@
     "#b6a136",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -46062,7 +46062,7 @@
     "#b6a136",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -46151,7 +46151,7 @@
     "#a8a77a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -46248,7 +46248,7 @@
     "#a8a77a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -46337,7 +46337,7 @@
     "#a8a77a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -46428,7 +46428,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -46524,7 +46524,7 @@
     "#a8a77a",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -46622,7 +46622,7 @@
     "#a8a77a",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -46716,7 +46716,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -46812,7 +46812,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -46907,7 +46907,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -47011,7 +47011,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -47106,7 +47106,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -47195,7 +47195,7 @@
     "#6390f0",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -47287,7 +47287,7 @@
     "#6390f0",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -47378,7 +47378,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -47468,7 +47468,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -47568,7 +47568,7 @@
     "#a98ff3",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -47669,7 +47669,7 @@
     "#a98ff3",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -47767,7 +47767,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -47867,7 +47867,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -47964,7 +47964,7 @@
     "#96d9d6",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -48065,7 +48065,7 @@
     "#96d9d6",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -48160,7 +48160,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -48260,7 +48260,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -48357,7 +48357,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -48459,7 +48459,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -48553,7 +48553,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -48649,7 +48649,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -48746,7 +48746,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -48846,7 +48846,7 @@
     "#6390f0",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -48944,7 +48944,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -49046,7 +49046,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -49141,7 +49141,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -49238,7 +49238,7 @@
     "#ee8130",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -49338,7 +49338,7 @@
     "#ee8130",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -49425,7 +49425,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -49519,7 +49519,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -49606,7 +49606,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -49697,7 +49697,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -49794,7 +49794,7 @@
     "#b7b7ce",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -49892,7 +49892,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -49991,7 +49991,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -50078,7 +50078,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -50178,7 +50178,7 @@
     "#a98ff3",
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -50283,7 +50283,7 @@
     "#a98ff3",
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -50380,7 +50380,7 @@
     "#a98ff3",
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -50478,7 +50478,7 @@
     "#6390f0",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -50580,7 +50580,7 @@
     "#6390f0",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -50676,7 +50676,7 @@
     "#ee8130",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -50773,7 +50773,7 @@
     "#ee8130",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -50873,7 +50873,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -50978,7 +50978,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -51075,7 +51075,7 @@
     "#a6b91a",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -51172,7 +51172,7 @@
     "#c22e28",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -51272,7 +51272,7 @@
     "#c22e28",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -51372,7 +51372,7 @@
     "#6390f0",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -51478,7 +51478,7 @@
     "#6390f0",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -51575,7 +51575,7 @@
     "#6390f0",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -51666,7 +51666,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -51766,7 +51766,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -51857,7 +51857,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -51948,7 +51948,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -52043,7 +52043,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -52137,7 +52137,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -52234,7 +52234,7 @@
     "#a33ea1",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -52330,7 +52330,7 @@
     "#a33ea1",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -52425,7 +52425,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -52528,7 +52528,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -52623,7 +52623,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -52712,7 +52712,7 @@
     "#a8a77a",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -52810,7 +52810,7 @@
     "#a8a77a",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -52899,7 +52899,7 @@
     "#a8a77a",
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -52990,7 +52990,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -53085,7 +53085,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -53182,7 +53182,7 @@
     "#6f35fc",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -53284,7 +53284,7 @@
     "#6f35fc",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -53380,7 +53380,7 @@
     "#6390f0",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -53472,7 +53472,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -53568,7 +53568,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -53657,7 +53657,7 @@
     "#a8a77a",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -53748,7 +53748,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -53846,7 +53846,7 @@
     "#d685ad",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -53942,7 +53942,7 @@
     "#e2bf65",
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -54031,7 +54031,7 @@
     "#6390f0",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -54132,7 +54132,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -54232,7 +54232,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -54326,7 +54326,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -54427,7 +54427,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -54518,7 +54518,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -54609,7 +54609,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -54705,7 +54705,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -54802,7 +54802,7 @@
     "#b6a136",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -54906,7 +54906,7 @@
     "#b6a136",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -55003,7 +55003,7 @@
     "#b6a136",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -55094,7 +55094,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -55192,7 +55192,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -55290,7 +55290,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -55384,7 +55384,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -55480,7 +55480,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -55570,7 +55570,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -55664,7 +55664,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -55758,7 +55758,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -55848,7 +55848,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -55940,7 +55940,7 @@
     "#b7b7ce",
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -56034,7 +56034,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -56133,7 +56133,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -56224,7 +56224,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -56319,7 +56319,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -56422,7 +56422,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -56520,7 +56520,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -56611,7 +56611,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -56706,7 +56706,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -56802,7 +56802,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -56903,7 +56903,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -56999,7 +56999,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -57090,7 +57090,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -57185,7 +57185,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -57285,7 +57285,7 @@
     "#705746",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -57392,7 +57392,7 @@
     "#705746",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -57489,7 +57489,7 @@
     "#705746",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -57578,7 +57578,7 @@
     "#e2bf65",
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -57680,7 +57680,7 @@
     "#ee8130",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -57781,7 +57781,7 @@
     "#ee8130",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -57875,7 +57875,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -57969,7 +57969,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉"
  },
@@ -58066,7 +58066,7 @@
     "#ee8130",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -58171,7 +58171,7 @@
     "#ee8130",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -58271,7 +58271,7 @@
     "#ee8130",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -58358,7 +58358,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -58451,7 +58451,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -58544,7 +58544,7 @@
     "#a8a77a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -58642,7 +58642,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -58742,7 +58742,7 @@
    "colors": [
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -58836,7 +58836,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -58938,7 +58938,7 @@
     "#6390f0",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -59040,7 +59040,7 @@
     "#6390f0",
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -59131,7 +59131,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -59231,7 +59231,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -59330,7 +59330,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -59425,7 +59425,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -59523,7 +59523,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -59613,7 +59613,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -59709,7 +59709,7 @@
     "#b7b7ce",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -59809,7 +59809,7 @@
     "#b7b7ce",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -59902,7 +59902,7 @@
     "#b7b7ce",
     "#d685ad"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -59993,7 +59993,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -60089,7 +60089,7 @@
     "#a6b91a",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -60186,7 +60186,7 @@
     "#a6b91a",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -60277,7 +60277,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -60376,7 +60376,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -60470,7 +60470,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -60565,7 +60565,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -60668,7 +60668,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -60763,7 +60763,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -60860,7 +60860,7 @@
     "#e2bf65",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -60960,7 +60960,7 @@
     "#e2bf65",
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -61054,7 +61054,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -61149,7 +61149,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -61248,7 +61248,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -61342,7 +61342,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -61437,7 +61437,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -61541,7 +61541,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -61636,7 +61636,7 @@
    "colors": [
     "#6390f0"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -61733,7 +61733,7 @@
     "#f95587",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -61834,7 +61834,7 @@
     "#f95587",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -61925,7 +61925,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -62020,7 +62020,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -62116,7 +62116,7 @@
     "#d685ad",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -62214,7 +62214,7 @@
     "#d685ad",
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -62312,7 +62312,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -62415,7 +62415,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -62513,7 +62513,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -62600,7 +62600,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -62695,7 +62695,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -62785,7 +62785,7 @@
    "colors": [
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -62882,7 +62882,7 @@
     "#e2bf65",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -62982,7 +62982,7 @@
     "#e2bf65",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -63076,7 +63076,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -63171,7 +63171,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -63262,7 +63262,7 @@
    "colors": [
     "#c22e28"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -63358,7 +63358,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -63453,7 +63453,7 @@
    "colors": [
     "#6f35fc"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -63544,7 +63544,7 @@
    "colors": [
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -63643,7 +63643,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -63746,7 +63746,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -63841,7 +63841,7 @@
    "colors": [
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -63937,7 +63937,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -64036,7 +64036,7 @@
    "colors": [
     "#a6b91a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林"
  },
@@ -64127,7 +64127,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -64222,7 +64222,7 @@
    "colors": [
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -64311,7 +64311,7 @@
     "#a8a77a",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -64405,7 +64405,7 @@
     "#a8a77a",
     "#b7b7ce"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -64495,7 +64495,7 @@
    "colors": [
     "#e2bf65"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -64595,7 +64595,7 @@
     "#a6b91a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -64699,7 +64699,7 @@
     "#a6b91a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -64799,7 +64799,7 @@
     "#a6b91a",
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -64892,7 +64892,7 @@
     "#c22e28",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -64989,7 +64989,7 @@
     "#c22e28",
     "#a33ea1"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -65083,7 +65083,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -65182,7 +65182,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -65273,7 +65273,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -65364,7 +65364,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -65464,7 +65464,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -65558,7 +65558,7 @@
    "colors": [
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -65653,7 +65653,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -65755,7 +65755,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -65850,7 +65850,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -65939,7 +65939,7 @@
     "#a98ff3",
     "#a8a77a"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "深翠森林",
   "spawns": [
@@ -66033,7 +66033,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -66133,7 +66133,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -66231,7 +66231,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸"
  },
@@ -66322,7 +66322,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -66420,7 +66420,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -66511,7 +66511,7 @@
    "colors": [
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -66606,7 +66606,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山",
   "spawns": [
@@ -66705,7 +66705,7 @@
    "colors": [
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "赤炎火山"
  },
@@ -66800,7 +66800,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼",
   "spawns": [
@@ -66904,7 +66904,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -66999,7 +66999,7 @@
    "colors": [
     "#735797"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "雾沼"
  },
@@ -67094,7 +67094,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区",
   "spawns": [
@@ -67193,7 +67193,7 @@
    "colors": [
     "#f95587"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "碧镜湖区"
  },
@@ -67290,7 +67290,7 @@
     "#b7b7ce",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭",
   "spawns": [
@@ -67390,7 +67390,7 @@
     "#b7b7ce",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "霜岭"
  },
@@ -67483,7 +67483,7 @@
     "#a98ff3",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -67580,7 +67580,7 @@
     "#a98ff3",
     "#ee8130"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -67678,7 +67678,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -67781,7 +67781,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -67879,7 +67879,7 @@
    "colors": [
     "#f7d02c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -67977,7 +67977,7 @@
     "#ee8130",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -68081,7 +68081,7 @@
     "#ee8130",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -68181,7 +68181,7 @@
     "#ee8130",
     "#a98ff3"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -68278,7 +68278,7 @@
     "#b6a136",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -68379,7 +68379,7 @@
     "#b6a136",
     "#96d9d6"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "蔚蓝海岸",
   "spawns": [
@@ -68473,7 +68473,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠",
   "spawns": [
@@ -68570,7 +68570,7 @@
    "colors": [
     "#705746"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "金沙荒漠"
  },
@@ -68665,7 +68665,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原",
   "spawns": [
@@ -68769,7 +68769,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -68864,7 +68864,7 @@
    "colors": [
     "#7ac74c"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "翠原"
  },
@@ -68961,7 +68961,7 @@
     "#e2bf65",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [
@@ -69061,7 +69061,7 @@
     "#e2bf65",
     "#b6a136"
    ],
-   "frames": 4
+   "frames": 24
   },
   "home": "苍岩山脉",
   "spawns": [

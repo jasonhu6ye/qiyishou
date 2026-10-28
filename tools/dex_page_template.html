@@ -51,10 +51,12 @@ button:focus-visible, input:focus-visible, select:focus-visible, .row:focus-visi
 .nm { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
 .bst { font-family: var(--mono); text-align: right }
 .home { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
-.sprite { width: 36px; height: 36px; image-rendering: pixelated }
+.sprite { width: 44px; height: 44px; image-rendering: pixelated }
 .detail { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 14px; min-width: 0; max-height: calc(100vh - 24px); overflow-y: auto }
-.dtop { display: flex; gap: 14px; align-items: center }
-.dtop canvas { width: 96px; height: 96px; image-rendering: pixelated; background: var(--hi); border-radius: 6px; flex: none }
+.dtop { display: flex; flex-wrap: wrap; gap: 14px; align-items: center }
+.pics { display: flex; gap: 6px; align-items: flex-end; flex: none }
+.dtop canvas { width: 144px; height: 144px; image-rendering: pixelated; background: var(--hi); border-radius: 6px }
+.dtop #back { width: 72px; height: 72px; opacity: .9 }
 .dname { font-family: var(--display); font-size: 30px; line-height: 1.1 }
 .meta { color: var(--muted); font-size: 12px }
 h3 { font-size: 12px; letter-spacing: .08em; color: var(--muted); margin: 0 0 6px; font-weight: 500 }
@@ -156,39 +158,19 @@ $("counts").innerHTML = [[S.length, "只幻兽"], [new Set(S.map(s => s.line)).s
   [Object.keys(D.abilities).length, "个特性"], [Object.keys(D.spawns).length, "个刷新地点"]]
   .map(([n, l]) => `<div><b>${n}</b><span>${l}</span></div>`).join("");
 
-// ---------------------------------------------------------------- 占位立绘：按身体结构和属性色画一个 16x16 的像素剪影
-function hashStr(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619) } return h >>> 0 }
-const SHAPES = {
-  "四足": ["................", "................", "..##........##..", "..###......###..", "...##########...", "..############..", "..##.#####.###..", "..############..", "...##########...", "....########....", "...##########.##", "...##########.#.", "...###....###...", "...##......##...", "...##......##...", "................"],
-  "鸟形": ["................", "................", "......####......", ".....######.....", ".....#.##.#.....", ".....######.##..", "......####.##...", "..##########....", ".#############..", "..###########...", "....########....", ".....######.....", "......#..#......", ".....##..##.....", "................", "................"],
-  "鱼形": ["................", "................", "................", "......####......", "....########....", "...##########..#", "..###.########.#", "..############.#", "..############.#", "...##########..#", "....########....", "......####......", "................", "................", "................", "................"],
-  "蛇形": ["................", "................", "..####..........", ".######.........", ".#.##.##........", ".######.........", "..#####.........", "...####..####...", "....##########..", ".....###...####.", "...........####.", "..#######.####..", ".############...", "..#########.....", "................", "................"],
-  "龙形": ["................", "..#.......#.....", "..##.....##.....", "...#######......", "..#.##.###......", "..########...##.", "...######...###.", "##.########.##..", "############....", ".###########....", "...##########...", "...##########...", "....###..###....", "....##....##....", "...###...###....", "................"],
-  "虫形": ["................", "................", "....#....#......", ".....#..#.......", "....######......", "...#.####.#.....", "...########.....", "....######......", "..#.######.#....", ".#.########.#...", "...########.....", "..#.######.#....", ".#..######..#...", "....######......", ".....####.......", "................"],
-  "蝶形": ["................", "................", "......#..#......", ".......##.......", ".####..##..####.", "######.##.######", "######.##.######", ".#####.##.#####.", "..####.##.####..", "..#####..#####..", ".######..######.", ".#####....#####.", "..###......###..", "................", "................", "................"],
-  "两栖": ["................", "................", "................", "...##.....##....", "..####...####...", "..#.##...#.##...", "..############..", ".##############.", ".##############.", ".###..####..###.", "..############..", "...##########...", "..###......###..", ".####......####.", "................", "................"],
-  "甲壳": ["................", "................", ".##..........##.", "##.#........#.##", "##.#........#.##", ".###..#..#..###.", "..##..#..#..##..", "...##########...", "..############..", ".##############.", ".##############.", "..############..", "..#.#.#..#.#.#..", ".#..#..##..#..#.", "................", "................"],
-  "浮游": ["................", "................", ".....######.....", "...##########...", "..############..", "..###.####.###..", "..############..", "..############..", "...##########...", "....########....", "....#.#..#.#....", "...#..#..#..#...", "....#.#..#.#....", "...#..#..#..#...", "................", "................"],
-  "植物": ["................", "....##....##....", "...####..####...", "...####..####...", "....###..###....", "......####......", ".....######.....", "....########....", "....#.####.#....", "....########....", ".....######.....", "......####......", "..#....##....#..", "...##..##..##...", "....########....", "................"],
-  "人形": ["................", "......####......", ".....######.....", ".....#.##.#.....", ".....######.....", "......####......", "...##########...", "..############..", "..##.######.##..", "..##.######.##..", "....########....", "....###..###....", "....###..###....", "....##....##....", "...###....###...", "................"],
-  "飞膜": ["................", "................", "................", "#......##......#", "##....####....##", "###..#.##.#..###", "####.######.####", "################", ".##############.", "..###.####.###..", "...#..####..#...", "......#..#......", "................", "................", "................", "................"],
-};
-function shade(hex, f) { const n = parseInt(hex.slice(1), 16); let r = n >> 16, g = (n >> 8) & 255, b = n & 255;
-  r = Math.min(255, Math.max(0, Math.round(r * f))); g = Math.min(255, Math.max(0, Math.round(g * f))); b = Math.min(255, Math.max(0, Math.round(b * f)));
-  return `rgb(${r},${g},${b})` }
-function drawSprite(cv, s, frame = 0) {
-  const ctx = cv.getContext("2d"); ctx.clearRect(0, 0, 16, 16);
-  const shape = SHAPES[s.model.body] || SHAPES["四足"], c1 = s.model.colors[0], c2 = s.model.colors[1] || c1;
-  const h = hashStr(s.name), bob = frame % 2;
-  for (let y = 0; y < 16; y++) for (let x = 0; x < 16; x++) {
-    if (shape[y][x] !== "#") continue;
-    const edge = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => (shape[y + dy] || "")[x + dx] !== "#");
-    const spot = ((h >> ((x * 3 + y * 5) % 24)) & 7) === 0 && !edge;
-    ctx.fillStyle = edge ? shade(c1, .45) : spot ? shade(c2, 1) : (y < 7 ? shade(c1, 1.15) : shade(c1, .92));
-    ctx.fillRect(x, y + (y < 10 ? bob : 0) * 0, 1, 1);
-  }
-  // 眼睛
-  ctx.fillStyle = "#111"; const ey = shape.findIndex(r => r.includes("#.")); if (ey >= 0) { const ex = shape[ey].indexOf("#.") + 1; ctx.fillRect(ex, ey + bob, 1, 1) }
+// ---------------------------------------------------------------- 立绘：tools/gen_species_art.py 渲染，build_dex_page.py 拼成图集
+// 正面：每张图集 180 只，一只一行，24 帧横排，每帧 72x72；背面：一张图集，24 列，每格 96x96
+const PER = 180, FW = 72, NF = 24, BW = 96, idxOf = Object.fromEntries(S.map((s, i) => [s.key, i]));
+const atlas = n => { atlas.c ||= {}; if (!atlas.c[n]) { const im = new Image(); im.src = n; atlas.c[n] = new Promise(r => { im.onload = () => r(im); im.onerror = () => r(null) }) } return atlas.c[n] };
+const frontSheet = i => atlas(`atlas/front${Math.floor(i / PER)}.webp`);
+function drawSprite(cv, s, frame = 0, back = false) {
+  const i = idxOf[s.key], ctx = cv.getContext("2d");
+  (back ? atlas("atlas/back.webp") : frontSheet(i)).then(im => {
+    if (!im || !cv.isConnected) return;
+    ctx.imageSmoothingEnabled = false; ctx.clearRect(0, 0, cv.width, cv.height);
+    if (back) ctx.drawImage(im, (i % 24) * BW, Math.floor(i / 24) * BW, BW, BW, 0, 0, cv.width, cv.height);
+    else ctx.drawImage(im, frame * FW, (i % PER) * FW, FW, FW, 0, 0, cv.width, cv.height);
+  });
 }
 
 // ---------------------------------------------------------------- 图鉴
@@ -214,7 +196,7 @@ function renderList() {
   const k = $("sort").value;
   if (k === "bst") list.sort((a, b) => b.bst - a.bst); else if (k === "spe") list.sort((a, b) => b.base.spe - a.base.spe);
   $("rows").innerHTML = list.map(s => `<div class="row" tabindex="0" data-k="${s.key}" aria-current="${s.key === current}">
-    <span class="no">#${String(s.dex).padStart(3, "0")}</span><canvas class="sprite" width="16" height="16" data-k="${s.key}"></canvas>
+    <span class="no">#${String(s.dex).padStart(3, "0")}</span><canvas class="sprite" width="72" height="72" data-k="${s.key}"></canvas>
     <span class="nm">${esc(s.name)}</span><span>${s.types.map(badge).join(" ")}</span><span class="bst">${s.bst}</span><span class="home">${esc(s.home)}</span></div>`).join("")
     || `<p style="padding:12px" class="note">没有符合条件的幻兽。换个关键词或取消属性筛选试试。</p>`;
   $("rows").querySelectorAll("canvas").forEach(cv => drawSprite(cv, byKey[cv.dataset.k]));
@@ -235,7 +217,7 @@ function show(key) {
   const moves = s.learnset.map(([lv, n]) => { const m = D.moves[n] || {}; return `<tr><td class="mono">${lv}</td><td>${esc(n)}</td><td>${m.type ? badge(m.type) : ""}</td><td>${esc(m.category || "")}</td><td class="mono">${m.power || "—"}</td><td class="mono">${m.accuracy || ""}</td><td>${esc(m.effect || "")}</td></tr>` }).join("");
   const ab = n => `<div class="ab"><b>${esc(n)}</b><p>${esc((D.abilities[n] || {}).effect || "")}</p></div>`;
   $("detail").innerHTML = `
-    <div class="dtop"><canvas id="big" width="16" height="16"></canvas><div>
+    <div class="dtop"><div class="pics"><canvas id="big" width="72" height="72"></canvas><canvas id="back" width="96" height="96" title="背面"></canvas></div><div>
       <div class="meta mono">#${String(s.dex).padStart(3, "0")} · ${esc(s.category)}</div>
       <div class="dname">${esc(s.name)}</div>
       <div>${s.types.map(badge).join(" ")}</div></div></div>
@@ -249,9 +231,10 @@ function show(key) {
       <dt>动态模型</dt><dd>${esc(s.model.body)} · ${esc(s.model.size)}型 · 待机 ${s.model.frames} 帧<br><span class="meta">${esc(s.model.idle)}</span></dd></dl>
     <div><h3>升级招式</h3><div class="scroll"><table><thead><tr><th>等级</th><th>招式</th><th>属性</th><th>分类</th><th>威力</th><th>命中</th><th>效果</th></tr></thead><tbody>${moves}</tbody></table></div></div>`;
   $("detail").querySelectorAll(".evo button").forEach(b => b.addEventListener("click", () => show(b.dataset.k)));
-  const big = $("big"); let f = 0; drawSprite(big, s, 0);
+  const big = $("big"); let f = 0; drawSprite(big, s, 0); drawSprite($("back"), s, 0, true);
   clearInterval(animTimer);
-  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) animTimer = setInterval(() => { f++; big.style.transform = `translateY(${f % 2 ? -2 : 0}px)` }, 450);
+  // 24 帧待机动画，每秒 12 帧，一个循环 2 秒
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) animTimer = setInterval(() => { f = (f + 1) % NF; drawSprite(big, s, f) }, 1000 / 12);
 }
 
 // ---------------------------------------------------------------- 刷新地点
