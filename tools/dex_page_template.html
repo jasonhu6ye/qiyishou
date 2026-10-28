@@ -1,0 +1,288 @@
+<title>奈尔斯幻兽图鉴</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* 布局：顶部标题和分页签；图鉴页左侧可筛选的名录，右侧粘性详情卡（窄屏时详情在名录上方） */
+:root {
+  --bg: #f3f1ea; --panel: #fffdf7; --ink: #1f2a2e; --muted: #66706f; --line: #d9d4c4;
+  --accent: #2f6f5e; --accent-ink: #ffffff; --hi: #e9e3cf; --bar: #2f6f5e; --shadow: 0 1px 0 #d9d4c4;
+  --display: "ZCOOL QingKe HuangYou", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #161c1d; --panel: #1e2627; --ink: #e6ebe7; --muted: #9aa7a3; --line: #33403f;
+  --accent: #6cc3a6; --accent-ink: #0f1514; --hi: #263233; --bar: #6cc3a6; --shadow: 0 1px 0 #33403f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #161c1d; --panel: #1e2627; --ink: #e6ebe7; --muted: #9aa7a3; --line: #33403f;
+  --accent: #6cc3a6; --accent-ink: #0f1514; --hi: #263233; --bar: #6cc3a6; --shadow: 0 1px 0 #33403f; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 14px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 40px }
+.wrap { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 8px 24px }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(30px, 5vw, 44px); line-height: 1; margin: 0; letter-spacing: .02em; text-wrap: balance }
+.sub { color: var(--muted); margin: 6px 0 0 }
+.counts { display: flex; gap: 18px; flex-wrap: wrap; font-variant-numeric: tabular-nums }
+.counts div { display: flex; flex-direction: column }
+.counts b { font-family: var(--mono); font-size: 20px; font-weight: 600 }
+.counts span { color: var(--muted); font-size: 12px; letter-spacing: .06em }
+nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); overflow-x: auto }
+nav.tabs button { font: inherit; font-weight: 500; background: none; border: 0; color: var(--muted); padding: 8px 14px; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent) }
+button:focus-visible, input:focus-visible, select:focus-visible, .row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.filters input, .filters select { font: inherit; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; min-width: 0 }
+.filters input { flex: 1 1 180px }
+.chips { display: flex; flex-wrap: wrap; gap: 4px }
+.tchip { font: inherit; font-size: 12px; border: 1px solid transparent; border-radius: 4px; padding: 1px 7px; cursor: pointer; color: #fff; opacity: .45; text-shadow: 0 1px 0 rgba(0,0,0,.25) }
+.tchip[aria-pressed="true"] { opacity: 1; border-color: var(--ink) }
+.tbadge { display: inline-block; font-size: 12px; border-radius: 4px; padding: 0 6px; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.3); white-space: nowrap }
+.dex { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 16px; align-items: start }
+.list { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; min-width: 0 }
+.list-head, .row { display: grid; grid-template-columns: 52px 44px minmax(0, 1fr) 132px 46px 88px; gap: 8px; align-items: center; padding: 6px 12px }
+.list-head { font-size: 12px; color: var(--muted); border-bottom: 1px solid var(--line); letter-spacing: .04em }
+.rows { max-height: 70vh; overflow-y: auto }
+.row { border-bottom: 1px solid var(--line); cursor: pointer; font-variant-numeric: tabular-nums }
+.row:hover { background: var(--hi) }
+.row[aria-current="true"] { background: var(--hi); box-shadow: inset 3px 0 0 var(--accent) }
+.no { font-family: var(--mono); color: var(--muted); font-size: 12px }
+.nm { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.bst { font-family: var(--mono); text-align: right }
+.home { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.sprite { width: 36px; height: 36px; image-rendering: pixelated }
+.detail { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 14px; min-width: 0; max-height: calc(100vh - 24px); overflow-y: auto }
+.dtop { display: flex; gap: 14px; align-items: center }
+.dtop canvas { width: 96px; height: 96px; image-rendering: pixelated; background: var(--hi); border-radius: 6px; flex: none }
+.dname { font-family: var(--display); font-size: 30px; line-height: 1.1 }
+.meta { color: var(--muted); font-size: 12px }
+h3 { font-size: 12px; letter-spacing: .08em; color: var(--muted); margin: 0 0 6px; font-weight: 500 }
+.stats { display: grid; grid-template-columns: 36px 34px minmax(0, 1fr); gap: 3px 8px; align-items: center; font-variant-numeric: tabular-nums }
+.stats .v { font-family: var(--mono); text-align: right }
+.stats .b { height: 8px; background: var(--hi); border-radius: 4px; overflow: hidden }
+.stats .b i { display: block; height: 100% }
+.kv { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 4px 10px }
+.kv dt { color: var(--muted) }
+.kv dd { margin: 0 }
+.evo { display: flex; flex-wrap: wrap; align-items: center; gap: 6px }
+.evo button { font: inherit; background: var(--hi); border: 1px solid var(--line); color: var(--ink); border-radius: 6px; padding: 2px 8px; cursor: pointer }
+.evo button[aria-current="true"] { border-color: var(--accent); font-weight: 700 }
+.evo .arrow { color: var(--muted); font-size: 12px }
+table { border-collapse: collapse; width: 100% }
+td, th { padding: 4px 6px; border-bottom: 1px solid var(--line); text-align: left; font-weight: 400; vertical-align: top }
+th { color: var(--muted); font-size: 12px }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums }
+.scroll { overflow-x: auto }
+.ab b { font-weight: 500 }
+.ab p { margin: 0 0 6px; color: var(--muted); font-size: 13px }
+.loc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: 14px }
+.region h2 { font-family: var(--display); font-weight: 400; font-size: 24px; margin: 10px 0 4px }
+.region .lv { color: var(--muted); font-size: 12px }
+.loc { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; min-width: 0 }
+.loc h4 { margin: 0 0 6px; font-size: 15px; display: flex; justify-content: space-between; gap: 8px }
+.loc h4 span { color: var(--muted); font-weight: 400; font-size: 12px }
+.loc a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--muted); cursor: pointer }
+.rar { font-size: 11px; padding: 0 5px; border-radius: 3px; border: 1px solid var(--line); white-space: nowrap }
+.rar.常见 { color: var(--muted) } .rar.稀有, .rar.唯一 { border-color: var(--accent); color: var(--accent) }
+.chart td, .chart th { text-align: center; padding: 0; width: 30px; height: 26px; font-family: var(--mono); font-size: 12px; border: 1px solid var(--line) }
+.chart th.r { text-align: right; padding-right: 6px; width: auto; white-space: nowrap }
+.chart thead th { writing-mode: vertical-rl; height: 52px; padding: 4px 0 }
+.x2 { background: #3e9b5a; color: #fff } .x05 { background: #c76a4a; color: #fff } .x0 { background: #2b2b2b; color: #fff }
+.note { color: var(--muted); font-size: 13px; max-width: 70ch }
+@media (max-width: 860px) {
+  .dex { grid-template-columns: minmax(0, 1fr) }
+  .detail { position: static; max-height: none; order: -1 }
+  .rows { max-height: 60vh }
+  .list-head, .row { grid-template-columns: 44px 36px minmax(0, 1fr) 96px 40px }
+  .list-head .home, .row .home { display: none }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>奈尔斯幻兽图鉴</h1>
+      <p class="sub">奈尔斯地区全部幻兽的设计规划：属性、种族值、特性、进化、招式、动态模型和刷新地点。</p>
+    </div>
+    <div class="counts" id="counts"></div>
+  </header>
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-dex" aria-selected="true" data-view="dex">图鉴</button>
+    <button role="tab" id="tab-spawn" aria-selected="false" data-view="spawn">刷新地点</button>
+    <button role="tab" id="tab-types" aria-selected="false" data-view="types">属性克制</button>
+  </nav>
+
+  <section id="view-dex" class="view">
+    <div class="filters">
+      <input id="q" type="search" placeholder="搜索名字、特性或招式" aria-label="搜索">
+      <select id="region" aria-label="原生区域"><option value="">全部区域</option></select>
+      <select id="cat" aria-label="分类"><option value="">全部分类</option></select>
+      <select id="sort" aria-label="排序"><option value="dex">按编号</option><option value="bst">按种族值总和</option><option value="spe">按速度</option></select>
+    </div>
+    <div class="chips" id="typechips" style="margin-top:8px"></div>
+    <div class="dex" style="margin-top:12px">
+      <div class="list">
+        <div class="list-head"><span>编号</span><span></span><span>名字</span><span>属性</span><span class="bst">总和</span><span class="home">原生区域</span></div>
+        <div class="rows" id="rows"></div>
+      </div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-spawn" class="view" hidden>
+    <p class="note">每个地点刷新的幻兽、遭遇方式、等级和稀有度。道路按所在区域归类；“野外”指区域里道路以外的草丛和水面。点名字跳到图鉴。</p>
+    <div id="spawns"></div>
+  </section>
+
+  <section id="view-types" class="view" hidden>
+    <p class="note">行是招式属性，列是被打的幻兽属性。绿色 2 倍，红色 0.5 倍，黑色无效。双属性的幻兽两个倍率相乘。</p>
+    <div class="scroll"><table class="chart" id="chart"></table></div>
+  </section>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const D = JSON.parse(document.getElementById("data").textContent);
+const S = D.species, byKey = Object.fromEntries(S.map(s => [s.key, s]));
+const TC = D.types.colors, STAT = D.types.stats;
+const REGIONS = D.regions;
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const badge = t => `<span class="tbadge" style="background:${TC[t]}">${esc(t)}</span>`;
+
+$("counts").innerHTML = [[S.length, "只幻兽"], [new Set(S.map(s => s.line)).size, "条进化线"], [Object.keys(D.moves).length, "个招式"],
+  [Object.keys(D.abilities).length, "个特性"], [Object.keys(D.spawns).length, "个刷新地点"]]
+  .map(([n, l]) => `<div><b>${n}</b><span>${l}</span></div>`).join("");
+
+// ---------------------------------------------------------------- 占位立绘：按身体结构和属性色画一个 16x16 的像素剪影
+function hashStr(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619) } return h >>> 0 }
+const SHAPES = {
+  "四足": ["................", "................", "..##........##..", "..###......###..", "...##########...", "..############..", "..##.#####.###..", "..############..", "...##########...", "....########....", "...##########.##", "...##########.#.", "...###....###...", "...##......##...", "...##......##...", "................"],
+  "鸟形": ["................", "................", "......####......", ".....######.....", ".....#.##.#.....", ".....######.##..", "......####.##...", "..##########....", ".#############..", "..###########...", "....########....", ".....######.....", "......#..#......", ".....##..##.....", "................", "................"],
+  "鱼形": ["................", "................", "................", "......####......", "....########....", "...##########..#", "..###.########.#", "..############.#", "..############.#", "...##########..#", "....########....", "......####......", "................", "................", "................", "................"],
+  "蛇形": ["................", "................", "..####..........", ".######.........", ".#.##.##........", ".######.........", "..#####.........", "...####..####...", "....##########..", ".....###...####.", "...........####.", "..#######.####..", ".############...", "..#########.....", "................", "................"],
+  "龙形": ["................", "..#.......#.....", "..##.....##.....", "...#######......", "..#.##.###......", "..########...##.", "...######...###.", "##.########.##..", "############....", ".###########....", "...##########...", "...##########...", "....###..###....", "....##....##....", "...###...###....", "................"],
+  "虫形": ["................", "................", "....#....#......", ".....#..#.......", "....######......", "...#.####.#.....", "...########.....", "....######......", "..#.######.#....", ".#.########.#...", "...########.....", "..#.######.#....", ".#..######..#...", "....######......", ".....####.......", "................"],
+  "蝶形": ["................", "................", "......#..#......", ".......##.......", ".####..##..####.", "######.##.######", "######.##.######", ".#####.##.#####.", "..####.##.####..", "..#####..#####..", ".######..######.", ".#####....#####.", "..###......###..", "................", "................", "................"],
+  "两栖": ["................", "................", "................", "...##.....##....", "..####...####...", "..#.##...#.##...", "..############..", ".##############.", ".##############.", ".###..####..###.", "..############..", "...##########...", "..###......###..", ".####......####.", "................", "................"],
+  "甲壳": ["................", "................", ".##..........##.", "##.#........#.##", "##.#........#.##", ".###..#..#..###.", "..##..#..#..##..", "...##########...", "..############..", ".##############.", ".##############.", "..############..", "..#.#.#..#.#.#..", ".#..#..##..#..#.", "................", "................"],
+  "浮游": ["................", "................", ".....######.....", "...##########...", "..############..", "..###.####.###..", "..############..", "..############..", "...##########...", "....########....", "....#.#..#.#....", "...#..#..#..#...", "....#.#..#.#....", "...#..#..#..#...", "................", "................"],
+  "植物": ["................", "....##....##....", "...####..####...", "...####..####...", "....###..###....", "......####......", ".....######.....", "....########....", "....#.####.#....", "....########....", ".....######.....", "......####......", "..#....##....#..", "...##..##..##...", "....########....", "................"],
+  "人形": ["................", "......####......", ".....######.....", ".....#.##.#.....", ".....######.....", "......####......", "...##########...", "..############..", "..##.######.##..", "..##.######.##..", "....########....", "....###..###....", "....###..###....", "....##....##....", "...###....###...", "................"],
+  "飞膜": ["................", "................", "................", "#......##......#", "##....####....##", "###..#.##.#..###", "####.######.####", "################", ".##############.", "..###.####.###..", "...#..####..#...", "......#..#......", "................", "................", "................", "................"],
+};
+function shade(hex, f) { const n = parseInt(hex.slice(1), 16); let r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+  r = Math.min(255, Math.max(0, Math.round(r * f))); g = Math.min(255, Math.max(0, Math.round(g * f))); b = Math.min(255, Math.max(0, Math.round(b * f)));
+  return `rgb(${r},${g},${b})` }
+function drawSprite(cv, s, frame = 0) {
+  const ctx = cv.getContext("2d"); ctx.clearRect(0, 0, 16, 16);
+  const shape = SHAPES[s.model.body] || SHAPES["四足"], c1 = s.model.colors[0], c2 = s.model.colors[1] || c1;
+  const h = hashStr(s.name), bob = frame % 2;
+  for (let y = 0; y < 16; y++) for (let x = 0; x < 16; x++) {
+    if (shape[y][x] !== "#") continue;
+    const edge = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => (shape[y + dy] || "")[x + dx] !== "#");
+    const spot = ((h >> ((x * 3 + y * 5) % 24)) & 7) === 0 && !edge;
+    ctx.fillStyle = edge ? shade(c1, .45) : spot ? shade(c2, 1) : (y < 7 ? shade(c1, 1.15) : shade(c1, .92));
+    ctx.fillRect(x, y + (y < 10 ? bob : 0) * 0, 1, 1);
+  }
+  // 眼睛
+  ctx.fillStyle = "#111"; const ey = shape.findIndex(r => r.includes("#.")); if (ey >= 0) { const ex = shape[ey].indexOf("#.") + 1; ctx.fillRect(ex, ey + bob, 1, 1) }
+}
+
+// ---------------------------------------------------------------- 图鉴
+const types = D.types.types;
+let typeFilter = new Set(), current = S[0].key;
+$("typechips").innerHTML = types.map(t => `<button class="tchip" style="background:${TC[t]}" data-t="${t}" aria-pressed="false">${t}</button>`).join("");
+$("typechips").addEventListener("click", e => { const b = e.target.closest(".tchip"); if (!b) return;
+  const t = b.dataset.t; typeFilter.has(t) ? typeFilter.delete(t) : typeFilter.add(t); b.setAttribute("aria-pressed", typeFilter.has(t)); renderList() });
+$("region").innerHTML += REGIONS.map(r => `<option>${esc(r.name)}</option>`).join("");
+$("cat").innerHTML += [...new Set(S.map(s => s.category))].map(c => `<option>${esc(c)}</option>`).join("");
+for (const id of ["q", "region", "cat", "sort"]) $(id).addEventListener("input", renderList);
+
+function matches(s) {
+  const q = $("q").value.trim();
+  if (q && !(s.name.includes(q) || s.abilities.includes(q) || s.hidden_ability.includes(q) || s.learnset.some(m => m[1].includes(q)) || String(s.dex) === q)) return false;
+  if ($("region").value && s.home !== $("region").value) return false;
+  if ($("cat").value && s.category !== $("cat").value) return false;
+  for (const t of typeFilter) if (!s.types.includes(t)) return false;
+  return true;
+}
+function renderList() {
+  let list = S.filter(matches);
+  const k = $("sort").value;
+  if (k === "bst") list.sort((a, b) => b.bst - a.bst); else if (k === "spe") list.sort((a, b) => b.base.spe - a.base.spe);
+  $("rows").innerHTML = list.map(s => `<div class="row" tabindex="0" data-k="${s.key}" aria-current="${s.key === current}">
+    <span class="no">#${String(s.dex).padStart(3, "0")}</span><canvas class="sprite" width="16" height="16" data-k="${s.key}"></canvas>
+    <span class="nm">${esc(s.name)}</span><span>${s.types.map(badge).join(" ")}</span><span class="bst">${s.bst}</span><span class="home">${esc(s.home)}</span></div>`).join("")
+    || `<p style="padding:12px" class="note">没有符合条件的幻兽。换个关键词或取消属性筛选试试。</p>`;
+  $("rows").querySelectorAll("canvas").forEach(cv => drawSprite(cv, byKey[cv.dataset.k]));
+}
+$("rows").addEventListener("click", e => { const r = e.target.closest(".row"); if (r) show(r.dataset.k) });
+$("rows").addEventListener("keydown", e => { const r = e.target.closest(".row"); if (r && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); show(r.dataset.k) } });
+
+function lineOf(s) { return S.filter(x => x.line === s.line) }
+function evoText(e) { if (!e) return ""; return e.method === "等级" ? `Lv ${e.level}` : e.method === "道具" ? e.item : e.note || e.method }
+let animTimer = null;
+function show(key) {
+  current = key; const s = byKey[key];
+  $("rows").querySelectorAll(".row").forEach(r => r.setAttribute("aria-current", r.dataset.k === key));
+  const max = 180;
+  const line = lineOf(s);
+  const evo = line.map((x, i) => (i ? `<span class="arrow">→ ${esc(evoText(line[i - 1].evolution))} →</span>` : "") +
+    `<button data-k="${x.key}" aria-current="${x.key === key}">${esc(x.name)}</button>`).join("");
+  const moves = s.learnset.map(([lv, n]) => { const m = D.moves[n] || {}; return `<tr><td class="mono">${lv}</td><td>${esc(n)}</td><td>${m.type ? badge(m.type) : ""}</td><td>${esc(m.category || "")}</td><td class="mono">${m.power || "—"}</td><td class="mono">${m.accuracy || ""}</td><td>${esc(m.effect || "")}</td></tr>` }).join("");
+  const ab = n => `<div class="ab"><b>${esc(n)}</b><p>${esc((D.abilities[n] || {}).effect || "")}</p></div>`;
+  $("detail").innerHTML = `
+    <div class="dtop"><canvas id="big" width="16" height="16"></canvas><div>
+      <div class="meta mono">#${String(s.dex).padStart(3, "0")} · ${esc(s.category)}</div>
+      <div class="dname">${esc(s.name)}</div>
+      <div>${s.types.map(badge).join(" ")}</div></div></div>
+    <div><h3>种族值 · 总和 ${s.bst}</h3><div class="stats">${Object.entries(s.base).map(([k, v]) =>
+      `<span>${STAT[k]}</span><span class="v">${v}</span><span class="b"><i style="width:${Math.min(100, v / max * 100)}%;background:${v >= 100 ? "var(--accent)" : v < 50 ? "#c76a4a" : "var(--bar)"};opacity:${v >= 100 ? 1 : .7}"></i></span>`).join("")}</div></div>
+    <div><h3>进化</h3><div class="evo">${evo}</div></div>
+    <div><h3>特性</h3>${s.abilities.map(ab).join("")}<h3 style="margin-top:6px">隐藏特性</h3>${ab(s.hidden_ability)}</div>
+    <dl class="kv"><dt>原生区域</dt><dd>${esc(s.home)}</dd>
+      <dt>刷新地点</dt><dd>${s.spawns && s.spawns.length ? s.spawns.map(esc).join("<br>") : "野外不出现，只能进化得到"}</dd>
+      <dt>捕获率</dt><dd class="mono">${s.catch_rate} / 255</dd><dt>经验</dt><dd class="mono">${s.xp}</dd>
+      <dt>动态模型</dt><dd>${esc(s.model.body)} · ${esc(s.model.size)}型 · 待机 ${s.model.frames} 帧<br><span class="meta">${esc(s.model.idle)}</span></dd></dl>
+    <div><h3>升级招式</h3><div class="scroll"><table><thead><tr><th>等级</th><th>招式</th><th>属性</th><th>分类</th><th>威力</th><th>命中</th><th>效果</th></tr></thead><tbody>${moves}</tbody></table></div></div>`;
+  $("detail").querySelectorAll(".evo button").forEach(b => b.addEventListener("click", () => show(b.dataset.k)));
+  const big = $("big"); let f = 0; drawSprite(big, s, 0);
+  clearInterval(animTimer);
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) animTimer = setInterval(() => { f++; big.style.transform = `translateY(${f % 2 ? -2 : 0}px)` }, 450);
+}
+
+// ---------------------------------------------------------------- 刷新地点
+function renderSpawns() {
+  const byRegion = {};
+  for (const [loc, info] of Object.entries(D.spawns)) (byRegion[info.region] ||= []).push([loc, info]);
+  $("spawns").innerHTML = REGIONS.map(r => {
+    const locs = (byRegion[r.name] || []).sort((a, b) => (parseInt(a[0]) || 99) - (parseInt(b[0]) || 99));
+    return `<div class="region"><h2>${esc(r.name)} <span class="lv">${esc(r.biome)} · 野生 Lv ${r.levels[0]}–${r.levels[1]}</span></h2>
+      <div class="loc-grid">${locs.map(([loc, info]) => `<div class="loc"><h4>${esc(loc)}<span>${info.list.length} 种</span></h4>
+        <div class="scroll"><table><tbody>${info.list.map(e => `<tr><td><a data-k="${e.key}">${esc(e.name)}</a></td><td>${esc(e.method)}</td><td class="mono">Lv ${e.levels[0]}–${e.levels[1]}</td><td><span class="rar ${esc(e.rarity)}">${esc(e.rarity)}</span></td></tr>`).join("")}</tbody></table></div></div>`).join("")}</div></div>`;
+  }).join("");
+}
+$("spawns").addEventListener("click", e => { const a = e.target.closest("a[data-k]"); if (!a) return; setView("dex"); show(a.dataset.k);
+  const row = $("rows").querySelector(`[data-k="${a.dataset.k}"]`); if (row) row.scrollIntoView({block: "center"}) });
+
+// ---------------------------------------------------------------- 克制表
+function renderChart() {
+  const c = D.types.chart;
+  $("chart").innerHTML = `<thead><tr><th class="r">招式 ＼ 防守</th>${types.map(t => `<th style="color:${TC[t]}">${t}</th>`).join("")}</tr></thead><tbody>` +
+    types.map(a => `<tr><th class="r">${badge(a)}</th>${types.map(d => { const v = c[a][d]; return `<td class="${v === 2 ? "x2" : v === .5 ? "x05" : v === 0 ? "x0" : ""}">${v === 1 ? "" : v === .5 ? "½" : v}</td>` }).join("")}</tr>`).join("") + "</tbody>";
+}
+
+// ---------------------------------------------------------------- 分页
+function setView(v) {
+  document.querySelectorAll("nav.tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.view === v));
+  document.querySelectorAll(".view").forEach(s => s.hidden = s.id !== "view-" + v);
+  if (location.hash.slice(1) !== v) history.replaceState(null, "", "#" + v);
+}
+document.querySelector("nav.tabs").addEventListener("click", e => { const b = e.target.closest("button"); if (b) setView(b.dataset.view) });
+addEventListener("hashchange", () => { const v = location.hash.slice(1); if (["dex", "spawn", "types"].includes(v)) setView(v) });
+renderList(); show(current); renderSpawns(); renderChart();
+{ const v = location.hash.slice(1); if (["spawn", "types"].includes(v)) setView(v) }
+</script>

@@ -85,6 +85,12 @@ tests/map_overview.tscn   导出奈尔斯地区全图鸟瞰图（每 16 格一�
 godot --headless --path . res://tests/smoke_test.tscn
 ```
 
+## 幻兽规划
+
+`tools/dex_plan.py` 规划了奈尔斯地区全部 716 只幻兽：18 种属性和克制表、六项种族值（体力、攻击、防御、特攻、特防、速度）、物理/特殊/变化招式、特性和隐藏特性、进化线、升级招式、动态模型（身体结构、大小、待机动作），以及 22 条道路、9 片野外和 12 个迷宫地标各刷新哪些幻兽、几级、多稀有。数据在 `data/dex/`，说明在 `docs/dex-plan.md`。`python3 tools/build_dex_page.py` 生成可搜索的图鉴页面 `build/naers-dex.html`。
+
+这些数据还没接进游戏：下一步是把战斗换成 18 属性和六项能力，再给 716 只画立绘和待机动画。
+
 ## 路线图
 
 1. **美术**：更丰富的招式动画、地图改用 TileMapLayer 方便在编辑器里画、换成手绘像素图
