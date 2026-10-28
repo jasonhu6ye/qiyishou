@@ -1,4 +1,4 @@
-"""生成奇异兽的像素美术：地面图块、树、房屋、人物行走图和奇异兽立绘（见 gen_monsters.py）。
+"""生成奇异兽的像素美术：地面图块、树、房屋、人物行走图、奇异兽立绘（见 gen_monsters.py）和战斗背景（见 gen_battle_bg.py）。
 
 用法：python3 tools/gen_pixel_art.py
 输出到 assets/sprites/。需要 Pillow（pip install pillow）。
@@ -11,6 +11,7 @@ import random
 
 from PIL import Image
 
+from gen_battle_bg import make_battle_bgs
 from gen_monsters import make_monsters
 
 OUT = Path(__file__).resolve().parent.parent / "assets" / "sprites"
@@ -435,6 +436,7 @@ def main():
     make_house("shop", "#4a7fd1", "shop")
     make_house("home", "#5a9e5a", "home")
     make_monsters(OUT)
+    make_battle_bgs(OUT)
     print("已生成：", ", ".join(sorted(str(p.relative_to(OUT)) for p in OUT.rglob("*.png"))))
 
 

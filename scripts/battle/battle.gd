@@ -21,6 +21,11 @@ var faint_enemy_at := -1.0
 var ball_at := -1.0
 var ball_shake_at := -10.0
 var flash_at := -10.0
+var lunge_enemy_at := -10.0
+var lunge_me_at := -10.0
+var fx_at := -10.0
+var fx_type := ""
+var fx_on_enemy := true
 
 
 func _ready() -> void:
@@ -255,6 +260,14 @@ func _attack(attacker: Monster, defender: Monster, move: String) -> void:
 	var foe_side := attacker == wild
 	var who := _foe_name() if foe_side else attacker.species_name()
 	await dialog.say("%s 使用了 %s！" % [who, move], 0.8)
+	if foe_side:
+		lunge_enemy_at = now()
+	else:
+		lunge_me_at = now()
+	fx_type = Data.MOVES[move]["type"]
+	fx_on_enemy = not foe_side
+	fx_at = now()
+	await _wait(BattleView.FX_TIME)
 	var r := damage(attacker, defender, move, Game.rng)
 	defender.hp = maxi(0, defender.hp - int(r["amount"]))
 	if foe_side:

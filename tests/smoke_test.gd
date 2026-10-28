@@ -88,6 +88,7 @@ func _unit_checks() -> void:
 	for kind in ["heal", "shop", "home"]:
 		check(Art.tex("house_" + kind) != null, "%s 房屋贴图能载入" % kind)
 
+	check(Art.tex("battle_bg_0") != null and Art.tex("battle_bg_1") != null, "战斗背景能载入")
 	check(Art.tex("tiles") != null and Art.tex("tree") != null and Art.tex("player") != null, "像素图都能载入")
 	check(Game.ui_theme != null and Game.ui_theme.default_font.resource_path == Game.FONT_PATH, "界面主题使用像素字体")
 
