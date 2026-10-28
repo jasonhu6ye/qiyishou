@@ -23,7 +23,7 @@ func _ready() -> void:
 		var steps := int(a.distance_to(b)) + 1
 		for i in steps + 1:
 			var p := a.lerp(b, float(i) / steps)
-			_dot(img, Vector2i(p), 0, Color("#d9bc85"))
+			_dot(img, Vector2i(p), 0, Color("#7a4a22"))
 	for t in WorldPlan.TOWNS:
 		var col := Color("#ffffff")
 		if not (t["gym"] as Dictionary).is_empty():

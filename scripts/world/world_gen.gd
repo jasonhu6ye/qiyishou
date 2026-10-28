@@ -59,7 +59,7 @@ const BIOME_INFO := [
 		"lake": O_WATER, "lake_t": 0.62, "river": O_WATER, "ridge": "boulder", "rock": "boulder",
 		"rocks": 0.012, "tall_t": 0.3, "decor": ["pebbles", "pebbles", "flower_w"], "decor_p": 0.05},
 	{"ground": G_GRASS, "trees": ["tree_oak", "tree_autumn", "tree_round", "reeds"], "tree": 0.015, "grove": 0.25,
-		"lake": O_WATER, "lake_t": 0.32, "river": O_WATER, "ridge": "", "rock": "boulder", "rocks": 0.002,
+		"lake": O_WATER, "lake_t": 0.16, "river": O_WATER, "ridge": "", "rock": "boulder", "rocks": 0.002,
 		"tall_t": 0.3, "decor": ["flower_b", "flower_w", "lily"], "decor_p": 0.05},
 	{"ground": G_SNOW, "trees": ["tree_snowpine", "tree_snowpine", "ice_crystal"], "tree": 0.03, "grove": 0.28,
 		"lake": O_ICE, "lake_t": 0.48, "river": O_ICE, "ridge": "ice_crystal", "rock": "ice_crystal",
@@ -176,9 +176,9 @@ func ocean_metric(x: int, y: int) -> float:
 	var m := minf(edge, south) + _coast.get_noise_2d(x, y) * 190.0
 	# 南海里的小岛
 	if m < 0.0 and m > -600.0:
-		var isle := _lake.get_noise_2d(x * 0.35 + 9000.0, y * 0.35)
-		if isle > 0.42:
-			m = (isle - 0.42) * 300.0
+		var isle := _lake.get_noise_2d(x * 0.12 + 9000.0, y * 0.12)
+		if isle > 0.4:
+			m = (isle - 0.4) * 300.0
 	return m
 
 
@@ -518,6 +518,8 @@ func _cell(c: Vector2i, near: Array, towns: Array, start_rect: Rect2i) -> int:
 	var overlay := O_NONE
 	# 湖泊（深处是深水）、河流
 	var lake := _lake.get_noise_2d(x, y)
+	if b == Biome.LAKES:
+		lake = _lake.get_noise_2d(x * 0.4 + 7000.0, y * 0.4)  # 湖区的湖更大更连片
 	var lake_t: float = info["lake_t"]
 	if lake > lake_t:
 		overlay = info["lake"]
@@ -546,7 +548,8 @@ func _cell(c: Vector2i, near: Array, towns: Array, start_rect: Rect2i) -> int:
 	var ridge_name: String = info["ridge"]
 	if ridge_name != "":
 		var rg := _ridge.get_noise_2d(x * 1.7, y * 1.7)
-		if rg > 0.42 and _hash(x, y, 4) < 0.85:
+		var fill := 0.85 if b == Biome.MOUNTAIN or b == Biome.SNOW else 0.45
+		if rg > 0.42 and _hash(x, y, 4) < fill:
 			return pack(ground, O_NONE, prop_id(ridge_name))
 
 	# 遭遇草丛：靠近道路的地方更多
