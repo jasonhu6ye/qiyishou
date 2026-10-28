@@ -24,6 +24,7 @@ func _ready() -> void:
 	await _capture("world")
 
 	main.dialog.close()
+	main._set_state(main.State.BATTLE)
 	main.battle.run(Monster.create("tantan", 6), 1)
 	var start := Time.get_ticks_msec()
 	while main.dialog.grid.get_child_count() == 0 and Time.get_ticks_msec() - start < 8000:

@@ -2,6 +2,9 @@
 
 一款类 PokeMMO 的 2.5D 俯视角怪兽收集 RPG，用 Godot 4 开发。当前是单机可玩的最小版本。画面以 320×240 渲染再整数倍放大，地面、树和人物是像素图，房屋和奇异兽还是代码绘制的占位图。
 
+![大地图](docs/screenshots/world.png)
+![战斗](docs/screenshots/battle.png)
+
 ## 运行
 
 1. 安装 [Godot 4.3](https://godotengine.org/download)（标准版即可，不需要 .NET 版）。
