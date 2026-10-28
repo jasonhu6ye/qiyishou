@@ -4,3 +4,4 @@
 export_presets.cfg
 # 本地导出产物
 build/
+__pycache__/

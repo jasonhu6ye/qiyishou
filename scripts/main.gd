@@ -48,12 +48,12 @@ func _set_state(s: State) -> void:
 
 func _choose_starter() -> void:
 	_set_state(State.TALK)
-	await dialog.say("研究员：欢迎来到晨露镇！这里有三只奇异兽，带上一只出发吧。")
+	await dialog.say("研究员：欢迎来到晨露镇！这里有三只幻兽，带上一只出发吧。")
 	await dialog.say("属性相克是 火 → 草 → 水 → 火，选你喜欢的就好。")
 	var labels: Array = []
 	for k in Data.STARTERS:
 		labels.append("%s（%s）" % [Data.SPECIES[k]["name"], Data.SPECIES[k]["type"]])
-	var i: int = await dialog.choose("选择你的第一只奇异兽", labels)
+	var i: int = await dialog.choose("选择你的第一只幻兽", labels)
 	var m := Monster.create(Data.STARTERS[i], 5)
 	Game.party.append(m)
 	Game.seen[m.key] = true
@@ -81,33 +81,69 @@ func _on_stepped(cell: Vector2i) -> void:
 		_area = area
 		hud.show_toast(area)
 	hud.refresh(area)
-	var t := world.tile_at(cell)
+	var door := world.door_at(cell)
 	var spotter := world.trainer_spotting(cell)
-	if cell == World.HEAL_DOOR:
-		_heal()
-	elif cell == World.SHOP_DOOR:
-		_shop()
+	if not door.is_empty():
+		_enter(door)
 	elif spotter:
 		_trainer_battle(spotter, true)
-	elif t == World.TALL_GRASS and Game.rng.randf() < ENCOUNTER_RATE:
+	elif world.is_tall_grass(cell) and Game.rng.randf() < ENCOUNTER_RATE:
 		_encounter(cell)
 	elif player.steps % AUTOSAVE_STEPS == 0:
 		_save()
 
 
-func _heal() -> void:
+## 走进门：治疗所、商店有功能，其他房子说一句话后退出门外
+func _enter(door: Dictionary) -> void:
+	match door["kind"]:
+		"heal":
+			await _heal(door)
+			return
+		"shop":
+			await _shop(door)
+			return
 	_set_state(State.TALK)
-	await dialog.say("护士：欢迎来到治疗所！把奇异兽交给我吧……")
+	match door["kind"]:
+		"gym":
+			var town: Dictionary = _town(door["town"])
+			var gym: Dictionary = town.get("gym", {})
+			await dialog.say("这里是%s道馆，%s擅长%s属性。" % [town.get("name", ""), gym.get("leader", "馆主"), gym.get("type", "")])
+			await dialog.say("馆主正在闭关修炼，道馆挑战还没开放。")
+		"league":
+			await dialog.say("幻兽联盟的大门紧闭着。集齐八枚徽章的训练师才能进入。")
+		_:
+			await dialog.say("门上挂着牌子：外出采集中，请勿打扰。")
+	dialog.close()
+	_leave(door)
+	_set_state(State.WALK)
+
+
+func _leave(door: Dictionary) -> void:
+	player.dir = Vector2i.DOWN
+	player.place(door["exit"])
+	world.refresh_now()
+
+
+func _town(id: String) -> Dictionary:
+	for t in WorldPlan.TOWNS:
+		if t["id"] == id:
+			return t
+	return {}
+
+
+func _heal(door: Dictionary) -> void:
+	_set_state(State.TALK)
+	await dialog.say("护士：欢迎来到治疗所！把幻兽交给我吧……")
 	Game.heal_all()
+	Game.last_town = door["town"]
 	await dialog.say("全部恢复精神了！路上小心。")
 	dialog.close()
-	player.dir = Vector2i.DOWN
-	player.place(World.HEAL_EXIT)
+	_leave(door)
 	_save()
 	_set_state(State.WALK)
 
 
-func _shop() -> void:
+func _shop(door: Dictionary) -> void:
 	_set_state(State.TALK)
 	await dialog.say("店员：欢迎光临！需要点什么？")
 	while true:
@@ -126,8 +162,7 @@ func _shop() -> void:
 			await dialog.say("钱好像不太够呢……", 1.0)
 	await dialog.say("欢迎下次光临！", 0.8)
 	dialog.close()
-	player.dir = Vector2i.DOWN
-	player.place(World.SHOP_EXIT)
+	_leave(door)
 	_save()
 	_set_state(State.WALK)
 
@@ -135,7 +170,7 @@ func _shop() -> void:
 func _encounter(cell: Vector2i) -> void:
 	_set_state(State.BATTLE)
 	var zone := world.zone_index(cell)
-	var wild := Data.roll_wild(zone, Game.rng)
+	var wild := Data.roll_wild(world.biome_at(cell), world.region_levels(cell), Game.rng)
 	var foes: Array[Monster] = [wild]
 	var result: String = await battle.run(foes, zone)
 	_after_battle(result)
@@ -167,7 +202,8 @@ func _trainer_battle(npc: Prop, spotted: bool) -> void:
 func _after_battle(result: String) -> void:
 	if result == "lost":
 		player.dir = Vector2i.DOWN
-		player.place(World.HEAL_EXIT)
+		player.place(world.heal_exit(Game.last_town))
+		world.refresh_now()
 	_save()
 	_set_state(State.WALK)
 
@@ -187,18 +223,45 @@ func _interact() -> void:
 		dialog.close()
 		_set_state(State.WALK)
 		return
-	var house := world.house_at(front)
-	if not house.is_empty():
+	var lines := _look_at(front)
+	if not lines.is_empty():
 		_set_state(State.TALK)
-		match house["kind"]:
-			"heal":
-				await dialog.say("治疗所的大门在正下方，走进去就能恢复。")
-			"shop":
-				await dialog.say("商店的大门在正下方，兽球和伤药都在这里买。")
-			_:
-				await dialog.say("门上挂着牌子：外出采集中，请勿打扰。")
+		for line in lines:
+			await dialog.say(line)
 		dialog.close()
 		_set_state(State.WALK)
+
+
+## 对着房子、路牌、洞口、地标按确认键时的说明
+func _look_at(c: Vector2i) -> Array:
+	var house := world.building_at(c)
+	if not house.is_empty():
+		match house["kind"]:
+			"heal":
+				return ["治疗所的大门在正下方，走进去就能恢复。"]
+			"shop":
+				return ["商店的大门在正下方，兽球和伤药都在这里买。"]
+			"gym":
+				return ["道馆的大门在正下方。"]
+			"league":
+				return ["幻兽联盟总部。"]
+		return ["一户人家。"]
+	var obj := WorldGen.object_of(world.cell(c))
+	if obj == 0 or obj == WorldGen.BUILDING:
+		return []
+	match WorldGen.PROPS[obj]:
+		"sign":
+			var place := World.gen.place_at(c, 4)
+			if not place.is_empty():
+				return ["路牌：%s" % place["name"]]
+			return ["路牌：%s · 奈尔斯地区" % world.area_name(c)]
+		"cave", "monument":
+			var p := World.gen.place_at(c, 2)
+			if not p.is_empty():
+				if p["kind"] == "dungeon":
+					return ["%s：%s" % [p["name"], p["desc"]], "洞里黑漆漆的，现在还进不去。"]
+				return ["%s：%s" % [p["name"], p["desc"]]]
+	return []
 
 
 func _main_menu() -> void:

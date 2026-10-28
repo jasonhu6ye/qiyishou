@@ -8,8 +8,8 @@ const WALK_TIME := 0.18
 const RUN_TIME := 0.105
 
 var world: World
-var cell := Vector2i(9, 8)
-var target := Vector2i(9, 8)
+var cell := Game.START_CELL
+var target := Game.START_CELL
 var dir := Vector2i.DOWN
 var moving := false
 var active := true
@@ -95,5 +95,6 @@ func _draw() -> void:
 	Art.character(self, "player", dir, step)
 	# 站在高草里时，在脚前补画一层草叶，看起来像被草挡住
 	var here := target if moving and _progress > 0.5 else cell
-	if world and world.tile_at(here) == World.TALL_GRASS:
-		Art.tall_grass_front(self)
+	var front := world.grass_front(here) if world else ""
+	if front != "":
+		Art.grass_front(self, front)

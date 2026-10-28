@@ -55,7 +55,8 @@ jobs:
 
       - name: 截图
         run: |
-          timeout 120 xvfb-run -a -s "-screen 0 1280x960x24" "$RUNNER_TEMP/godot" --path . --rendering-driver opengl3 res://tests/screenshot.tscn 2>&1 | tail -30
+          timeout 600 "$RUNNER_TEMP/godot" --headless --path . res://tests/map_overview.tscn 2>&1 | tail -5
+          timeout 180 xvfb-run -a -s "-screen 0 1280x960x24" "$RUNNER_TEMP/godot" --path . --rendering-driver opengl3 res://tests/screenshot.tscn 2>&1 | tail -30
           mkdir -p screenshots
           cp ~/.local/share/godot/app_userdata/*/screenshots/*.png screenshots/
 
@@ -63,7 +64,7 @@ jobs:
         run: |
           for f in screenshots/*.png; do
             echo "=== BEGIN $f"
-            base64 -w 120 "$f"
+            base64 -w 0 "$f"; echo
             echo "=== END $f"
           done
 

@@ -1,4 +1,4 @@
-"""生成奇异兽的像素美术：地面图块、树、房屋、人物行走图、奇异兽立绘（见 gen_monsters.py）和战斗背景（见 gen_battle_bg.py）。
+"""生成幻兽的像素美术：地面图块、树、房屋、人物行走图、幻兽立绘（见 gen_monsters.py）和战斗背景（见 gen_battle_bg.py）。
 
 用法：python3 tools/gen_pixel_art.py
 输出到 assets/sprites/。需要 Pillow（pip install pillow）。
@@ -13,6 +13,8 @@ from PIL import Image
 
 from gen_battle_bg import make_battle_bgs
 from gen_monsters import make_monsters
+from gen_props import make_props
+from gen_terrain import build as make_terrain
 
 OUT = Path(__file__).resolve().parent.parent / "assets" / "sprites"
 T = 16
@@ -425,6 +427,56 @@ def shade(c, f):
     return tuple(max(0, min(255, int(v * f))) for v in c[:3]) + (c[3],)
 
 
+def make_hall(name, tw, th, roof_hex, wall_hex, emblem):
+    """大型建筑（道馆、联盟）：占 tw x th 格，画布宽 tw*16+8、高 th*16+12+16。
+    和小房子一样，画布 (4, 高) 对应占地左下角；门在底边正中。"""
+    w, h = tw * 16 + 8, th * 16 + 28
+    im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    px = im.load()
+    wall, wall_d = hexc(wall_hex), shade(hexc(wall_hex), 0.85)
+    roof, roof_dark, roof_light = hexc(roof_hex), shade(hexc(roof_hex), 0.72), shade(hexc(roof_hex), 1.2)
+    top = h - th * 16 + 8  # 墙顶
+    rect(px, 4, top, w - 4, h, wall)
+    for x in range(8, w - 8, 10):
+        rect(px, x, top + 4, x + 2, h - 4, wall_d)  # 立柱
+    rect(px, 4, h - 4, w - 4, h, FOUNDATION)
+    for x in range(12, w - 20, 22):
+        if abs(x + 5 - w // 2) > 12:
+            window(px, x, top + 10)
+    # 大门：双开门
+    cx = w // 2
+    rect(px, cx - 9, h - 22, cx + 9, h, WOOD_DARK)
+    rect(px, cx - 8, h - 21, cx - 1, h, hexc("#c94a3a") if name == "gym" else hexc("#4a6ad1"))
+    rect(px, cx + 1, h - 21, cx + 8, h, hexc("#c94a3a") if name == "gym" else hexc("#4a6ad1"))
+    px[cx - 3, h - 11] = px[cx + 2, h - 11] = hexc("#ffcd4d")
+    # 屋顶：两层梯形
+    for y in range(2, top + 2):
+        t = (y - 2) / max(1, top - 2)
+        x0 = round(14 - 14 * t)
+        x1 = round(w - 14 + 14 * t)
+        col = roof_light if y < 5 else (roof_dark if (y - 2) % 5 == 4 else roof)
+        rect(px, x0, y, x1, y + 1, col)
+    rect(px, 0, top, w, top + 2, roof_dark)
+    # 徽记
+    ex, ey = cx, top // 2 + 1
+    for y in range(ey - 6, ey + 7):
+        for x in range(ex - 6, ex + 7):
+            if (x - ex) ** 2 + (y - ey) ** 2 <= 36:
+                px[x, y] = hexc("#ffffff")
+    for y in range(ey - 4, ey + 5):
+        for x in range(ex - 4, ex + 5):
+            if emblem == "star" and abs(x - ex) + abs(y - ey) <= 4:
+                px[x, y] = hexc("#ffcd4d")
+            if emblem == "crown" and (x - ex) ** 2 + (y - ey) ** 2 <= 16 and (y > ey or (x - ex) % 3 == 0):
+                px[x, y] = hexc("#ffcd4d")
+    outline(im, hexc("#2b2b45"))
+    shadow = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    sp = shadow.load()
+    rect(sp, w - 3, top + 4, w, h, (0, 0, 0, 56))
+    shadow.alpha_composite(im)
+    shadow.save(OUT / f"house_{name}.png")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     make_tiles()
@@ -435,8 +487,12 @@ def main():
     make_house("heal", "#d9534f", "heal")
     make_house("shop", "#4a7fd1", "shop")
     make_house("home", "#5a9e5a", "home")
+    make_hall("gym", 6, 4, "#c94a3a", "#f2e8d8", "star")
+    make_hall("league", 8, 5, "#4a5ad1", "#e8eef8", "crown")
     make_monsters(OUT)
     make_battle_bgs(OUT)
+    make_props(OUT)
+    make_terrain()
     print("已生成：", ", ".join(sorted(str(p.relative_to(OUT)) for p in OUT.rglob("*.png"))))
 
 
