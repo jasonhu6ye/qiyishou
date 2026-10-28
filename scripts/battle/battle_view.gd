@@ -104,7 +104,7 @@ func _fx(k: float, type: String, on_enemy: bool) -> void:
 		"火":
 			for i in 22:
 				var life := fposmod(k * 1.6 + i * 0.137, 1.0)
-				var p := target + Vector2((i * 37 % 37) - 18 + sin(life * 9.0 + i) * 3.0, 18.0 - life * 44.0)
+				var p := target + Vector2((i * 23 % 37) - 18 + sin(life * 9.0 + i) * 3.0, 18.0 - life * 44.0)
 				var c: Color = cols[mini(2, int(life * 3.0))]
 				_dot(p, roundf(7.0 - life * 5.0), c)
 				if life < 0.4:
