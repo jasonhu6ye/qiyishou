@@ -25,6 +25,7 @@ var flash_at := -10.0
 func _ready() -> void:
 	layer = 5
 	view = BattleView.new()
+	view.theme = Game.ui_theme
 	view.battle = self
 	view.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	view.mouse_filter = Control.MOUSE_FILTER_IGNORE

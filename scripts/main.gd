@@ -42,6 +42,7 @@ func _ready() -> void:
 func _set_state(s: State) -> void:
 	state = s
 	player.active = s == State.WALK
+	hud.visible = s != State.BATTLE
 	hud.refresh(world.area_name(player.cell))
 
 

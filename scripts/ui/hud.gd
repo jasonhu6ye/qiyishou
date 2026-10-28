@@ -10,6 +10,7 @@ var _tween: Tween
 func _ready() -> void:
 	layer = 8
 	status = Label.new()
+	status.theme = Game.ui_theme
 	status.position = Vector2(4, 2)
 	status.add_theme_color_override("font_color", Color("#f1f2ff"))
 	status.add_theme_color_override("font_outline_color", Color("#141830"))
@@ -17,6 +18,7 @@ func _ready() -> void:
 	add_child(status)
 
 	toast = Label.new()
+	toast.theme = Game.ui_theme
 	toast.anchor_left = 0.5
 	toast.anchor_right = 0.5
 	toast.offset_top = 22

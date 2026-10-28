@@ -14,6 +14,8 @@ var seen := {}
 var caught := {}
 var player_cell := START_CELL
 var rng := RandomNumberGenerator.new()
+## 界面主题。CanvasLayer 会截断主题继承，所以各个界面的顶层控件要自己设置 theme = Game.ui_theme
+var ui_theme: Theme
 
 
 func _ready() -> void:
@@ -67,6 +69,7 @@ func _setup_theme() -> void:
 	theme.set_color("font_disabled_color", "Button", Color("#6b7099"))
 	theme.set_color("font_color", "Label", Color("#f1f2ff"))
 	get_tree().root.theme = theme
+	ui_theme = theme
 
 
 func _flat_box(bg: Color, border: Color) -> StyleBoxFlat:

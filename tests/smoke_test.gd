@@ -62,7 +62,7 @@ func _unit_checks() -> void:
 			break
 
 	check(Art.tex("tiles") != null and Art.tex("tree") != null and Art.tex("player") != null, "像素图都能载入")
-	check(ThemeDB.fallback_font is FontFile, "像素字体已设为默认字体")
+	check(Game.ui_theme != null and Game.ui_theme.default_font.resource_path == Game.FONT_PATH, "界面主题使用像素字体")
 
 	Game.reset()
 	Game.party.append(Monster.create("paowa", 7))
@@ -91,6 +91,9 @@ func _scene_checks() -> void:
 	check(world.tile_at(World.HEAL_DOOR) == World.DOOR, "治疗所门口存在")
 	check(not world.is_walkable(Vector2i(0, 0)), "地图边缘是树")
 	check(main.state == 0 and main.player.active, "有队伍时直接进入行走状态")
+	var dialog_font: Font = main.dialog.label.get_theme_font("font")
+	check(dialog_font.resource_path == Game.FONT_PATH, "对话框实际用上了像素字体")
+	check(main.dialog.label.get_theme_font_size("font_size") == Game.FONT_SIZE, "对话框字号是 12px")
 
 
 func _battle_check() -> void:

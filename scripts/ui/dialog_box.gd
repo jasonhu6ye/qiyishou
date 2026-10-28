@@ -19,6 +19,7 @@ var _shown_at := 0.0
 func _ready() -> void:
 	layer = 10
 	panel = PanelContainer.new()
+	panel.theme = Game.ui_theme
 	panel.anchor_left = 0.0
 	panel.anchor_right = 1.0
 	panel.anchor_top = 1.0
