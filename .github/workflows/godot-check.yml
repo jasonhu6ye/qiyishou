@@ -31,3 +31,43 @@ jobs:
           if grep -nE "SCRIPT ERROR|Parse Error|Failed to load script|Could not find type" import.log test.log; then
             echo "发现脚本错误"; exit 1
           fi
+
+  screenshots:
+    # 用虚拟显示器真正渲染一次，截图作为构建产物上传，方便不装 Godot 也能看效果
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      GODOT_VERSION: 4.3-stable
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装虚拟显示器
+        run: sudo apt-get update -q && sudo apt-get install -y -q xvfb libgl1 libgl1-mesa-dri
+
+      - name: 下载 Godot
+        run: |
+          curl -sSL -o godot.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_linux.x86_64.zip"
+          unzip -q godot.zip
+          mv "Godot_v${GODOT_VERSION}_linux.x86_64" "$RUNNER_TEMP/godot"
+
+      - name: 导入项目
+        run: timeout 300 "$RUNNER_TEMP/godot" --headless --editor --quit 2>&1 | tail -20 || true
+
+      - name: 截图
+        run: |
+          timeout 120 xvfb-run -a -s "-screen 0 1280x960x24" "$RUNNER_TEMP/godot" --path . --rendering-driver opengl3 res://tests/screenshot.tscn 2>&1 | tail -30
+          mkdir -p screenshots
+          cp ~/.local/share/godot/app_userdata/*/screenshots/*.png screenshots/
+
+      - name: 在日志里输出截图（base64，便于无法下载构建产物时查看）
+        run: |
+          for f in screenshots/*.png; do
+            echo "=== BEGIN $f"
+            base64 -w 120 "$f"
+            echo "=== END $f"
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: screenshots/

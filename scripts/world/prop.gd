@@ -17,7 +17,7 @@ func _draw() -> void:
 			var door_x := float(int(r.size.x / 2) * World.T)
 			Art.house(self, Vector2(r.size) * World.T, Color(house["roof"]), house["heal"], door_x)
 		"npc":
-			Art.person(self, facing, 0, Color(npc["body"]), Color(npc["hat"]))
+			Art.character(self, npc["sprite"], facing, 0)
 
 
 func face(dir: Vector2i) -> void:

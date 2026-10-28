@@ -20,7 +20,7 @@ const HOUSES := [
 
 const NPCS := [
 	{
-		"cell": Vector2i(12, 8), "body": "#3f8f6b", "hat": "#d8d0b8",
+		"cell": Vector2i(12, 8), "sprite": "npc_elder",
 		"lines": [
 			"老爷爷：年轻人，草丛里藏着野生的奇异兽，走进去就可能遇到。",
 			"先把它们打到红血，再扔兽球，成功率会高很多。",
@@ -159,33 +159,30 @@ func house_at(c: Vector2i) -> Dictionary:
 	return {}
 
 
+## tiles.png 中的格子：0/1 草地  2 花  3 高草  4 小路  5-7 水面三帧
+func _tile_frame(t: int, x: int, y: int) -> int:
+	match t:
+		PATH, DOOR:
+			return 4
+		WATER:
+			return 5 + int(_time * 3.0) % 3
+		FLOWER:
+			return 2
+		TALL_GRASS:
+			return 3
+	return 1 if (x * 7 + y * 3) % 5 == 0 else 0
+
+
 func _draw() -> void:
-	var grass_a := Color("#7cc96b")
-	var grass_b := Color("#78c467")
+	var sheet := Art.tex("tiles")
+	var size := Vector2(T, T)
 	for y in H:
 		for x in W:
 			var t := tiles[y * W + x]
 			var o := Vector2(x * T, y * T)
-			match t:
-				PATH, DOOR:
-					draw_rect(Rect2(o, Vector2(T, T)), Color("#e3c88f"))
-					if (x * 7 + y * 3) % 5 == 0:
-						draw_rect(Rect2(o + Vector2(4, 9), Vector2(2, 1)), Color("#c9ad72"))
-				WATER:
-					draw_rect(Rect2(o, Vector2(T, T)), Color("#3d8fd6"))
-					var shimmer := fmod(_time * 11.0 + x * 5 + y * 3, 12.0)
-					draw_rect(Rect2(o + Vector2(shimmer, 5 + (y % 2) * 5), Vector2(4, 1)), Color(1, 1, 1, 0.35))
-					if tile_at(Vector2i(x, y - 1)) != WATER:
-						draw_rect(Rect2(o, Vector2(T, 3)), Color("#a7dcf7"))
-					if tile_at(Vector2i(x, y + 1)) != WATER:
-						draw_rect(Rect2(o + Vector2(0, T - 2), Vector2(T, 2)), Color("#2a6fb0"))
-				_:
-					draw_rect(Rect2(o, Vector2(T, T)), grass_a if (x + y) % 2 else grass_b)
-					if t == FLOWER:
-						Art.ellipse(self, o + Vector2(4, 5), Vector2(1.4, 1.4), Color("#fff6a8"))
-						Art.ellipse(self, o + Vector2(11, 11), Vector2(1.4, 1.4), Color("#ff9fb5"))
-					elif t == TALL_GRASS:
-						for blade in [Vector2(2, 6), Vector2(8, 2), Vector2(9, 10), Vector2(3, 12)]:
-							var bp: Vector2 = o + blade
-							Art.poly(self, [bp + Vector2(0, 5), bp + Vector2(2, -1), bp + Vector2(3, 5)], Color("#3f9a3c"))
-							Art.poly(self, [bp + Vector2(2, 5), bp + Vector2(4.5, 0), bp + Vector2(5.5, 5)], Color("#2f7f2e"))
+			draw_texture_rect_region(sheet, Rect2(o, size), Rect2(_tile_frame(t, x, y) * T, 0, T, T))
+			if t == WATER:
+				if tile_at(Vector2i(x, y - 1)) != WATER:
+					draw_rect(Rect2(o, Vector2(T, 2)), Color("#cdeeff"))
+				if tile_at(Vector2i(x, y + 1)) != WATER:
+					draw_rect(Rect2(o + Vector2(0, T - 2), Vector2(T, 2)), Color("#2a6fb0"))

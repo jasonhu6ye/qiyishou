@@ -10,29 +10,30 @@ var _tween: Tween
 func _ready() -> void:
 	layer = 8
 	status = Label.new()
-	status.position = Vector2(14, 10)
-	status.add_theme_font_size_override("font_size", 18)
+	status.theme = Game.ui_theme
+	status.position = Vector2(4, 2)
 	status.add_theme_color_override("font_color", Color("#f1f2ff"))
 	status.add_theme_color_override("font_outline_color", Color("#141830"))
-	status.add_theme_constant_override("outline_size", 6)
+	status.add_theme_constant_override("outline_size", 3)
 	add_child(status)
 
 	toast = Label.new()
+	toast.theme = Game.ui_theme
 	toast.anchor_left = 0.5
 	toast.anchor_right = 0.5
-	toast.offset_top = 40
+	toast.offset_top = 22
 	toast.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	toast.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	toast.add_theme_font_size_override("font_size", 32)
+	toast.add_theme_font_size_override("font_size", 24)
 	toast.add_theme_color_override("font_color", Color("#ffcd4d"))
 	toast.add_theme_color_override("font_outline_color", Color("#141830"))
-	toast.add_theme_constant_override("outline_size", 10)
+	toast.add_theme_constant_override("outline_size", 4)
 	toast.modulate.a = 0.0
 	add_child(toast)
 
 
 func refresh(area: String) -> void:
-	status.text = "%s · 兽球 %d · 队伍 %d/%d · 图鉴 捕获 %d / 见过 %d" % [
+	status.text = "%s  兽球×%d  队伍%d/%d  图鉴%d/%d" % [
 		area, Game.balls, Game.party.size(), Game.PARTY_LIMIT, Game.caught.size(), Game.seen.size()]
 
 

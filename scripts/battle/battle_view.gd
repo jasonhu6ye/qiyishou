@@ -1,6 +1,6 @@
 class_name BattleView
 extends Control
-## 战斗画面。在 320x240 的逻辑坐标里绘制，按控件宽度等比放大；文字按实际像素绘制以保持清晰。
+## 战斗画面。在 320x240 的逻辑坐标里绘制（就是游戏的渲染分辨率），按控件宽度等比缩放。
 
 const LOGICAL := Vector2(320, 240)
 
@@ -60,9 +60,9 @@ func _draw() -> void:
 			alpha = 0.35 if int(since / 0.07) % 2 else 1.0
 		_monster(Vector2(84 + dx, 152), 1.9, b.me.key, true, alpha, t)
 
-	_hp_box(Vector2(12, 12), 132, b.wild, b.disp_enemy_hp, false)
+	_hp_box(Vector2(8, 8), 140, b.wild, b.disp_enemy_hp, false)
 	if b.show_me and b.me:
-		_hp_box(Vector2(180, 100), 128, b.me, b.disp_me_hp, true)
+		_hp_box(Vector2(172, 98), 140, b.me, b.disp_me_hp, true)
 
 	var flash := 1.0 - (t - b.flash_at) / 0.5
 	if flash > 0.0:
@@ -102,31 +102,32 @@ func _hp_color(r: float) -> Color:
 
 
 func _hp_box(at: Vector2, w: float, m: Monster, disp: float, mine: bool) -> void:
-	var h := 38.0 if mine else 30.0
-	draw_rect(Rect2(at, Vector2(w, h)), Color(0.08, 0.09, 0.19, 0.9))
-	draw_rect(Rect2(at, Vector2(w, h)), Color("#3d4580"), false, 1.2)
-	_text(at + Vector2(7, 4), m.species_name(), 9, Color("#f1f2ff"))
-	_text(at + Vector2(w - 7, 4), "Lv.%d" % m.level, 9, Color("#f1f2ff"), true)
-	_text(at + Vector2(7, 16), "HP", 7, Color("#ffcd4d"))
-	var bw := w - 30
+	var h := 44.0 if mine else 31.0
+	draw_rect(Rect2(at, Vector2(w, h)), Color(0.08, 0.09, 0.19, 0.92))
+	draw_rect(Rect2(at + Vector2(0.5, 0.5), Vector2(w - 1, h - 1)), Color("#3d4580"), false, 1.0)
+	_text(at + Vector2(6, 3), m.species_name(), Color("#f1f2ff"))
+	_text(at + Vector2(w - 6, 3), "Lv.%d" % m.level, Color("#f1f2ff"), true)
+	_text(at + Vector2(6, 16), "HP", Color("#ffcd4d"))
+	var bar := Rect2(at + Vector2(24, 20), Vector2(w - 30, 5))
 	var r := clampf(disp / m.max_hp(), 0.0, 1.0)
-	draw_rect(Rect2(at + Vector2(22, 19), Vector2(bw, 5)), Color("#0c0f22"))
-	draw_rect(Rect2(at + Vector2(22, 19), Vector2(bw * r, 5)), _hp_color(r))
+	draw_rect(bar, Color("#0c0f22"))
+	draw_rect(Rect2(bar.position, Vector2(roundf(bar.size.x * r), bar.size.y)), _hp_color(r))
 	if mine:
-		_text(at + Vector2(w - 7, 25), "%d / %d" % [ceili(disp), m.max_hp()], 7, Color("#a3a9d6"), true)
+		_text(at + Vector2(w - 6, 27), "%d / %d" % [ceili(disp), m.max_hp()], Color("#a3a9d6"), true)
 		var lo := float(m.level * m.level * m.level)
 		var hi := float(m.xp_for_next())
-		draw_rect(Rect2(at + Vector2(7, h - 4), Vector2(w - 14, 2)), Color("#0c0f22"))
-		draw_rect(Rect2(at + Vector2(7, h - 4), Vector2((w - 14) * clampf((m.xp - lo) / (hi - lo), 0.0, 1.0), 2)), Color("#6fb6ff"))
+		var xp := Rect2(at + Vector2(6, h - 4), Vector2(w - 12, 2))
+		draw_rect(xp, Color("#0c0f22"))
+		draw_rect(Rect2(xp.position, Vector2(roundf(xp.size.x * clampf((m.xp - lo) / (hi - lo), 0.0, 1.0)), 2)), Color("#6fb6ff"))
 
 
-## 在逻辑坐标 at（文字左上角；right 为 true 时是右上角）处绘制清晰文字
-func _text(at: Vector2, s: String, logical_size: float, col: Color, right := false) -> void:
+## 在逻辑坐标 at（文字左上角；right 为 true 时是右上角）处用像素字体绘制文字
+func _text(at: Vector2, s: String, col: Color, right := false) -> void:
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 	var font := get_theme_default_font()
-	var px := int(logical_size * _k)
-	var pos := at * _k
+	var px := int(Game.FONT_SIZE * _k)
+	var pos := (at * _k).round()
 	if right:
 		pos.x -= font.get_string_size(s, HORIZONTAL_ALIGNMENT_LEFT, -1, px).x
-	draw_string(font, pos + Vector2(0, font.get_ascent(px)), s, HORIZONTAL_ALIGNMENT_LEFT, -1, px, col)
+	draw_string(font, pos + Vector2(0, roundf(font.get_ascent(px))), s, HORIZONTAL_ALIGNMENT_LEFT, -1, px, col)
 	_reset()

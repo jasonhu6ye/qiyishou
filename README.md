@@ -1,6 +1,9 @@
 # 奇异兽
 
-一款类 PokeMMO 的 2.5D 俯视角怪兽收集 RPG，用 Godot 4 开发。当前是单机可玩的最小版本，美术全部是代码画的占位图，之后替换成像素贴图。
+一款类 PokeMMO 的 2.5D 俯视角怪兽收集 RPG，用 Godot 4 开发。当前是单机可玩的最小版本。画面以 320×240 渲染再整数倍放大，地面、树和人物是像素图，房屋和奇异兽还是代码绘制的占位图。
+
+![大地图](docs/screenshots/world.png)
+![战斗](docs/screenshots/battle.png)
 
 ## 运行
 
@@ -42,8 +45,22 @@ scripts/
   battle/battle_view.gd   战斗画面绘制
   ui/dialog_box.gd        对话框与选项按钮
   ui/hud.gd               状态栏与地名提示
+assets/sprites/           像素图：tiles.png 地面图块、tree.png、player.png / npc_elder.png 行走图
+assets/fonts/             Fusion Pixel 12px 中文像素字体（SIL OFL 1.1，见 OFL.txt）
+tools/gen_pixel_art.py    重新生成 assets/sprites 下的像素图（需要 Pillow）
 tests/smoke_test.tscn     冒烟测试
+tests/screenshot.tscn     截图脚本（CI 用虚拟显示器运行，截图作为构建产物上传）
 ```
+
+## 美术规格
+
+- 渲染分辨率 320×240，窗口 960×720，整数倍缩放，关闭纹理过滤
+- 图块 16×16。`tiles.png` 一行依次是：草地、草地变体、花、高草、小路、水面三帧、高草前景
+- 人物行走图每帧 16×20，3 列（站立、迈左脚、迈右脚）× 4 行（下、左、右、上）
+- 树 16×32，原点在底边中心
+- 字体只用 12px（或 24px 等整数倍），否则像素会糊
+
+换手绘图时保持同样的尺寸和排布，代码不用改。
 
 ## 测试
 
@@ -55,7 +72,7 @@ godot --headless --path . res://tests/smoke_test.tscn
 
 ## 路线图
 
-1. **美术**：16×16 像素图块（TileMapLayer）、角色四方向行走图、奇异兽正面/背面图，接入中文像素字体
+1. **美术**：房屋改成像素图、奇异兽正面/背面像素图、战斗背景图、地图改用 TileMapLayer 方便在编辑器里画
 2. **内容**：更多物种和招式、进化、道具与商店、训练师对战、第二个城镇
 3. **系统**：状态异常、能力等级变化、特性、图鉴界面
 4. **联机**（单机打磨好之后）：同屏看到其他玩家、交易、玩家对战。届时需要单独的服务器

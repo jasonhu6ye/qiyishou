@@ -1,7 +1,13 @@
 class_name Art
 extends RefCounted
-## 占位美术：用矢量图元画人物、树木、房屋与奇异兽。
-## 换成像素贴图时，只需替换这里和 Prop/Player 的 _draw。
+## 美术入口：地面、树和人物用 assets/sprites 下的像素图（由 tools/gen_pixel_art.py 生成），
+## 房屋和奇异兽暂时还是矢量占位图，在 320x240 下渲染后同样呈像素风。
+
+const CHAR_SIZE := Vector2(16, 20)
+const TILE_TALL_FRONT := 8
+
+static var _textures := {}
+
 
 
 static func ellipse(ci: CanvasItem, c: Vector2, r: Vector2, col: Color, rot := 0.0) -> void:
@@ -24,48 +30,38 @@ static func half_disc(ci: CanvasItem, c: Vector2, r: float, col: Color) -> void:
 	ci.draw_colored_polygon(pts, col)
 
 
-## 人物，原点在脚底中心。dir 为朝向，step 为 0/1/2 的走路帧。
-static func person(ci: CanvasItem, dir: Vector2i, step: int, body: Color, hat: Color) -> void:
-	var o := Vector2(-8, -16)
-	var skin := Color("#ffd9b3")
-	var dark := Color("#2b2b45")
-	ellipse(ci, o + Vector2(8, 14.5), Vector2(5, 2), Color(0, 0, 0, 0.28))
-	var legs := [[5.0, 11.0, 4.0], [9.0, 11.0, 4.0]]
-	if step == 1:
-		legs = [[5.0, 11.0, 4.0], [9.0, 12.0, 3.0]]
-	elif step == 2:
-		legs = [[5.0, 12.0, 3.0], [9.0, 11.0, 4.0]]
-	for l in legs:
-		ci.draw_rect(Rect2(o + Vector2(l[0], l[1]), Vector2(2, l[2])), dark)
-	var lift := 0.5 if step != 0 else 0.0
-	ci.draw_rect(Rect2(o + Vector2(4, 6 - lift), Vector2(8, 6)), body)
-	ci.draw_rect(Rect2(o + Vector2(3, 7 - lift), Vector2(1.5, 4)), body)
-	ci.draw_rect(Rect2(o + Vector2(11.5, 7 - lift), Vector2(1.5, 4)), body)
-	ellipse(ci, o + Vector2(8, 3 - lift), Vector2(4.5, 4.5), skin)
-	if dir == Vector2i.UP:
-		ellipse(ci, o + Vector2(8, 2.4 - lift), Vector2(4.8, 4.4), hat)
-		return
-	half_disc(ci, o + Vector2(8, 1.8 - lift), 4.9, hat)
-	var brim := Rect2(o + Vector2(3.5, 1.3 - lift), Vector2(9, 1.4))
-	var eyes := [6.4, 9.6]
+static func tex(sprite_name: String) -> Texture2D:
+	if not _textures.has(sprite_name):
+		_textures[sprite_name] = load("res://assets/sprites/%s.png" % sprite_name)
+	return _textures[sprite_name]
+
+
+## 行走图中朝向对应的行：下、左、右、上
+static func _dir_row(dir: Vector2i) -> int:
 	if dir == Vector2i.LEFT:
-		brim = Rect2(o + Vector2(1.5, 1.3 - lift), Vector2(5, 1.4))
-		eyes = [5.6]
-	elif dir == Vector2i.RIGHT:
-		brim = Rect2(o + Vector2(9.5, 1.3 - lift), Vector2(5, 1.4))
-		eyes = [10.4]
-	ci.draw_rect(brim, hat)
-	for ex in eyes:
-		ci.draw_rect(Rect2(o + Vector2(ex - 0.6, 3.4 - lift), Vector2(1.2, 1.6)), dark)
+		return 1
+	if dir == Vector2i.RIGHT:
+		return 2
+	if dir == Vector2i.UP:
+		return 3
+	return 0
+
+
+## 人物，原点在脚底中心。sheet 为 assets/sprites 下的行走图名，step 为 0/1/2 的走路帧。
+static func character(ci: CanvasItem, sheet: String, dir: Vector2i, step: int) -> void:
+	ellipse(ci, Vector2(0, -1.5), Vector2(5, 2), Color(0, 0, 0, 0.28))
+	var src := Rect2(Vector2(step * CHAR_SIZE.x, _dir_row(dir) * CHAR_SIZE.y), CHAR_SIZE)
+	ci.draw_texture_rect_region(tex(sheet), Rect2(Vector2(-8, -18), CHAR_SIZE), src)
+
+
+## 站在高草里时盖在脚上的草叶
+static func tall_grass_front(ci: CanvasItem) -> void:
+	ci.draw_texture_rect_region(tex("tiles"), Rect2(-8, -16, 16, 16), Rect2(TILE_TALL_FRONT * 16, 0, 16, 16))
 
 
 ## 树，原点在所在格子的底边中心。树冠高出一格，形成 2.5D 遮挡。
 static func tree(ci: CanvasItem) -> void:
-	ellipse(ci, Vector2(0, -2), Vector2(7.5, 3), Color(0, 0, 0, 0.25))
-	ci.draw_rect(Rect2(-1.5, -8, 3, 6.5), Color("#7a4f2a"))
-	ellipse(ci, Vector2(0, -13), Vector2(8.5, 8), Color("#2e7537"))
-	ellipse(ci, Vector2(0, -18), Vector2(6.5, 6), Color("#3a8b44"))
-	ellipse(ci, Vector2(-2, -19), Vector2(3.5, 3), Color("#56a95c"))
+	ci.draw_texture(tex("tree"), Vector2(-8, -32))
 
 
 ## 房屋，原点在左下角。size 以像素计。
