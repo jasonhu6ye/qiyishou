@@ -33,8 +33,8 @@ func _ready() -> void:
 
 
 func refresh(area: String) -> void:
-	status.text = "%s  兽球×%d  队伍%d/%d  图鉴%d/%d" % [
-		area, Game.balls, Game.party.size(), Game.PARTY_LIMIT, Game.caught.size(), Game.seen.size()]
+	status.text = "%s  %d金  兽球×%d  伤药×%d  图鉴%d/%d" % [
+		area, Game.money, Game.balls, Game.potions, Game.caught.size(), Game.seen.size()]
 
 
 func show_toast(text: String) -> void:

@@ -1,19 +1,25 @@
 class_name Data
 extends RefCounted
-## 静态游戏数据：招式、属性克制、物种、野外遭遇表。
+## 静态游戏数据：招式、属性克制、物种与进化、野外遭遇表、商店。
 ## 以后数据量变大时可以迁到 Resource（.tres）或 JSON。
 
 const MOVES := {
 	"撞击": {"type": "普通", "power": 40},
 	"啄": {"type": "普通", "power": 35},
 	"咬住": {"type": "普通", "power": 60},
+	"疾风翼": {"type": "普通", "power": 60},
 	"火花": {"type": "火", "power": 40},
 	"火焰轮": {"type": "火", "power": 65},
+	"烈焰冲撞": {"type": "火", "power": 90},
 	"水枪": {"type": "水", "power": 40},
 	"泡沫光线": {"type": "水", "power": 65},
+	"激流炮": {"type": "水", "power": 90},
 	"吸取": {"type": "草", "power": 30},
 	"飞叶": {"type": "草", "power": 45},
 	"飞叶快刀": {"type": "草", "power": 60},
+	"叶刃风暴": {"type": "草", "power": 90},
+	"电击": {"type": "电", "power": 40},
+	"雷电球": {"type": "电", "power": 65},
 }
 
 ## 攻击属性 -> 防守属性 -> 倍率，未列出的为 1.0
@@ -21,57 +27,80 @@ const EFFECTIVENESS := {
 	"火": {"草": 2.0, "水": 0.5, "火": 0.5},
 	"水": {"火": 2.0, "草": 0.5, "水": 0.5},
 	"草": {"水": 2.0, "火": 0.5, "草": 0.5},
+	"电": {"水": 2.0, "草": 0.5, "电": 0.5},
 }
 
+## evolves: [进化后的物种, 进化等级]。立绘在 assets/sprites/monsters/<key>_front.png / _back.png
 const SPECIES := {
 	"huohu": {
-		"name": "焰尾狐", "type": "火", "shape": "fox",
-		"col": "#e8743b", "col2": "#ffe1a8", "dark": "#a8441c",
-		"base": {"hp": 40, "atk": 55, "def": 42, "spd": 62},
-		"catch_rate": 0.3, "xp": 64,
+		"name": "焰尾狐", "type": "火", "base": {"hp": 40, "atk": 55, "def": 42, "spd": 62},
+		"catch_rate": 0.3, "xp": 64, "evolves": ["huohu2", 16],
 		"moves": [[1, "撞击"], [1, "火花"], [8, "咬住"], [12, "火焰轮"]],
 	},
+	"huohu2": {
+		"name": "烈焰狐", "type": "火", "base": {"hp": 58, "atk": 80, "def": 60, "spd": 82},
+		"catch_rate": 0.1, "xp": 142,
+		"moves": [[1, "撞击"], [1, "火花"], [8, "咬住"], [12, "火焰轮"], [22, "烈焰冲撞"]],
+	},
 	"paowa": {
-		"name": "泡泡蛙", "type": "水", "shape": "frog",
-		"col": "#4c9be8", "col2": "#d6efff", "dark": "#2a6bb0",
-		"base": {"hp": 46, "atk": 48, "def": 55, "spd": 45},
-		"catch_rate": 0.3, "xp": 64,
+		"name": "泡泡蛙", "type": "水", "base": {"hp": 46, "atk": 48, "def": 55, "spd": 45},
+		"catch_rate": 0.3, "xp": 64, "evolves": ["paowa2", 16],
 		"moves": [[1, "撞击"], [1, "水枪"], [8, "咬住"], [12, "泡沫光线"]],
 	},
+	"paowa2": {
+		"name": "巨浪蛙", "type": "水", "base": {"hp": 68, "atk": 70, "def": 78, "spd": 58},
+		"catch_rate": 0.1, "xp": 142,
+		"moves": [[1, "撞击"], [1, "水枪"], [8, "咬住"], [12, "泡沫光线"], [22, "激流炮"]],
+	},
 	"yeshu": {
-		"name": "叶芽鼠", "type": "草", "shape": "mouse",
-		"col": "#c9b78a", "col2": "#f5c2c7", "dark": "#8d7a52",
-		"base": {"hp": 44, "atk": 50, "def": 50, "spd": 50},
-		"catch_rate": 0.35, "xp": 64,
+		"name": "叶芽鼠", "type": "草", "base": {"hp": 44, "atk": 50, "def": 50, "spd": 50},
+		"catch_rate": 0.35, "xp": 64, "evolves": ["yeshu2", 16],
 		"moves": [[1, "撞击"], [1, "吸取"], [7, "飞叶"], [12, "飞叶快刀"]],
 	},
+	"yeshu2": {
+		"name": "森叶鼠", "type": "草", "base": {"hp": 62, "atk": 74, "def": 70, "spd": 70},
+		"catch_rate": 0.1, "xp": 142,
+		"moves": [[1, "撞击"], [1, "吸取"], [7, "飞叶"], [12, "飞叶快刀"], [22, "叶刃风暴"]],
+	},
 	"yuanniao": {
-		"name": "圆滚鸟", "type": "普通", "shape": "bird",
-		"col": "#b9a3e3", "col2": "#f4ecff", "dark": "#7a62a8",
-		"base": {"hp": 40, "atk": 45, "def": 40, "spd": 56},
-		"catch_rate": 0.7, "xp": 50,
+		"name": "圆滚鸟", "type": "普通", "base": {"hp": 40, "atk": 45, "def": 40, "spd": 56},
+		"catch_rate": 0.7, "xp": 50, "evolves": ["yuanniao2", 14],
 		"moves": [[1, "撞击"], [3, "啄"], [10, "咬住"]],
 	},
+	"yuanniao2": {
+		"name": "疾风鸟", "type": "普通", "base": {"hp": 55, "atk": 70, "def": 55, "spd": 85},
+		"catch_rate": 0.35, "xp": 120,
+		"moves": [[1, "撞击"], [3, "啄"], [10, "咬住"], [14, "疾风翼"]],
+	},
 	"chongchong": {
-		"name": "绒绒虫", "type": "草", "shape": "worm",
-		"col": "#9ad66b", "col2": "#e4ffc9", "dark": "#5c9a3a",
-		"base": {"hp": 45, "atk": 30, "def": 35, "spd": 40},
-		"catch_rate": 0.8, "xp": 40,
+		"name": "绒绒虫", "type": "草", "base": {"hp": 45, "atk": 30, "def": 35, "spd": 40},
+		"catch_rate": 0.8, "xp": 40, "evolves": ["jianjian", 7],
 		"moves": [[1, "撞击"], [4, "吸取"], [11, "飞叶"]],
 	},
+	"jianjian": {
+		"name": "茧茧", "type": "草", "base": {"hp": 50, "atk": 20, "def": 70, "spd": 15},
+		"catch_rate": 0.5, "xp": 60, "evolves": ["caidie", 10],
+		"moves": [[1, "撞击"], [4, "吸取"]],
+	},
+	"caidie": {
+		"name": "彩翼蝶", "type": "草", "base": {"hp": 60, "atk": 60, "def": 50, "spd": 70},
+		"catch_rate": 0.3, "xp": 130,
+		"moves": [[1, "吸取"], [10, "飞叶"], [12, "疾风翼"], [18, "飞叶快刀"]],
+	},
 	"tantan": {
-		"name": "炭炭", "type": "火", "shape": "blob",
-		"col": "#4a3f4f", "col2": "#ffe17a", "dark": "#2b232e",
-		"base": {"hp": 45, "atk": 50, "def": 45, "spd": 35},
+		"name": "炭炭", "type": "火", "base": {"hp": 45, "atk": 50, "def": 45, "spd": 35},
 		"catch_rate": 0.5, "xp": 58,
 		"moves": [[1, "撞击"], [5, "火花"], [13, "火焰轮"]],
 	},
 	"fufu": {
-		"name": "浮浮母", "type": "水", "shape": "jelly",
-		"col": "#8fd8e8", "col2": "#ffffff", "dark": "#4aa2b8",
-		"base": {"hp": 50, "atk": 40, "def": 50, "spd": 40},
+		"name": "浮浮母", "type": "水", "base": {"hp": 50, "atk": 40, "def": 50, "spd": 40},
 		"catch_rate": 0.5, "xp": 58,
 		"moves": [[1, "撞击"], [5, "水枪"], [13, "泡沫光线"]],
+	},
+	"dianli": {
+		"name": "电栗", "type": "电", "base": {"hp": 42, "atk": 52, "def": 40, "spd": 72},
+		"catch_rate": 0.4, "xp": 62,
+		"moves": [[1, "撞击"], [4, "电击"], [13, "雷电球"]],
 	},
 }
 
@@ -84,9 +113,13 @@ const ZONES := [
 	},
 	{
 		"name": "2号道路", "levels": [5, 9],
-		"table": [["yuanniao", 20], ["chongchong", 15], ["tantan", 22], ["fufu", 18], ["paowa", 13], ["huohu", 12]],
+		"table": [["yuanniao", 18], ["chongchong", 12], ["tantan", 18], ["fufu", 16], ["dianli", 14], ["paowa", 11], ["huohu", 11]],
 	},
 ]
+
+## 商店商品：名字 -> 价格
+const SHOP := {"兽球": 200, "伤药": 300}
+const POTION_HEAL := 20
 
 
 static func effectiveness(move_type: String, target_type: String) -> float:
@@ -109,3 +142,11 @@ static func roll_wild(zone_index: int, rng: RandomNumberGenerator) -> Monster:
 			break
 	var lv := rng.randi_range(int(zone["levels"][0]), int(zone["levels"][1]))
 	return Monster.create(key, lv)
+
+
+## 达到进化等级时返回进化后的物种，否则返回空字符串
+static func evolution_for(m: Monster) -> String:
+	var evo: Array = m.species().get("evolves", [])
+	if evo.size() == 2 and m.level >= int(evo[1]):
+		return evo[0]
+	return ""

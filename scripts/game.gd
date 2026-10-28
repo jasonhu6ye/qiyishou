@@ -9,7 +9,11 @@ const FONT_SIZE := 12
 
 var party: Array[Monster] = []
 var box: Array[Monster] = []
-var balls := 10
+var balls := 5
+var potions := 2
+var money := 500
+## 剧情标记，比如打败过的训练师：flags["trainer_ajie"] = true
+var flags := {}
 var seen := {}
 var caught := {}
 var player_cell := START_CELL
@@ -114,10 +118,34 @@ func add_caught(m: Monster) -> bool:
 	return false
 
 
+## 在商店买一件东西，钱不够返回 false
+func buy(item: String) -> bool:
+	var price: int = Data.SHOP[item]
+	if money < price:
+		return false
+	money -= price
+	if item == "兽球":
+		balls += 1
+	elif item == "伤药":
+		potions += 1
+	return true
+
+
+## 对一只奇异兽用伤药，返回回复量；不能用（没药、已倒下、满血）返回 0 且不消耗
+func use_potion(m: Monster) -> int:
+	if potions <= 0 or m.is_fainted() or m.hp >= m.max_hp():
+		return 0
+	potions -= 1
+	return m.restore(Data.POTION_HEAL)
+
+
 func reset() -> void:
 	party.clear()
 	box.clear()
-	balls = 10
+	balls = 5
+	potions = 2
+	money = 500
+	flags.clear()
 	seen.clear()
 	caught.clear()
 	player_cell = START_CELL
@@ -128,6 +156,9 @@ func save_game() -> void:
 		"party": party.map(func(m: Monster) -> Dictionary: return m.to_dict()),
 		"box": box.map(func(m: Monster) -> Dictionary: return m.to_dict()),
 		"balls": balls,
+		"potions": potions,
+		"money": money,
+		"flags": flags,
 		"seen": seen.keys(),
 		"caught": caught.keys(),
 		"cell": [player_cell.x, player_cell.y],
@@ -151,7 +182,10 @@ func load_game() -> bool:
 		party.append(Monster.from_dict(d))
 	for d in data.get("box", []):
 		box.append(Monster.from_dict(d))
-	balls = int(data.get("balls", 10))
+	balls = int(data.get("balls", 5))
+	potions = int(data.get("potions", 2))
+	money = int(data.get("money", 500))
+	flags = data.get("flags", {})
 	for k in data.get("seen", []):
 		seen[k] = true
 	for k in data.get("caught", []):

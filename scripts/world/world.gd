@@ -11,11 +11,13 @@ const H := 36
 const WALKABLE := [GRASS, TALL_GRASS, PATH, DOOR, FLOWER]
 const HEAL_DOOR := Vector2i(6, 5)
 const HEAL_EXIT := Vector2i(6, 6)
+const SHOP_DOOR := Vector2i(13, 5)
+const SHOP_EXIT := Vector2i(13, 6)
 
 const HOUSES := [
-	{"rect": Rect2i(4, 3, 4, 3), "roof": "#d9534f", "heal": true},
-	{"rect": Rect2i(11, 3, 4, 3), "roof": "#4a7fd1", "heal": false},
-	{"rect": Rect2i(3, 10, 4, 3), "roof": "#5a9e5a", "heal": false},
+	{"rect": Rect2i(4, 3, 4, 3), "kind": "heal"},
+	{"rect": Rect2i(11, 3, 4, 3), "kind": "shop"},
+	{"rect": Rect2i(3, 10, 4, 3), "kind": "home"},
 ]
 
 const NPCS := [
@@ -26,7 +28,18 @@ const NPCS := [
 			"先把它们打到红血，再扔兽球，成功率会高很多。",
 			"打不过就回镇子左上角的红屋顶治疗所，走进门就能免费恢复。",
 			"往东走是2号道路，那里的奇异兽更强。听说湖边还有会喷火的炭炭。",
+			"对了，红屋顶旁边蓝屋顶的是商店，兽球和伤药都在那儿买。",
 		],
+	},
+	{
+		"cell": Vector2i(37, 15), "sprite": "npc_trainer", "facing": Vector2i.LEFT,
+		"lines": ["阿杰：输给你我心服口服。再往前走走，说不定能碰到更厉害的奇异兽！"],
+		"trainer": {
+			"id": "trainer_ajie", "name": "训练师 阿杰", "sight": 4, "reward": 480,
+			"team": [["yuanniao", 8], ["dianli", 9]],
+			"intro": ["阿杰：喂！眼神对上了就是要对战！", "让你见识一下我精心培养的奇异兽！"],
+			"defeat": "阿杰：怎么会……我的奇异兽明明那么强！",
+		},
 	},
 ]
 
@@ -61,6 +74,7 @@ func _ready() -> void:
 		p.kind = "npc"
 		p.npc = n
 		p.position = Vector2(n["cell"].x * T + 8, (n["cell"].y + 1) * T)
+		p.facing = n.get("facing", Vector2i.DOWN)
 		objects.add_child(p)
 		npc_props.append(p)
 	player = Player.new()
@@ -104,6 +118,11 @@ func _generate() -> void:
 		_fill(h["rect"], HOUSE, rng)
 	_set_tile(HEAL_DOOR, DOOR)
 	_set_tile(HEAL_EXIT, PATH)
+	_set_tile(SHOP_DOOR, DOOR)
+	_set_tile(SHOP_EXIT, PATH)
+	# NPC 脚下保证是空地，不会被随机生成的树或草挡住
+	for n in NPCS:
+		_set_tile(n["cell"], GRASS)
 
 
 func _fill(r: Rect2i, v: int, rng: RandomNumberGenerator, p := 1.0) -> void:
@@ -130,6 +149,23 @@ func npc_at(c: Vector2i) -> Prop:
 	for p in npc_props:
 		if p.npc["cell"] == c:
 			return p
+	return null
+
+
+## 玩家走到 cell 时，返回看见了他的、还没被打败的训练师（没有则返回 null）。
+## 训练师沿面朝方向看 sight 格，视线会被不能走的格子挡住。
+func trainer_spotting(c: Vector2i) -> Prop:
+	for p in npc_props:
+		var info: Dictionary = p.npc.get("trainer", {})
+		if info.is_empty() or Game.flags.get(info["id"], false):
+			continue
+		var look: Vector2i = p.npc["cell"]
+		for i in int(info["sight"]):
+			look += p.facing
+			if look == c:
+				return p
+			if not is_walkable(look) and look != c:
+				break
 	return null
 
 

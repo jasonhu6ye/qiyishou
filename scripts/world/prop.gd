@@ -6,6 +6,8 @@ var kind := "tree"
 var house := {}
 var npc := {}
 var facing := Vector2i.DOWN
+## 训练师发现玩家时头顶显示感叹号
+var alerted := false
 
 
 func _draw() -> void:
@@ -13,11 +15,16 @@ func _draw() -> void:
 		"tree":
 			Art.tree(self)
 		"house":
-			var r: Rect2i = house["rect"]
-			var door_x := float(int(r.size.x / 2) * World.T)
-			Art.house(self, Vector2(r.size) * World.T, Color(house["roof"]), house["heal"], door_x)
+			Art.house(self, house["kind"])
 		"npc":
 			Art.character(self, npc["sprite"], facing, 0)
+			if alerted:
+				Art.alert(self)
+
+
+func set_alerted(on: bool) -> void:
+	alerted = on
+	queue_redraw()
 
 
 func face(dir: Vector2i) -> void:

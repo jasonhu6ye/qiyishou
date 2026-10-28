@@ -1,4 +1,4 @@
-"""生成奇异兽的像素美术：地面图块、树、玩家与 NPC 行走图。
+"""生成奇异兽的像素美术：地面图块、树、房屋、人物行走图和奇异兽立绘（见 gen_monsters.py）。
 
 用法：python3 tools/gen_pixel_art.py
 输出到 assets/sprites/。需要 Pillow（pip install pillow）。
@@ -10,6 +10,8 @@ from pathlib import Path
 import random
 
 from PIL import Image
+
+from gen_monsters import make_monsters
 
 OUT = Path(__file__).resolve().parent.parent / "assets" / "sprites"
 T = 16
@@ -295,6 +297,10 @@ PLAYER_PALETTE = {
     "K": "#2b2b45", "R": "#d84a4a", "W": "#ffffff", "D": "#3a2a24", "S": "#ffd9b3",
     "B": "#3d6fd1", "b": "#9cc0ff", "P": "#3a3a5c",
 }
+TRAINER_PALETTE = {
+    "K": "#2b2b45", "R": "#3f9a5a", "W": "#ffffff", "D": "#2a2420", "S": "#f5cfa8",
+    "B": "#e08a3a", "b": "#ffd08a", "P": "#3a3a5c",
+}
 NPC_PALETTE = {
     "K": "#2b2b45", "R": "#d8d0b8", "W": "#f5f0e0", "D": "#c8c2b0", "S": "#f0c9a0",
     "B": "#3f8f6b", "b": "#7fc9a3", "P": "#5a4a3a",
@@ -325,13 +331,111 @@ def make_character(palette, name):
     sheet.save(OUT / f"{name}.png")
 
 
+# ---------------------------------------------------------------- 房屋
+# 72x60，对应 4x3 格的房子：左右各伸出 4 像素屋檐，屋顶高出 12 像素。
+# 画布 (4, 60) 对应房子所占格子的左下角。
+HOUSE_W, HOUSE_H = 72, 60
+WALL = hexc("#efe3cb")
+WALL_LINE = hexc("#ddcfb2")
+FOUNDATION = hexc("#a89878")
+WOOD = hexc("#7a4f2a")
+WOOD_DARK = hexc("#5a3a1f")
+GLASS = hexc("#9fd7f2")
+GLASS_LIGHT = hexc("#e2f5ff")
+
+
+def rect(px, x0, y0, x1, y1, col):
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            px[x, y] = col
+
+
+def window(px, x, y):
+    rect(px, x, y, x + 10, y + 8, WOOD_DARK)
+    rect(px, x + 1, y + 1, x + 9, y + 7, GLASS)
+    rect(px, x + 5, y + 1, x + 6, y + 7, WOOD_DARK)
+    px[x + 2, y + 2] = GLASS_LIGHT
+    px[x + 3, y + 2] = GLASS_LIGHT
+    px[x + 2, y + 3] = GLASS_LIGHT
+
+
+def make_house(name, roof_hex, kind):
+    im = Image.new("RGBA", (HOUSE_W, HOUSE_H), (0, 0, 0, 0))
+    px = im.load()
+    roof, roof_dark, roof_light = hexc(roof_hex), shade(hexc(roof_hex), 0.75), shade(hexc(roof_hex), 1.2)
+    # 墙
+    rect(px, 4, 28, 68, 60, WALL)
+    for y in range(33, 57, 6):
+        rect(px, 4, y, 68, y + 1, WALL_LINE)
+    rect(px, 4, 57, 68, 60, FOUNDATION)
+    window(px, 9, 36)
+    window(px, 53, 36)
+    # 门（第 3 格，x 36..52）
+    if kind == "heal":
+        rect(px, 38, 42, 50, 60, WOOD_DARK)
+        rect(px, 39, 43, 49, 60, GLASS)
+        rect(px, 43, 43, 45, 60, WOOD_DARK)
+        px[40, 44] = px[41, 44] = px[40, 45] = GLASS_LIGHT
+    elif kind == "shop":
+        rect(px, 38, 42, 50, 60, WOOD_DARK)
+        rect(px, 39, 43, 49, 60, hexc("#3d6fd1"))
+        rect(px, 39, 50, 49, 51, hexc("#2b4f9a"))
+        px[47, 52] = hexc("#ffcd4d")
+    else:
+        rect(px, 38, 43, 50, 60, WOOD_DARK)
+        rect(px, 39, 44, 49, 60, WOOD)
+        rect(px, 43, 44, 44, 60, WOOD_DARK)
+        px[47, 52] = hexc("#ffcd4d")
+    # 屋顶：梯形，逐行收窄，每 4 行一道瓦缝
+    for y in range(2, 31):
+        t = (y - 2) / 28
+        x0 = round(8 - 8 * t)
+        x1 = round(64 + 8 * t)
+        col = roof_light if y < 5 else roof
+        if (y - 2) % 4 == 3:
+            col = roof_dark
+        rect(px, x0, y, x1, y + 1, col)
+    rect(px, 0, 30, 72, 32, roof_dark)
+    # 招牌
+    if kind in ("heal", "shop"):
+        rect(px, 29, 8, 43, 20, hexc("#ffffff"))
+        rect(px, 29, 19, 43, 20, hexc("#c9c9d9"))
+        if kind == "heal":
+            rect(px, 35, 10, 37, 18, hexc("#d9534f"))
+            rect(px, 32, 13, 40, 15, hexc("#d9534f"))
+        else:
+            for y in range(9, 19):
+                for x in range(30, 42):
+                    d = (x + 0.5 - 36) ** 2 + (y + 0.5 - 14) ** 2
+                    if d <= 20:
+                        px[x, y] = hexc("#e04848") if y < 14 else hexc("#f1f2ff")
+            rect(px, 31, 13, 41, 14, hexc("#2b2b45"))
+            px[35, 13] = px[36, 13] = hexc("#f1f2ff")
+    outline(im, hexc("#2b2b45"))
+    # 地面影子（右侧）
+    shadow = Image.new("RGBA", (HOUSE_W, HOUSE_H), (0, 0, 0, 0))
+    sp = shadow.load()
+    rect(sp, 69, 34, 72, 60, (0, 0, 0, 56))
+    shadow.alpha_composite(im)
+    shadow.save(OUT / f"house_{name}.png")
+
+
+def shade(c, f):
+    return tuple(max(0, min(255, int(v * f))) for v in c[:3]) + (c[3],)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     make_tiles()
     make_tree()
     make_character(PLAYER_PALETTE, "player")
     make_character(NPC_PALETTE, "npc_elder")
-    print("已生成：", ", ".join(sorted(p.name for p in OUT.glob("*.png"))))
+    make_character(TRAINER_PALETTE, "npc_trainer")
+    make_house("heal", "#d9534f", "heal")
+    make_house("shop", "#4a7fd1", "shop")
+    make_house("home", "#5a9e5a", "home")
+    make_monsters(OUT)
+    print("已生成：", ", ".join(sorted(str(p.relative_to(OUT)) for p in OUT.rglob("*.png"))))
 
 
 if __name__ == "__main__":
