@@ -3,7 +3,6 @@ extends RefCounted
 ## 美术入口：所有像素图都在 assets/sprites 下，由 tools/gen_pixel_art.py 生成。
 
 const CHAR_SIZE := Vector2(16, 20)
-const TILE_TALL_FRONT := 8
 
 static var _textures := {}
 
@@ -53,9 +52,18 @@ static func character(ci: CanvasItem, sheet: String, dir: Vector2i, step: int) -
 	ci.draw_texture_rect_region(tex(sheet), Rect2(Vector2(-8, -18), CHAR_SIZE), src)
 
 
-## 站在高草里时盖在脚上的草叶
-static func tall_grass_front(ci: CanvasItem) -> void:
-	ci.draw_texture_rect_region(tex("tiles"), Rect2(-8, -16, 16, 16), Rect2(TILE_TALL_FRONT * 16, 0, 16, 16))
+## 站在草丛里时盖在脚上的叶片，front_name 见 World.grass_front()
+static func grass_front(ci: CanvasItem, front_name: String) -> void:
+	var p: Vector2i = TerrainAtlas.SINGLE[front_name]
+	ci.draw_texture_rect_region(tex("terrain"), Rect2(-8, -16, 16, 16), Rect2(p.x, p.y, 16, 16))
+
+
+## 地形物件（树、岩石……），原点在格子底边往上 1 像素的中心，贴图脚底在底边往上 5 像素
+static func prop(ci: CanvasItem, prop_name: String) -> void:
+	var t := tex("props/" + prop_name)
+	var sz := t.get_size()
+	ellipse(ci, Vector2(0, -1), Vector2(sz.x * 0.26, 2.5), Color(0.05, 0.1, 0.05, 0.22))
+	ci.draw_texture(t, Vector2(-sz.x / 2.0, -(sz.y - 4)))
 
 
 ## 树，原点在所在格子的底边中心。树冠高出一格，形成 2.5D 遮挡。
@@ -63,10 +71,11 @@ static func tree(ci: CanvasItem) -> void:
 	ci.draw_texture(tex("tree"), Vector2(-8, -32))
 
 
-## 房屋，原点在房子所占格子的左下角。kind 为 heal / shop / home。
-## 贴图 72x60：左右各伸出 4 像素屋檐，屋顶高出格子 12 像素。
+## 房屋，原点在房子所占格子的左下角。kind 为 heal / shop / home / gym / league。
+## 贴图左右各伸出 4 像素屋檐，底边对齐格子底边（小房子 72x60，道馆 104x92，联盟 136x108）。
 static func house(ci: CanvasItem, kind: String) -> void:
-	ci.draw_texture(tex("house_" + kind), Vector2(-4, -60))
+	var t := tex("house_" + kind)
+	ci.draw_texture(t, Vector2(-4, -t.get_height()))
 
 
 ## 奇异兽立绘，原点在脚底中心（贴图底边往上 5 像素）。正面 64x64，背面 80x80。

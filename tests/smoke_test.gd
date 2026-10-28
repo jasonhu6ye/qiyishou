@@ -56,9 +56,9 @@ func _unit_checks() -> void:
 	check(fox.level == lv + 1, "升级")
 
 	for i in 50:
-		var w := Data.roll_wild(1, rng)
-		if w.level < 5 or w.level > 9:
-			check(false, "2号道路等级应在 5–9")
+		var w := Data.roll_wild(WorldGen.Biome.DESERT, [30, 37], rng)
+		if w.level < 30 or w.level > 37:
+			check(false, "野生等级应在区域范围内")
 			break
 
 	var bug := Monster.create("chongchong", 6)
@@ -98,12 +98,14 @@ func _unit_checks() -> void:
 	Game.money = 1234
 	Game.flags["trainer_ajie"] = true
 	Game.seen["paowa"] = true
-	Game.player_cell = Vector2i(10, 7)
+	Game.player_cell = WorldPlan.START_ORIGIN + Vector2i(10, 7)
+	Game.last_town = "senyu"
 	Game.save_game()
 	Game.reset()
 	check(Game.load_game(), "能读取存档")
 	check(Game.party.size() == 1 and Game.party[0].key == "paowa" and Game.party[0].level == 7, "存档保留队伍")
-	check(Game.balls == 3 and Game.player_cell == Vector2i(10, 7), "存档保留兽球和位置")
+	check(Game.balls == 3 and Game.player_cell == WorldPlan.START_ORIGIN + Vector2i(10, 7), "存档保留兽球和位置")
+	check(Game.last_town == "senyu", "存档保留最近的治疗所")
 	check(Game.money == 1234 and Game.flags.get("trainer_ajie", false), "存档保留金钱和训练师记录")
 	Game.delete_save()
 
@@ -119,16 +121,57 @@ func _scene_checks() -> void:
 	var world: World = main.world
 	check(world != null and world.player != null, "主场景创建了地图和玩家")
 	check(world.is_walkable(Game.START_CELL), "出生点可以行走")
-	check(world.tile_at(World.HEAL_DOOR) == World.DOOR, "治疗所门口存在")
-	check(not world.is_walkable(Vector2i(0, 0)), "地图边缘是树")
+	var o := WorldPlan.START_ORIGIN
+	check(world.door_at(o + Vector2i(6, 5)).get("kind", "") == "heal", "晨露镇治疗所门口存在")
+	check(world.door_at(o + Vector2i(13, 5)).get("kind", "") == "shop", "晨露镇商店门口存在")
+	check(world.heal_exit("chenlu") == o + Vector2i(6, 6), "治疗所出口在门下方")
+	check(not world.is_walkable(o + Vector2i(0, 20)), "晨露镇边缘是树")
+	check(world.is_walkable(o + Vector2i(24, 0)) and world.is_walkable(o + Vector2i(47, 7)), "晨露镇北口和东口能走出去")
+	check(not world.is_walkable(Vector2i(5, 5)), "地图角落是海")
+	check(world.area_name(Game.START_CELL) == "晨露镇", "出生点的地名")
 	check(main.state == 0 and main.player.active, "有队伍时直接进入行走状态")
-	check(world.tile_at(World.SHOP_DOOR) == World.DOOR, "商店门口存在")
-	var ajie: Prop = world.trainer_spotting(Vector2i(36, 15))
+	var ajie: Prop = world.trainer_spotting(o + Vector2i(36, 15))
 	check(ajie != null and ajie.npc["trainer"]["id"] == "trainer_ajie", "站在阿杰视线里会被发现")
-	check(world.trainer_spotting(Vector2i(36, 16)) == null, "不在视线里不会被发现")
+	check(world.trainer_spotting(o + Vector2i(36, 16)) == null, "不在视线里不会被发现")
+	_world_checks(world)
 	var dialog_font: Font = main.dialog.label.get_theme_font("font")
 	check(dialog_font.resource_path == Game.FONT_PATH, "对话框实际用上了像素字体")
 	check(main.dialog.label.get_theme_font_size("font_size") == Game.FONT_SIZE, "对话框字号是 12px")
+
+
+## 大地图：每个城镇都有治疗所和商店，道馆城市有道馆，各区域地貌对得上，道路连通
+func _world_checks(world: World) -> void:
+	var gen := World.gen
+	for t in WorldPlan.TOWNS:
+		var kinds := {}
+		for b in gen.buildings:
+			if b["town"] == t["id"]:
+				kinds[b["kind"]] = true
+				if not world.is_walkable(b["exit"]):
+					check(false, "%s 的%s门口能走" % [t["name"], b["kind"]])
+		if not (kinds.has("heal") and kinds.has("shop")):
+			check(false, "%s 有治疗所和商店" % t["name"])
+		if t["kind"] == "city" and not kinds.has("gym"):
+			check(false, "%s 有道馆" % t["name"])
+		if t["kind"] != "start" and not world.is_walkable(t["pos"]):
+			check(false, "%s 中心能走" % t["name"])
+	for r in WorldPlan.REGIONS:
+		var c: Vector2i = r["center"]
+		if gen.region_index(c.x, c.y) != WorldPlan.REGIONS.find(r):
+			check(false, "%s 的中心属于自己的区域" % r["name"])
+	# 每条道路沿线采样：都能走（铺路或桥）
+	var bad := 0
+	for s in gen.route_segments:
+		var a: Vector2 = s["a"]
+		var b: Vector2 = s["b"]
+		for i in 9:
+			var p := Vector2i(a.lerp(b, (i + 0.5) / 9.0).round())
+			if not world.is_walkable(p) and gen.town_at(p).is_empty() and world.building_at(p).is_empty():
+				bad += 1
+	check(bad == 0, "道路沿线都能走（不通的点：%d）" % bad)
+	check(world.area_name(WorldPlan.TOWNS[1]["pos"]) == WorldPlan.TOWNS[1]["name"], "城镇地名")
+	var ch := gen.generate_chunk(Vector2i(100, 100))
+	check(ch == gen.generate_chunk(Vector2i(100, 100)), "同一区块每次生成都一样")
 
 
 func _battle_check() -> void:

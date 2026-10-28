@@ -1,8 +1,10 @@
 class_name Prop
 extends Node2D
-## 地图上的静态物件（树、房屋、NPC）。原点在物件“脚底”，供 Y 排序使用。
+## 地图上的物件（树和岩石等地形物件、房屋、NPC）。原点在物件“脚底”，供 Y 排序使用。
 
-var kind := "tree"
+var kind := "prop"
+## kind 为 prop 时的贴图名（assets/sprites/props/ 下）
+var prop_name := ""
 var house := {}
 var npc := {}
 var facing := Vector2i.DOWN
@@ -12,8 +14,8 @@ var alerted := false
 
 func _draw() -> void:
 	match kind:
-		"tree":
-			Art.tree(self)
+		"prop":
+			Art.prop(self, prop_name)
 		"house":
 			Art.house(self, house["kind"])
 		"npc":

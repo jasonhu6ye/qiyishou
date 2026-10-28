@@ -1,6 +1,6 @@
 class_name Data
 extends RefCounted
-## 静态游戏数据：招式、属性克制、物种与进化、野外遭遇表、商店。
+## 静态游戏数据：招式、属性克制、物种与进化、各地貌的遭遇表、商店。
 ## 以后数据量变大时可以迁到 Resource（.tres）或 JSON。
 
 const MOVES := {
@@ -106,15 +106,18 @@ const SPECIES := {
 
 const STARTERS := ["huohu", "paowa", "yeshu"]
 
-const ZONES := [
-	{
-		"name": "1号道路", "levels": [2, 5],
-		"table": [["yuanniao", 40], ["chongchong", 35], ["yeshu", 25]],
-	},
-	{
-		"name": "2号道路", "levels": [5, 9],
-		"table": [["yuanniao", 18], ["chongchong", 12], ["tantan", 18], ["fufu", 16], ["dianli", 14], ["paowa", 11], ["huohu", 11]],
-	},
+## 各地貌（WorldGen.Biome 的序号）的野生遭遇表：[物种, 权重]。等级由所在区域决定（WorldPlan.REGIONS 的 levels）
+const BIOME_TABLES := [
+	[["yuanniao", 30], ["chongchong", 25], ["yeshu", 20], ["huohu", 8], ["paowa", 8], ["dianli", 9]],
+	[["chongchong", 30], ["yeshu", 25], ["jianjian", 15], ["yuanniao", 15], ["huohu", 10], ["caidie", 5]],
+	[["paowa", 30], ["chongchong", 25], ["jianjian", 15], ["fufu", 15], ["tantan", 15]],
+	[["fufu", 35], ["paowa", 30], ["yuanniao", 25], ["dianli", 10]],
+	[["tantan", 35], ["dianli", 30], ["yuanniao", 20], ["huohu", 15]],
+	[["tantan", 50], ["huohu", 35], ["dianli", 15]],
+	[["yuanniao", 35], ["tantan", 20], ["dianli", 20], ["yuanniao2", 15], ["yeshu", 10]],
+	[["paowa", 35], ["fufu", 30], ["yeshu", 15], ["caidie", 10], ["paowa2", 10]],
+	[["fufu", 35], ["yuanniao", 25], ["dianli", 20], ["paowa", 20]],
+	[["fufu", 60], ["paowa", 40]],
 ]
 
 ## 商店商品：名字 -> 价格
@@ -127,21 +130,20 @@ static func effectiveness(move_type: String, target_type: String) -> float:
 	return row.get(target_type, 1.0)
 
 
-## 按权重从区域遭遇表中抽取一只野生奇异兽
-static func roll_wild(zone_index: int, rng: RandomNumberGenerator) -> Monster:
-	var zone: Dictionary = ZONES[zone_index]
+## 按地貌的遭遇表抽取一只野生奇异兽，等级在 levels = [最低, 最高] 之间
+static func roll_wild(biome: int, levels: Array, rng: RandomNumberGenerator) -> Monster:
+	var table: Array = BIOME_TABLES[clampi(biome, 0, BIOME_TABLES.size() - 1)]
 	var total := 0
-	for entry in zone["table"]:
+	for entry in table:
 		total += int(entry[1])
 	var r := rng.randi_range(0, total - 1)
-	var key: String = zone["table"][0][0]
-	for entry in zone["table"]:
+	var key: String = table[0][0]
+	for entry in table:
 		r -= int(entry[1])
 		if r < 0:
 			key = entry[0]
 			break
-	var lv := rng.randi_range(int(zone["levels"][0]), int(zone["levels"][1]))
-	return Monster.create(key, lv)
+	return Monster.create(key, rng.randi_range(int(levels[0]), int(levels[1])))
 
 
 ## 达到进化等级时返回进化后的物种，否则返回空字符串

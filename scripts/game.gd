@@ -3,7 +3,7 @@ extends Node
 
 const SAVE_PATH := "user://save.json"
 const PARTY_LIMIT := 6
-const START_CELL := Vector2i(9, 8)
+const START_CELL := WorldPlan.START_ORIGIN + Vector2i(9, 8)
 const FONT_PATH := "res://assets/fonts/fusion-pixel-12px.ttf"
 const FONT_SIZE := 12
 
@@ -17,6 +17,8 @@ var flags := {}
 var seen := {}
 var caught := {}
 var player_cell := START_CELL
+## 最近一次去过治疗所的城镇，全灭后送回那里
+var last_town := "chenlu"
 var rng := RandomNumberGenerator.new()
 ## 界面主题。CanvasLayer 会截断主题继承，所以各个界面的顶层控件要自己设置 theme = Game.ui_theme
 var ui_theme: Theme
@@ -149,6 +151,7 @@ func reset() -> void:
 	seen.clear()
 	caught.clear()
 	player_cell = START_CELL
+	last_town = "chenlu"
 
 
 func save_game() -> void:
@@ -162,6 +165,7 @@ func save_game() -> void:
 		"seen": seen.keys(),
 		"caught": caught.keys(),
 		"cell": [player_cell.x, player_cell.y],
+		"last_town": last_town,
 	}
 	var f := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
 	if f:
@@ -192,6 +196,10 @@ func load_game() -> bool:
 		caught[k] = true
 	var cell: Array = data.get("cell", [START_CELL.x, START_CELL.y])
 	player_cell = Vector2i(int(cell[0]), int(cell[1]))
+	last_town = str(data.get("last_town", "chenlu"))
+	# 旧版存档用的是单张小地图的坐标，平移到大地图里的晨露镇
+	if player_cell.x < 1000 and player_cell.y < 1000:
+		player_cell += WorldPlan.START_ORIGIN
 	return true
 
 
