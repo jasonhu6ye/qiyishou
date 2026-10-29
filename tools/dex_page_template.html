@@ -145,6 +145,7 @@ th { color: var(--muted); font-size: 12px }
 </div>
 
 <script id="data" type="application/json">__DATA__</script>
+<script id="atlas" type="application/json">__ATLAS__</script>
 <script>
 const D = JSON.parse(document.getElementById("data").textContent);
 const S = D.species, byKey = Object.fromEntries(S.map(s => [s.key, s]));
@@ -161,7 +162,8 @@ $("counts").innerHTML = [[S.length, "只幻兽"], [new Set(S.map(s => s.line)).s
 // ---------------------------------------------------------------- 立绘：tools/gen_species_art.py 渲染，build_dex_page.py 拼成图集
 // 正面：每张图集 180 只，一只一行，24 帧横排，每帧 72x72；背面：一张图集，24 列，每格 96x96
 const PER = 180, FW = 72, NF = 24, BW = 96, idxOf = Object.fromEntries(S.map((s, i) => [s.key, i]));
-const atlas = n => { atlas.c ||= {}; if (!atlas.c[n]) { const im = new Image(); im.src = n; atlas.c[n] = new Promise(r => { im.onload = () => r(im); im.onerror = () => r(null) }) } return atlas.c[n] };
+const EMBED = JSON.parse(document.getElementById("atlas").textContent);  // 图集以 data URI 嵌在页面里，单文件就能打开
+const atlas = n => { atlas.c ||= {}; if (!atlas.c[n]) { const im = new Image(); im.src = EMBED[n] || n; atlas.c[n] = new Promise(r => { im.onload = () => r(im); im.onerror = () => r(null) }) } return atlas.c[n] };
 const frontSheet = i => atlas(`atlas/front${Math.floor(i / PER)}.webp`);
 function drawSprite(cv, s, frame = 0, back = false) {
   const i = idxOf[s.key], ctx = cv.getContext("2d");

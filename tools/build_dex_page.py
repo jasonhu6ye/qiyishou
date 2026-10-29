@@ -1,7 +1,8 @@
-"""把 data/dex/ 的规划数据嵌进图鉴页面，输出 build/naers-dex.html，立绘拼成图集放在 build/atlas/。
+"""把 data/dex/ 的规划数据嵌进图鉴页面，输出 build/naers-dex.html（单文件，立绘图集以 data URI 嵌在里面，浏览器直接打开）。
 
 python3 tools/dex_plan.py && python3 tools/gen_species_art.py && python3 tools/build_dex_page.py
 """
+import base64
 import json
 import os
 import sys
@@ -36,9 +37,12 @@ def main():
          for k in ["types", "moves", "abilities", "species", "spawns"]}
     d["regions"] = [{"name": r["name"], "biome": r["biome"], "levels": list(r["levels"])} for r in wp.REGIONS]
     data = json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    page = open(os.path.join(ROOT, "tools", "dex_page_template.html"), encoding="utf-8").read().replace("__DATA__", data)
     os.makedirs(os.path.join(ROOT, "build"), exist_ok=True)
-    build_atlas(d["species"], os.path.join(ROOT, "build", "atlas"))
+    out_atlas = os.path.join(ROOT, "build", "atlas")
+    build_atlas(d["species"], out_atlas)
+    embed = {f"atlas/{n}": "data:image/webp;base64," + base64.b64encode(open(os.path.join(out_atlas, n), "rb").read()).decode()
+             for n in sorted(os.listdir(out_atlas))}
+    page = open(os.path.join(ROOT, "tools", "dex_page_template.html"), encoding="utf-8").read().replace("__DATA__", data).replace("__ATLAS__", json.dumps(embed))
     out = os.path.join(ROOT, "build", "naers-dex.html")
     with open(out, "w", encoding="utf-8") as f:
         f.write("<!doctype html><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n" + page)
