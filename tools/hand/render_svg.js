@@ -7,9 +7,10 @@ const fs = require('fs');
   const browser = await chromium.launch();
   const page = await browser.newPage({ deviceScaleFactor: 1 });
   for (const job of jobs) {
+    // 每帧的 clipPath id 都从 c1 开始，同一页面里会互相串，按帧加前缀
     const n = job.frames.length, s = job.size;
     await page.setViewportSize({ width: s * n, height: s });
-    await page.setContent(`<html><body style="margin:0;background:transparent"><div id="strip" style="display:flex;width:${s * n}px;height:${s}px">${job.frames.join('')}</div></body></html>`);
+    await page.setContent(`<html><body style="margin:0;background:transparent"><div id="strip" style="display:flex;width:${s * n}px;height:${s}px">${job.frames.map((f, i) => f.replace(/id="c(\d+)"/g, `id="f${i}c$1"`).replace(/url\(#c(\d+)\)/g, `url(#f${i}c$1)`)).join('')}</div></body></html>`);
     await page.locator('#strip').screenshot({ path: job.out, omitBackground: true });
   }
   await browser.close();
