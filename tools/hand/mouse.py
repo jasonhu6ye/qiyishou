@@ -36,25 +36,26 @@ def yeshu(f):
         s.part(ell(50, 88, 5.5, 2.6), G, Gs)
     with s.group(f"translate(0 {-b * 1.2:.2f})"):
         # 叶子耳朵（远的那只先画）
-        leaf(s, 30, 40, 18, 8, -38, Gs, "#3a7a2c", False)
-        s.part("M20,50 C20,38 30,30 42,30 C55,30 62,38 62,48 C62,58 54,64 42,64 C30,64 20,60 20,50 Z", G, Gs, Gh)
-        s.part("M18,52 C18,58 26,62 34,61 C36,56 32,50 26,49 C22,49 19,50 18,52 Z", C, Cs, line="none")
-        s.flat(ell(19, 51.5, 2.6, 2), PINK, LINE, .8)
-        with s.group(rot(-10 if a["f"] in (18, 19) else 0, 52, 34)):
-            leaf(s, 52, 36, 22, 10, 30)
+        leaf(s, 29, 37, 20, 9, -40)
+        with s.group(rot(-10 if a["f"] in (18, 19) else 0, 53, 37)):
+            leaf(s, 53, 37, 20, 9, 40)
+        s.part("M21,48 C21,37 30,30 41,30 C52,30 61,37 61,48 C61,58 53,64 41,64 C29,64 21,58 21,48 Z", G, Gs, Gh)
+        s.part(ell(41, 55, 8, 5.5), C, Cs, line="none")
+        s.flat(ell(41, 52, 2.4, 1.8), PINK, LINE, .8)
         # 头顶小芽
         with s.group(rot(a["sway"] * 6, 42, 31)):
             s.line("M42,31 L42,24", L1s, 1.6)
             leaf(s, 42, 25, 9, 4, -45)
             leaf(s, 42, 25, 10, 4.5, 40)
-        s.eye(29, 46, 3.6, 4.6, IRIS, a["blink"])
-        s.eye(43, 45.5, 4.6, 5.6, IRIS, a["blink"])
-        s.line("M23,57 Q25.5,59 28,57")
-        s.flat("M24.5,57.5 L25.5,60 L26.5,57.5 Z", "#ffffff")
-        s.flat(ell(51, 55, 3, 1.6), PINK)
+        s.eye(34, 45, 4.2, 5.2, IRIS, a["blink"])
+        s.eye(48, 45, 4.2, 5.2, IRIS, a["blink"])
+        s.line("M38.5,57 Q41,59 43.5,57")
+        s.flat("M40,57.5 L41,60 L42,57.5 Z", "#ffffff")
+        s.flat(ell(28, 53, 3, 1.6), PINK)
+        s.flat(ell(54, 53, 3, 1.6), PINK)
         # 胡须
-        s.line("M16,54 L9,52", "#ffffff", .8)
-        s.line("M16,56 L10,58", "#ffffff", .8)
+        s.line("M33,55 L24,54", "#ffffff", .8)
+        s.line("M49,55 L58,54", "#ffffff", .8)
     return s
 
 
@@ -82,19 +83,20 @@ def yeshu2(f):
     s.part("M56,58 C66,58 70,66 68,74 L69,88 L61,88 L60,74 C56,70 54,62 56,58 Z", G, Gs, Gh)
     s.part(ell(64, 89, 5, 2.3), C, Cs)
     with s.group(f"translate(0 {-b * 1.2:.2f})"):
-        leaf(s, 22, 26, 22, 9, -35, Gs, "#3a7a2c", False)
-        s.part("M8,38 C8,26 18,18 30,18 C43,18 50,26 50,36 C50,46 42,52 30,52 C18,52 8,48 8,38 Z", G, Gs, Gh)
-        s.part("M4,40 C4,46 12,50 22,49 C24,44 20,38 13,37 C9,37 5,38 4,40 Z", C, Cs, line="none")
-        s.flat(ell(5, 39.5, 2.6, 2), PINK, LINE, .8)
-        with s.group(rot(-10 if a["f"] in (18, 19) else 0, 40, 22)):
-            leaf(s, 40, 24, 26, 11, 25)
+        leaf(s, 17, 26, 24, 10, -38)
+        with s.group(rot(-10 if a["f"] in (18, 19) else 0, 41, 26)):
+            leaf(s, 41, 26, 24, 10, 38)
+        s.part("M9,36 C9,25 18,18 29,18 C40,18 49,25 49,36 C49,46 41,52 29,52 C17,52 9,46 9,36 Z", G, Gs, Gh)
+        s.part(ell(29, 43, 7.5, 5.2), C, Cs, line="none")
+        s.flat(ell(29, 40.5, 2.4, 1.8), PINK, LINE, .8)
         with s.group(rot(a["sway"] * 5, 30, 19)):
             leaf(s, 30, 20, 14, 5, -30, "#5fc04a", L1s)
             leaf(s, 30, 20, 16, 6, 15)
-        s.eye(17, 34, 3.4, 4.2, IRIS, a["blink"], lid=.2)
-        s.eye(30, 33.5, 4.4, 5.2, IRIS, a["blink"], lid=.2)
-        s.line("M9,45 Q11.5,47 14,45")
-        s.line("M2,42 L-4,40", "#ffffff", .8)
+        s.eye(22.5, 33.5, 4, 4.8, IRIS, a["blink"], lid=.2)
+        s.eye(35.5, 33.5, 4, 4.8, IRIS, a["blink"], lid=.2)
+        s.line("M26.5,45 Q29,47 31.5,45")
+        s.line("M21,43 L13,42", "#ffffff", .8)
+        s.line("M37,43 L45,42", "#ffffff", .8)
     return s
 
 
@@ -133,14 +135,16 @@ def d009(f):
             s.line(f"M{x0},14 C{x0 + dirn * 2},6 {x0 + dirn * 6},2 {x0 + dirn * 10},-2", BARK, 1.6)
             s.line(f"M{x0 + dirn * 3},6 L{x0 + dirn * 1},0", BARKs, 2.2)
             leaf(s, x0 + dirn * 10, -1, 9, 4, dirn * 50, "#5fc04a", L1s)
-        s.part("M16,24 C16,14 26,8 38,8 C50,8 56,16 56,24 C56,34 48,38 36,38 C24,38 16,34 16,24 Z", G, Gs, Gh)
-        s.part("M12,26 C12,32 20,36 30,35 C32,30 28,24 21,23 C16,23 13,24 12,26 Z", C, Cs, line="none")
-        s.flat(ell(13, 25.5, 2.6, 2), PINK, LINE, .8)
-        leaf(s, 50, 14, 20, 9, 35)
-        s.eye(24, 21, 3.2, 3.8, IRIS, a["blink"], lid=.35)
-        s.eye(37, 20.5, 4.2, 4.8, IRIS, a["blink"], lid=.35)
-        s.line("M17,31 Q19.5,33 22,31")
-        s.line("M10,28 L4,26", "#ffffff", .8)
+        leaf(s, 22, 14, 18, 8, -45)
+        leaf(s, 50, 14, 18, 8, 45)
+        s.part("M17,24 C17,14 26,8 36,8 C46,8 55,14 55,24 C55,34 47,38 36,38 C25,38 17,34 17,24 Z", G, Gs, Gh)
+        s.part(ell(36, 30, 7, 5), C, Cs, line="none")
+        s.flat(ell(36, 27.5, 2.4, 1.8), PINK, LINE, .8)
+        s.eye(29.5, 21, 3.8, 4.4, IRIS, a["blink"], lid=.35)
+        s.eye(42.5, 21, 3.8, 4.4, IRIS, a["blink"], lid=.35)
+        s.line("M33.5,32 Q36,34 38.5,32")
+        s.line("M29,30 L21,29", "#ffffff", .8)
+        s.line("M43,30 L51,29", "#ffffff", .8)
     return s
 
 

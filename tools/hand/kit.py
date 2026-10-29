@@ -17,6 +17,7 @@ from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SIZE = 96
+EYE_STYLE = os.environ.get("EYE_STYLE", "dot")
 FRAMES = 24
 
 
@@ -84,23 +85,43 @@ class Sprite:
         self.body.append(f'<path d="{d}" fill="none" stroke="{color or self.outline}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>')
 
     def eye(self, cx, cy, rx, ry, iris, blink=False, look=-0.35, pupil="#1a1020", tilt=0.0, lid=0.0):
-        """动漫式大眼：眼白、虹膜（下半部亮）、瞳孔、两个高光；lid>0 时上眼皮压下来（凶）"""
+        """宝可梦式眼睛，眼型由 EYE_STYLE 决定：
+        dot   深色椭圆，左上一个白色高光，下沿透出一点虹膜色（最常见的宝可梦眼）
+        iris  深色描边里整块虹膜色，上深下浅，小瞳孔加高光
+        lash  只有上眼线是粗黑线，眼白不描下沿，虹膜贴着上眼线
+        lid>0 时上眼皮压下来（凶）"""
+        style = EYE_STYLE
         if blink:
-            self.line(f"M{cx - rx},{cy + ry * .1} Q{cx},{cy + ry * .55} {cx + rx},{cy + ry * .1}", self.outline, 1.2)
+            self.line(f"M{cx - rx},{cy + ry * .1} Q{cx},{cy + ry * .55} {cx + rx},{cy + ry * .1}", self.outline, 1.4)
             return
         t = f' transform="{rot(tilt, cx, cy)}"' if tilt else ""
         self.body.append(f"<g{t}>")
-        self.flat(ell(cx, cy, rx, ry), "#ffffff", self.outline, 1.0)
-        ix = cx + look * rx * .35
-        self.flat(ell(ix, cy + ry * .08, rx * .72, ry * .8), iris)
-        self.flat(ell(ix, cy + ry * .38, rx * .5, ry * .35), _lighten(iris, .35))
-        self.flat(ell(ix, cy + ry * .02, rx * .36, ry * .45), pupil)
-        self.flat(ell(ix - rx * .3, cy - ry * .32, rx * .26, ry * .24), "#ffffff")
-        self.flat(ell(ix + rx * .25, cy + ry * .38, rx * .12, ry * .1), "#ffffff")
+        if style == "dot":
+            rx2, ry2 = rx * .72, ry * .9
+            ix = cx + look * rx * .25
+            self.flat(ell(ix, cy, rx2, ry2), pupil)
+            self.flat(f"M{ix - rx2 * .75},{cy + ry2 * .35} Q{ix},{cy + ry2 * 1.05} {ix + rx2 * .75},{cy + ry2 * .35} Q{ix},{cy + ry2 * .65} {ix - rx2 * .75},{cy + ry2 * .35} Z",
+                      _lighten(iris, .1))
+            self.flat(ell(ix - rx2 * .3, cy - ry2 * .4, max(1.0, rx2 * .38), max(1.1, ry2 * .3)), "#ffffff")
+        elif style == "iris":
+            ix = cx + look * rx * .2
+            self.flat(ell(ix, cy, rx * .8, ry * .92), self.outline)
+            self.flat(ell(ix, cy + ry * .08, rx * .6, ry * .75), iris)
+            self.flat(ell(ix, cy + ry * .35, rx * .45, ry * .35), _lighten(iris, .4))
+            self.flat(ell(ix, cy + ry * .05, rx * .25, ry * .38), pupil)
+            self.flat(ell(ix - rx * .28, cy - ry * .38, max(1.0, rx * .26), max(1.0, ry * .22)), "#ffffff")
+        else:  # lash
+            self.flat(f"M{cx - rx},{cy - ry * .2} Q{cx - rx},{cy + ry} {cx},{cy + ry} Q{cx + rx},{cy + ry} {cx + rx},{cy - ry * .2} Z", "#ffffff")
+            ix = cx + look * rx * .3
+            self.flat(ell(ix, cy + ry * .15, rx * .55, ry * .7), iris)
+            self.flat(ell(ix, cy + ry * .1, rx * .3, ry * .45), pupil)
+            self.flat(ell(ix - rx * .25, cy - ry * .15, max(1.0, rx * .22), max(1.0, ry * .2)), "#ffffff")
+            self.line(f"M{cx - rx - .6},{cy - ry * .1} Q{cx},{cy - ry * 1.15} {cx + rx + .6},{cy - ry * .25}", self.outline, 1.8)
         if lid:
-            self.flat(f"M{cx - rx - .5},{cy - ry - .5} L{cx + rx + .5},{cy - ry - .5} L{cx + rx + .5},{cy - ry + ry * 2 * lid * .6} "
-                      f"L{cx - rx - .5},{cy - ry + ry * 2 * lid} Z", self.lid_color if hasattr(self, "lid_color") else self.outline)
-            self.line(f"M{cx - rx - .3},{cy - ry + ry * 2 * lid} L{cx + rx + .3},{cy - ry + ry * 2 * lid * .6}", self.outline, 1.2)
+            lc = getattr(self, "lid_color", self.outline)
+            y0, y1 = cy - ry - 1, cy - ry + ry * 2 * lid
+            self.flat(f"M{cx - rx - .5},{y0} L{cx + rx + .5},{y0} L{cx + rx + .5},{y1 - ry * lid * .8} L{cx - rx - .5},{y1} Z", lc)
+            self.line(f"M{cx - rx - .3},{y1} L{cx + rx + .3},{y1 - ry * lid * .8}", self.outline, 1.4)
         self.body.append("</g>")
 
     def svg(self):

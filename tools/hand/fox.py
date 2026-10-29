@@ -58,22 +58,21 @@ def huohu(f):
         s.part(ell(43, 88, 5, 2.6), C, Cs)
     # 头（随呼吸轻点头）
     with s.group(f"translate(0 {-b * 1.2:.2f})"):
-        with s.group(rot(-4, 32, 34)):
-            s.part(poly((30, 33), (25, 14), (40, 27)), Os, "#a8441a")
-            s.flat(poly((31, 30), (27, 19), (37, 27)), EAR)
-        s.part("M23,46 C23,34 33,26 44,26 C56,26 63,34 63,44 C63,52 59,57 52,60 L47,63 L45,58 L40,63 L37,57 L31,60 L31,55 C26,54 23,51 23,46 Z",
+        for x0, flip in ((28, -1), (58, 1)):
+            tw = -10 * flip if (a["f"] in (18, 19) and flip > 0) else 0
+            with s.group(rot(tw, x0, 30)):
+                s.part(poly((x0 - 7, 31), (x0 + flip * 4, 7), (x0 + 7, 29)), O, Os, Oh)
+                s.flat(poly((x0 - 4, 29), (x0 + flip * 3.5, 13), (x0 + 4, 28)), EAR)
+        s.part("M24,44 C24,32 33,26 43,26 C53,26 62,32 62,44 C62,52 58,57 52,60 L48,63 L46,59 L43,63 L40,59 L38,63 L34,60 C28,57 24,52 24,44 Z",
                O, Os, Oh)
-        s.part("M22,47 C22,53 29,58 38,57 C41,52 37,46 30,45 Z", C, Cs, line="none")
-        s.flat(ell(22.5, 46.5, 2.4, 1.8), LINE)
-        twitch = -12 if a["f"] in (18, 19) else 0
-        with s.group(rot(twitch, 54, 30)):
-            s.part(poly((45, 30), (57, 7), (63, 32)), O, Os, Oh)
-            s.flat(poly((49, 29), (56.5, 14), (59.5, 30)), EAR)
-        flame(s, 44, 28, 9, a["flick"] * -1, -8)
-        s.eye(31.5, 42, 3.2, 4.4, IRIS, a["blink"])
-        s.eye(44.5, 41.5, 4.3, 5.3, IRIS, a["blink"])
-        s.line("M28,53 Q31,55.5 34,53")
-        s.flat(ell(51, 50, 2.8, 1.5), "#ff8a7a")
+        s.part(ell(43, 52.5, 8.5, 6), C, Cs, line="none")
+        s.flat(ell(43, 49.5, 2.4, 1.8), LINE)
+        flame(s, 43, 28, 9, a["flick"] * -1, 0)
+        s.eye(35.5, 43, 4.2, 5.2, IRIS, a["blink"])
+        s.eye(50.5, 43, 4.2, 5.2, IRIS, a["blink"])
+        s.line("M40,54 Q43,56.5 46,54")
+        s.flat(ell(29, 51, 2.8, 1.5), "#ff8a7a")
+        s.flat(ell(57, 51, 2.8, 1.5), "#ff8a7a")
     return s
 
 
@@ -101,19 +100,17 @@ def huohu2(f):
     s.part(HIND(61, 56, 87), O, Os, Oh)
     s.part(ell(61, 88, 4.8, 2.4), C, Cs)
     with s.group(f"translate(0 {-b * 1.2:.2f})"):
-        with s.group(rot(-6, 22, 26)):
-            s.part(poly((20, 24), (17, 5), (31, 18)), Os, "#a8441a")
-            s.flat(poly((21, 21), (19, 10), (28, 18)), EAR)
-        s.part("M9,40 C10,30 18,20 30,19 C42,18 48,26 48,35 C48,43 43,48 36,50 L32,54 L30,49 L25,53 L22,48 L17,50 C12,47 9,44 9,40 Z", O, Os, Oh)
-        s.part("M6,40 C6,45 12,49 22,48 C26,44 22,38 14,37 C10,37 7,38 6,40 Z", C, Cs, line="none")
-        s.flat(ell(6, 39, 2.4, 1.8), LINE)
-        twitch = -12 if a["f"] in (18, 19) else 0
-        with s.group(rot(twitch, 38, 22)):
-            s.part(poly((30, 22), (40, -2 + 4), (48, 24)), O, Os, Oh)
-            s.flat(poly((34, 21), (40, 8), (45, 23)), EAR)
-        s.eye(18, 34, 3, 4, IRIS, a["blink"], lid=.25)
-        s.eye(30, 33, 4, 4.8, IRIS, a["blink"], lid=.25)
-        s.line("M13,45 Q16,47 19,45")
+        for x0, flip in ((16, -1), (40, 1)):
+            tw = -10 * flip if (a["f"] in (18, 19) and flip > 0) else 0
+            with s.group(rot(tw, x0, 20)):
+                s.part(poly((x0 - 6.5, 20), (x0 + flip * 4, -2 + 3), (x0 + 6.5, 18)), O, Os, Oh)
+                s.flat(poly((x0 - 3.5, 18), (x0 + flip * 3.5, 6), (x0 + 3.5, 17)), EAR)
+        s.part("M10,34 C10,24 18,18 28,18 C38,18 46,24 46,34 C46,42 42,46 37,48 L34,51 L32,47 L28,51 L24,47 L22,51 L19,48 C14,46 10,42 10,34 Z", O, Os, Oh)
+        s.part(ell(28, 42, 7.5, 5.2), C, Cs, line="none")
+        s.flat(ell(28, 39.5, 2.2, 1.6), LINE)
+        s.eye(21.5, 33, 3.8, 4.6, IRIS, a["blink"], lid=.25)
+        s.eye(34.5, 33, 3.8, 4.6, IRIS, a["blink"], lid=.25)
+        s.line("M25,44 Q28,46 31,44")
     return s
 
 
@@ -141,22 +138,21 @@ def d003(f):
     s.part(ell(64, 89, 4.4, 2.2), F3, F2)
     with s.group(f"translate(0 {-b * 1.2:.2f})"):
         # 金色鬃毛领
-        s.part("M24,44 C18,48 16,54 19,58 L22,56 L22,63 L27,59 L29,67 L33,61 L37,68 L39,60 L44,64 L44,56 L49,57 C50,50 46,44 40,42 Z", G, Gs, "#fff0b0")
-        with s.group(rot(-8, 20, 26)):
-            s.part(poly((19, 24), (16, 4), (30, 18)), Os, "#a8441a")
-            s.flat(poly((20, 21), (18, 9), (27, 18)), EAR)
-        s.part("M8,40 C9,30 17,20 29,19 C41,18 47,26 47,35 C47,43 42,48 35,50 L31,53 L29,49 L24,52 L21,48 L16,50 C11,47 8,44 8,40 Z", O, Os, Oh)
-        s.part("M4,40 C4,45 11,49 21,48 C25,44 21,38 13,37 C9,37 6,38 4,40 Z", C, Cs, line="none")
-        s.flat(ell(4.5, 39, 2.4, 1.8), LINE)
-        with s.group(rot(-10 if a["f"] in (18, 19) else 0, 37, 22)):
-            s.part(poly((29, 22), (39, 1), (47, 24)), O, Os, Oh)
-            s.flat(poly((33, 21), (39, 7), (44, 23)), EAR)
+        s.part("M14,42 C10,48 10,54 13,58 L16,56 L17,63 L22,59 L24,67 L28,61 L32,67 L34,59 L39,63 L40,56 L44,58 C46,50 42,44 38,42 Z", G, Gs, "#fff0b0")
+        for x0, flip in ((16, -1), (40, 1)):
+            tw = -10 * flip if (a["f"] in (18, 19) and flip > 0) else 0
+            with s.group(rot(tw, x0, 20)):
+                s.part(poly((x0 - 6.5, 20), (x0 + flip * 4, -2 + 3), (x0 + 6.5, 18)), O, Os, Oh)
+                s.flat(poly((x0 - 3.5, 18), (x0 + flip * 3.5, 6), (x0 + 3.5, 17)), EAR)
+        s.part("M10,34 C10,24 18,18 28,18 C38,18 46,24 46,34 C46,42 42,46 37,48 L34,51 L32,47 L28,51 L24,47 L22,51 L19,48 C14,46 10,42 10,34 Z", O, Os, Oh)
+        s.part(ell(28, 42, 7.5, 5.2), C, Cs, line="none")
+        s.flat(ell(28, 39.5, 2.2, 1.6), LINE)
         # 额头金色火焰冠
-        flame(s, 26, 21, 11, a["flick"], -12)
-        s.flat(poly((22, 27), (26, 23), (30, 27), (26, 30)), G, LINE)
-        s.eye(17, 34, 2.8, 3.6, "#e8a020", a["blink"], lid=.35)
-        s.eye(29, 33, 3.8, 4.4, "#e8a020", a["blink"], lid=.35)
-        s.line("M12,45 Q15,46.5 18,45")
+        flame(s, 28, 20, 11, a["flick"], 0)
+        s.flat(poly((24, 25), (28, 21), (32, 25), (28, 28)), G, LINE)
+        s.eye(21.5, 33, 3.6, 4.2, "#e8a020", a["blink"], lid=.35)
+        s.eye(34.5, 33, 3.6, 4.2, "#e8a020", a["blink"], lid=.35)
+        s.line("M25,44 Q28,45.5 31,44")
     return s
 
 

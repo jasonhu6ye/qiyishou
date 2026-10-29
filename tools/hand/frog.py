@@ -31,12 +31,12 @@ def paowa(f):
         s.part("M21,78 C17,63 28,52 46,52 C64,52 77,62 75,76 C74,86 64,89 48,89 C32,89 23,86 21,78 Z", B, Bs, Bh)
         s.part("M29,80 C33,71 58,70 67,78 C62,87 36,88 29,80 Z", W, Ws, line="none")
         # 眼睛鼓包
-        s.part(ell(35, 52, 9, 8.5), B, Bs, Bh)
-        s.part(ell(57, 50, 10.5, 9.5), B, Bs, Bh)
-        s.eye(35, 51, 4.6, 5.4, IRIS, a["blink"])
-        s.eye(57, 49.5, 5.6, 6.4, IRIS, a["blink"])
-        s.line("M27,66 Q42,76 62,65", LINE, 1.2)
-        s.flat(ell(25, 65, 3, 1.8), PINK)
+        s.part(ell(36, 51, 9.5, 9), B, Bs, Bh)
+        s.part(ell(58, 51, 9.5, 9), B, Bs, Bh)
+        s.eye(36, 50.5, 5, 5.8, IRIS, a["blink"])
+        s.eye(58, 50.5, 5, 5.8, IRIS, a["blink"])
+        s.line("M33,65 Q47,74 61,65", LINE, 1.2)
+        s.flat(ell(28, 64, 3, 1.8), PINK)
         s.flat(ell(66, 64, 3, 1.8), PINK)
         # 背上三个浅色斑点
         for x, y, r in ((62, 60, 2.2), (68, 66, 1.8), (44, 58, 1.6)):
@@ -63,12 +63,13 @@ def paowa2(f):
         # 头顶浪花鳍（三道弯）
         with s.group(rot(a["sway"] * 4, 48, 40)):
             s.part("M34,42 C30,30 38,22 44,26 C42,18 52,12 56,20 C58,12 70,14 68,26 C74,26 76,36 66,42 Z", FIN, FINs, "#c8fbff")
-        s.part(ell(32, 42, 9, 8.5), B, Bs, Bh)
-        s.part(ell(56, 40, 10.5, 9.5), B, Bs, Bh)
-        s.eye(32, 41, 4.4, 5.2, IRIS, a["blink"], lid=.18)
-        s.eye(56, 39.5, 5.4, 6.2, IRIS, a["blink"], lid=.18)
-        s.line("M22,56 Q40,66 62,55", LINE, 1.3)
-        s.flat(ell(21, 55, 3, 1.8), PINK)
+        s.part(ell(34, 41, 10, 9), B, Bs, Bh)
+        s.part(ell(58, 41, 10, 9), B, Bs, Bh)
+        s.eye(34, 40.5, 5, 5.8, IRIS, a["blink"], lid=.18)
+        s.eye(58, 40.5, 5, 5.8, IRIS, a["blink"], lid=.18)
+        s.line("M30,55 Q46,64 62,55", LINE, 1.3)
+        s.flat(ell(26, 54, 3, 1.8), PINK)
+        s.flat(ell(66, 54, 3, 1.8), PINK)
         # 两侧蓝色条纹
         for x, y in ((70, 54), (73, 62), (72, 71)):
             s.flat(ell(x, y, 3.2, 1.5), DK)
@@ -104,13 +105,14 @@ def d006(f):
             s.part("M30,22 L28,6 L36,14 L40,2 L46,12 L52,0 L56,12 L64,4 L62,22 Z", FIN, FINs, "#c8fbff")
             s.flat(ell(46, 17, 3, 3), "#ffe066", LINE)
         # 头
-        s.part("M20,28 C18,16 30,12 44,12 C60,12 70,18 68,30 C66,40 56,42 44,42 C30,42 22,38 20,28 Z", B, Bs, Bh)
-        s.part(ell(28, 16, 8, 7.5), B, Bs, Bh)
-        s.part(ell(50, 14, 9.5, 8.5), B, Bs, Bh)
-        s.eye(28, 15.5, 4, 4.6, IRIS, a["blink"], lid=.32)
-        s.eye(50, 14, 5, 5.6, IRIS, a["blink"], lid=.32)
-        s.line("M22,33 Q38,40 58,32", LINE, 1.4)
-        s.flat("M30,34 L32,38 L34,35 Z", "#ffffff")
+        s.part("M22,28 C20,16 32,12 44,12 C58,12 68,18 66,30 C64,40 56,42 44,42 C32,42 24,38 22,28 Z", B, Bs, Bh)
+        s.part(ell(33, 15, 8.5, 8), B, Bs, Bh)
+        s.part(ell(55, 15, 8.5, 8), B, Bs, Bh)
+        s.eye(33, 14.5, 4.4, 5, IRIS, a["blink"], lid=.32)
+        s.eye(55, 14.5, 4.4, 5, IRIS, a["blink"], lid=.32)
+        s.line("M28,32 Q44,40 60,32", LINE, 1.4)
+        s.flat("M36,34 L38,38 L40,35 Z", "#ffffff")
+        s.flat("M48,35 L50,38 L52,34 Z", "#ffffff")
         for x, y in ((62, 26), (64, 33)):
             s.flat(ell(x, y, 3, 1.4), DK)
     # 近侧粗壮手臂，攥拳
