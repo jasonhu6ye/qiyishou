@@ -223,9 +223,16 @@ def _face(px, sp, s, ox, oy, size):
     """眼睛、嘴、腮红，直接按像素画，保证小尺寸下也清楚"""
     iris = hexc(sp.get("iris", "#3b3f8f"))
     er = sp.get("eye_size", 1.15)
-    for ex, ey in sp.get("eyes", [(-5, -14), (5, -14)]):
+    for eye in sp.get("eyes", [(-5, -14), (5, -14)]):
+        ex, ey = eye[0], eye[1]
+        m = eye[2] if len(eye) > 2 else 1.0  # 第三项是这只眼睛的大小倍数（侧脸时远处的眼睛小一点）
         cx, cy = ox + ex * s, oy + ey * s
-        rx, ry = 1.9 * s * er, 2.5 * s * er
+        rx, ry = 1.9 * s * er * m, 2.5 * s * er * m * sp.get("eye_ry", 1.0)
+        if sp.get("blink"):  # 眨眼：只画一道弯线
+            for x in range(int(cx - rx), int(cx + rx) + 1):
+                if 0 <= x < size and 0 <= int(cy) < size:
+                    px[x, int(cy + abs(x + 0.5 - cx) / max(rx, 1) * 0.8)] = EYE_DARK
+            continue
         for y in range(int(cy - ry - 1), int(cy + ry + 2)):
             for x in range(int(cx - rx - 1), int(cx + rx + 2)):
                 a, b = (x + 0.5 - cx) / rx, (y + 0.5 - cy) / ry

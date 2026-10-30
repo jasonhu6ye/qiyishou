@@ -559,7 +559,7 @@ def main():
                 "evolution": None,
                 "learnset": ls if s == 0 else ls + [[evo[s - 1] if s - 1 < len(evo) else 1, rng.choice([n for n, m in moves.items() if m["type"] == types[-1] and m["power"] >= 80])]],
                 "model": {"body": body, "size": size, "idle": IDLE[body],
-                          "colors": [TYPE_COLOR[t] for t in types], "frames": 4},
+                          "colors": [TYPE_COLOR[t] for t in types], "frames": 24},
                 "home": REGION[region]["name"],
             }
             species.append(sp)
