@@ -7,7 +7,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kit  # noqa: E402
 
-MODULES = ["fox", "frog", "mouse", "legends1", "legends2"]
+MODULES = ["fox", "frog", "mouse", "legends1", "legends2", "early1", "early2"]
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(ROOT, "assets", "sprites", "dex")
 
